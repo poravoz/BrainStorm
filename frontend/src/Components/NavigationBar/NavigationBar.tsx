@@ -3,7 +3,7 @@ import './assets/css/NavigationBar.css'
 function NavigationBar() {
     return (
       <div className="container_navigation_bar">
-        <div className="logo"> BrainStorm </div>
+        <div className="logo_navigation"> BrainStorm </div>
 
         <nav className="navigation">
           <a className='navigation_link' href=""> Our Team </a>
