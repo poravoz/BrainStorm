@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from './Navbar.module.css';
+import style from './Header.module.css';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const NavigationBar = () => {
