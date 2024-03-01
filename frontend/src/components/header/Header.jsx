@@ -29,7 +29,7 @@ const NavigationBar = () => {
             </li>
           </ul>
           <div onClick={() => setNav(!nav)} className={style.mobile_btn}>
-            {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+            {nav ? <AiOutlineClose size={25} color='#05386b' /> : <AiOutlineMenu size={25} color='#05386b' />}
           </div>
         </div>
       </div>
