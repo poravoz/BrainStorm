@@ -3,7 +3,7 @@
     src: url("../fonts/Montserrat-Regular.ttf") format('ttf');
 }
 
-.container {
+.container_navigation_bar {
     font-family: "Montserrat", sans-serif;
 
     display: flex;

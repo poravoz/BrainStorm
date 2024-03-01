@@ -2,7 +2,7 @@ import './assets/css/NavigationBar.css'
 
 function NavigationBar() {
     return (
-      <div className="container">
+      <div className="container_navigation_bar">
         <div className="logo"> BrainStorm </div>
 
         <nav className="navigation">
