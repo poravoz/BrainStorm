@@ -1,8 +1,9 @@
-import HelloWorld from './Components/navigation/navigation'
+import NavigationBar from "./Components/NavigationBar/NavigationBar";
+
 
 function App() {
   return (
-    <HelloWorld></HelloWorld>
+   <NavigationBar></NavigationBar>
   );
 }
 

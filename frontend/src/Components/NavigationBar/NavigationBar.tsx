@@ -1,10 +1,10 @@
 
 
-function Navigation() {
+function NavigationBar() {
     return (
       <div> Hello, World ! </div>
     );
   }
   
-  export default Navigation;
+  export default NavigationBar;
   
