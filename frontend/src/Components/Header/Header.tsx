@@ -1,6 +1,6 @@
 import './assets/css/NavigationBar.css'
 
-function NavigationBar() {
+function Header() {
     return (
       <div className="container_navigation_bar">
         <div className="logo_navigation"> BrainStorm </div>
@@ -15,5 +15,5 @@ function NavigationBar() {
     );
   }
   
-  export default NavigationBar;
+  export default Header;
   
