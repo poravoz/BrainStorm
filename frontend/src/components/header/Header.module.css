@@ -9,6 +9,11 @@ li {
   list-style: none;
 }
 
+li:hover {
+  opacity: 0.8;
+}
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -38,6 +43,10 @@ a {
   font-size: 30px;
   color: #05386b;
 
+}
+
+.logo:hover {
+  opacity: 0.8;
 }
 
 .menu {
