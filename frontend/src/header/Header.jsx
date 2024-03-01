@@ -2,7 +2,7 @@ import { useState } from 'react';
 import style from './Navbar.module.css';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
-const NAvbar = () => {
+const NavigationBar = () => {
   const [nav, setNav] = useState(false);
   return (
       <div className='container'>
@@ -37,4 +37,4 @@ const NAvbar = () => {
   );
 };
 
-export default NAvbar;
+export default NavigationBar;
