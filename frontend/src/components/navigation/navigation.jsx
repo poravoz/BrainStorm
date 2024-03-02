@@ -23,7 +23,7 @@ const NavigationBar = () => {
             <a href="">Photos</a>
           </li>
           <li>
-            <a href="">Login</a>
+            <a href="">Log in</a>
           </li>
         </ul>
         <div onClick={() => setNav(!nav)} className={style.mobile_btn}>

@@ -9,6 +9,15 @@ const Header = () => {
                                     code into success. <br /></h2>
         
             <img className="robot_header" src={robot}/>
+
+            <form className="form_signIn_header">
+                <input className="input_signIn_header" type="email" /> <br />
+                <input className="input_signIn_header" type="text" /> <br />
+                <input className="input_signIn_header" type="password" /> <br />
+
+                <button className="button_signIn_header" > Sign-Up </button>
+            </form>
+
         </div>
        
     );
