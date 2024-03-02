@@ -70,6 +70,13 @@ a {
   display: none;
 }
 
+.title_header {
+  z-index: 100;
+} 
+
+
+
+
 @media (max-width: 800px) {
   .mobile_btn {
     display: block;
@@ -94,6 +101,7 @@ a {
     background-color: #5cdb95;
     z-index: 10;
     transition: left 1s;
+    align-items: center;
   }
 
   .active {

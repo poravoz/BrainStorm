@@ -1,4 +1,4 @@
-import NavigationBar from "./components/header/Header";
+import NavigationBar from "./components/header/navigation";
 
 function App() {
   return (
