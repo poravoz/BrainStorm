@@ -5,7 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
   return (
-      <div className='container'>
+      <div className={style.container}>
       <div className={style.box}>
         <div className={style.logo}>
           <a href=""> BrainStorm </a>
