@@ -36,9 +36,10 @@ a {
   height: 80px;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0px;
+  z-index: 10;
 }
 
 .logo {
@@ -59,7 +60,7 @@ a {
   position: relative;
   display: flex;
   font-size: 24px;
-  gap: 30px;
+  gap: 15px;
   color: #05386b;
   right: 50px;
   align-items: center;
@@ -76,11 +77,12 @@ a {
 @media (max-width: 800px) {
   .mobile_btn {
     display: block;
-    position: absolute;
+    position: fixed;
     right: 10px;
-    top: 27px;
+    top: 25px;
     cursor: pointer;
     z-index: 10;
+
   }
 
   .menu {
@@ -98,6 +100,7 @@ a {
     z-index: 10;
     transition: left 1s;
     align-items: center;
+    
   }
 
   .active {
