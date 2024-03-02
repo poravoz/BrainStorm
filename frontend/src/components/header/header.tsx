@@ -10,12 +10,11 @@ const Header = () => {
         
             <img className="robot_header" src={robot}/>
 
-            <form className="form_signIn_header">
-                <input className="input_signIn_header" type="email" /> <br />
-                <input className="input_signIn_header" type="text" /> <br />
-                <input className="input_signIn_header" type="password" /> <br />
+            <form className="form_signUp_header">
+                <input placeholder="Your email" className="input_signUp_header" type="email" /> <br />
+                <input placeholder="Your password" className="input_signUp_header" type="password" /> <br />
 
-                <button className="button_signIn_header" > Sign-Up </button>
+                <button className="button_signUp_header" > Sign up </button>
             </form>
 
         </div>

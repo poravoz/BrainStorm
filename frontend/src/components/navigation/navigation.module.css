@@ -71,10 +71,7 @@ a {
 
 .title_header {
   z-index: 100;
-} 
-
-
-
+}
 
 @media (max-width: 800px) {
   .mobile_btn {
@@ -109,5 +106,19 @@ a {
 
   .menu a {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 285px) {
+  .logo {
+    font-size: 14px;
+    left: 15px;
+  }
+
+}
+
+@media (max-width: 130px) {
+  .menu, .logo, .mobile_btn {
+      display: none;
   }
 }

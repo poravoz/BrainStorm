@@ -17,11 +17,134 @@
     color: #05386b;
     font-size: 40px;
     top: 15px;
-    left: 200px;
+    left: 400px;
+    width: 480px;
 }
 
 .robot_header {
     position: absolute;
-    right: 200px;
+    right: 400px;
     top: 0px;
+}
+
+.form_signUp_header {
+    position: relative;
+    left: 400px;
+    top: 25px;
+    width: 475px;
+}
+
+.input_signUp_header {
+    border: none;
+    width: 480px;
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #edf5e1;
+    font-size: 14px;
+    padding-left: 25px;
+    color: #05386b;
+}
+
+.input_signUp_header:hover {
+    opacity: 0.9;
+}
+
+.input_signUp_header:focus {
+    outline: none;
+}
+
+.button_signUp_header {
+    width: 225px;
+    height: 45px;
+    border: none;
+    background-color: #355ea6;
+    border-radius: 10px;
+    color: #edf5e1;
+    margin: 0 auto;
+    display: block;
+}
+
+.button_signUp_header:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1600px) {
+    .robot_header {
+        display: none;
+    }
+
+    .form_signUp_header, .title_header  {
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .title_header  {
+        max-width: 290px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .input_signUp_header {
+        margin: 0 auto;
+        display: block;
+        width: 285px;
+    }
+    .button_signUp_header {
+        width: 135px;
+    }
+}
+
+@media (max-width: 475px) {
+    .title_header  {
+        max-width: 290px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .input_signUp_header {
+        margin: 0 auto;
+        display: block;
+        width: 125px;
+        height: 24px;
+        font-size: 8px;
+        padding-left: 15px;
+        margin-left: -10px;
+    }
+    .button_signUp_header {
+        width: 80px;
+        height: 24px;
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+    .form_signUp_header {
+        max-width: 100px;
+    }
+
+    .container {
+        height: 250px;
+        background-color: #5cdb95;
+    }
+}
+
+@media (max-width: 300px) {
+    .title_header  {
+        font-size: 9px;
+        max-width: 100px;
+    }
+
+    .input_signUp_header {
+        max-width: 100px;
+        margin-left: 0px;
+    }
+
+}
+
+@media (max-width: 130px) {
+    .title_header, .form_signUp_header  {
+        display: none;
+    }
 }

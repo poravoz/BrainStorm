@@ -5,7 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
   return (
-      <div className={style.container}>
+    <div className={style.container}>
       <div className={style.box}>
         <div className={style.logo}>
           <a href=""> BrainStorm </a>
@@ -29,7 +29,7 @@ const NavigationBar = () => {
         <div onClick={() => setNav(!nav)} className={style.mobile_btn}>
           {nav ? <AiOutlineClose size={25} color='#05386b' /> : <AiOutlineMenu size={25} color='#05386b' />}
         </div>
-      </div>   
+      </div>
     </div>
   );
 };
