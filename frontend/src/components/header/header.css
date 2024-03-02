@@ -142,9 +142,3 @@
     }
 
 }
-
-@media (max-width: 130px) {
-    .title_header, .form_signUp_header  {
-        display: none;
-    }
-}

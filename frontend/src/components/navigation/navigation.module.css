@@ -116,9 +116,3 @@ a {
   }
 
 }
-
-@media (max-width: 130px) {
-  .menu, .logo, .mobile_btn {
-      display: none;
-  }
-}
