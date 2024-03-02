@@ -1,8 +1,46 @@
+@font-face {
+    font-family: "Kode Mono";
+    src: url("../fonts/KodeMono-SemiBold.ttf");
+  }
+
 .container_about_us {
     position: relative;
     top: 79px;
-    height: 300px;
+    height: 500px;
     width: 100%;
     background-color: #8ee4af;
     z-index: -1;
+}
+
+.text_about_us {
+    font-family: 'Kode Mono';
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    font-size: 36px;
+    color: #05386b;
+}
+
+@media (max-width:700px) {
+    .text_about_us {
+        font-size: 24px;
+        top: 25px;
+    }
+}
+
+@media (max-width: 475px) { 
+    .text_about_us {
+        font-size: 16px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 300px) { 
+    .text_about_us {
+        font-size: 10px;
+        top: 10px;
+    }
 }
