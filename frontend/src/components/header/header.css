@@ -46,6 +46,20 @@
     color: #05386b;
 }
 
+.mdEmail_header {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.mdPassword_header {
+    position: absolute;
+    right: 10px;
+    top: 68px;
+    z-index: 1;
+}
+
 .input_signUp_header:hover {
     opacity: 0.9;
 }
@@ -95,6 +109,15 @@
     .button_signUp_header {
         width: 135px;
     }
+
+    .mdEmail_header {
+        right: 105px;
+    }
+
+    .mdPassword_header { 
+        right: 105px;
+        top: 73px;
+    }
 }
 
 @media (max-width: 475px) {
@@ -130,6 +153,16 @@
         height: 250px;
         background-color: #5cdb95;
     }
+
+    .mdEmail_header {
+        right: -12px;
+        top: -1px;
+    }
+
+    .mdPassword_header { 
+        right: -12px;
+        top: 42px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -141,6 +174,16 @@
     .input_signUp_header {
         max-width: 100px;
         margin-left: 0px;
+    }
+
+    .mdEmail_header {
+        right: 0px;
+        top: -1px;
+    }
+
+    .mdPassword_header { 
+        right: 0px;
+        top: 42px;
     }
 
 }
