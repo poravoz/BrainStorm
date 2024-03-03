@@ -1,53 +1,85 @@
-@font-face {
-    font-family: "Kode Mono";
-    src: url("../fonts/KodeMono-SemiBold.ttf");
-  }
+.text_about_us {
+    color: #05386b;
+    font-family: 'Kode Mono';
+    position: absolute;
+    display: flex;
+    font-size: 36px;
+    top: 40px;
+}
+
+.p_about_us {
+    font-size: 9px;
+}
 
 .container_about_us {
-    position: relative;
+    height: 450px;
     top: 79px;
-    height: 500px;
-    width: 100%;
     background-color: #8ee4af;
-    z-index: -1;
-}
-
-.text_about_us {
-    font-family: 'Kode Mono';
-
-    position: relative;
+    position: relative;;
     display: flex;
+    gap: 100px;
     align-items: center;
     justify-content: center;
-    top: 50px;
-    font-size: 36px;
-    color: #05386b;
+    line-height: 1.5em;
+
 }
 
-@media (max-width:700px) {
-    .text_about_us {
-        font-size: 24px;
-        top: 25px;
-    }
+.item_about_us {
+    top: 30px;
+    background-color: #eb904b;
+    width: 285px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-shadow: 
+        #3c40434d 0px 1px 2px 0px,
+        #3c40434d 0px 1px 3px 1px;
+        position: relative;
+        cursor: pointer;
 }
 
-@media (max-width: 475px) { 
-    .text_about_us {
-        font-size: 16px;
-        top: 20px;
-    }
+.item_about_us:nth-child(2) {
+    background-color: #813085;
 }
 
-@media (max-width: 300px) { 
-    .text_about_us {
-        font-size: 10px;
-        top: 10px;
-    }
+.item_about_us:nth-child(3) {
+    background-color: #119630;
 }
 
+.layer_about_us {
+    background-color: azure;
+    border: 1px solid #fff;
+    border-radius: inherit;
+    padding: 20px;
+    box-shadow: 
+        #00000012 0px 1px 2px,
+        #00000012 0px 2px 4px, 
+        #00000012 0px 4px 8px,
+        #00000012 0px 8px 16px,
+        #00000012 0px 16px 32px,
+        #00000012 0px 32px 64px;
+        position: relative;
+        left: 10px;
+        transition: left 1s;
+}
 
-@media (max-width: 105px) { 
-    .container_about_us {
-        width: 105px
-    }
+.h3_about_us {
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    color: var(#eb904b);
+}
+
+.p_about_us {
+    font-family: 'Montserrat';
+    color: #555;
+    font-size: 16px;
+}
+
+.item_about_us:hover::after {
+    filter: drop-shadow(5px 0 4px #0000001a);
+}
+
+.layer_about_us:hover {
+    left: 50px;
 }
