@@ -6,10 +6,13 @@ import Transition from "./components/transition/transition"
 function App() {
   return (
    <>
-    <NavigationBar />
-    <Header />
-    <AboutUs />
-    <Transition />
+   <div className="body">
+      <NavigationBar />
+      <Header />
+      <AboutUs />
+      <Transition />
+   </div>
+
     
    </>
   );
