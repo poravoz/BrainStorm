@@ -5,6 +5,7 @@
     display: flex;
     font-size: 36px;
     top: 40px;
+    text-wrap: nowrap;
 }
 
 .p_about_us {
@@ -15,16 +16,16 @@
     height: 450px;
     top: 79px;
     background-color: #8ee4af;
-    position: relative;;
+    position: relative;
     display: flex;
     gap: 100px;
     align-items: center;
     justify-content: center;
     line-height: 1.5em;
-
 }
 
 .item_about_us {
+    right: 10px;
     top: 30px;
     background-color: #eb904b;
     width: 285px;
@@ -83,3 +84,77 @@
 .layer_about_us:hover {
     left: 50px;
 }
+
+@media (max-width:1200px) { 
+    .container_about_us {
+        flex-direction: column; 
+        gap: 20px; 
+        text-align: center; 
+        height: 700px;
+    }
+
+    .item_about_us {
+        width: 700px;
+        top: 35px;
+    }
+}
+
+@media (max-width:775px) { 
+    .item_about_us { 
+        width: 500px;
+        top: 30px;
+    }
+
+    .container_about_us {
+        height: 800px;
+    }
+}
+
+@media (max-width:500px) { 
+    .item_about_us { 
+        width: 300px;
+        top: 10px;
+    }
+
+    .container_about_us {
+        height: 750px;
+    }
+
+    .text_about_us { 
+        font-size: 24px;
+        top: 15px;
+    }
+
+    .p_about_us {
+        font-size: 14px;
+        line-height: 1em;
+    }
+}
+
+@media (max-width:340px) { 
+    .text_about_us { 
+        font-size: 12px;
+    }
+
+    .item_about_us { 
+        width: 175px;
+        top: 15px;
+    }
+
+    .p_about_us {
+        font-size: 10px;
+    }
+    .h3_about_us { 
+        line-height: 1em;
+        font-size: 12px;
+    }
+
+    .container_about_us {
+        height: 700px;
+    }
+}
+
+
+
+
+
