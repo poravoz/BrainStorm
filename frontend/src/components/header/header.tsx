@@ -12,10 +12,13 @@ const Header = () => {
             <img className="robot_header" src={robot}/>
 
             <form className="form_signUp_header">
+                <p className="email_header">Email:</p>
                 <MdEmail size={25} className='mdEmail_header' color='#05386b' />
                 <input placeholder="Your email" className="input_signUp_header" type="email" /> <br />
                 
                 <MdPassword size={25} className='mdPassword_header' color='#05386b' />
+                
+                <p className="password_header">Password:</p>
                 <input placeholder="Your password" className="input_signUp_header" type="password"/> <br />
                 <button className="button_signUp_header" > Sign up </button>
             </form>
