@@ -2,8 +2,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import {data} from './settingsAndArraySlider/array-for-slider'
-import settings from './settingsAndArraySlider/settigs-for-slider';
+import {data} from './settingsAndArray/array-for-slider'
+import settings from './settingsAndArray/settigs-for-slider';
 
 import './our-team.css';
 
