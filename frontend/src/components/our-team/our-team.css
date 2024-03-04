@@ -1,10 +1,21 @@
 .container_our_team {
     max-width: 800px; 
     margin: 0 auto; 
-  }
-  .slick-slider { 
-    margin: 100px;
-  }
+}
+
+.text_our_team {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    right: 50px;
+    font-size: 36px;
+}
+
+.slick-slider { 
+    top: 200px;
+    width: 500px;
+    left: 100px;
+}
 
 .img_our_team {
     display: block;
@@ -12,8 +23,8 @@
     margin-right: auto;
 
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
 }
 
 .name_our_team, .review_our_team {

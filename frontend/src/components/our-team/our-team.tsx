@@ -21,6 +21,7 @@ const OurTeam = () => {
 
   return (
     <div className="container_our_team">
+      <p className="text_our_team"> Our team </p>
       <Slider {...settings}>
         {data.map((item, index) => (
           <div key={index}>
@@ -43,12 +44,12 @@ const data = [
   {
     name: `Dmytro Zavorotniy`,
     img: dmytro,
-    review: `TEST`
+    review: `The main one decided`
   },
   {
     name: `Valeria Konovalchuk`,
     img: valeria,
-    review: `TEST`
+    review: `Brief description`
   },
   {
     name: `Yana Trofymenko`,

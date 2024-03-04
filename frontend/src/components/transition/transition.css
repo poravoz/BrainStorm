@@ -14,7 +14,8 @@
     left: 150px;
 }
 
-.text_transition {
+.text_transition {    
+    font-family: "Kode Mono";
     position: relative;
     font-size: 48px;
     bottom: 50px;
@@ -41,7 +42,7 @@
     }
 }
 
-@media (max-width:1385px) {
+@media (max-width:1470px) {
     .text_transition {
         bottom: 10px;
         font-size: 36px;
@@ -98,10 +99,11 @@
 @media (max-width:780px) { 
     .text_transition {
         left: 100px;
+        text-wrap: nowrap;
     }
 
     .google_play_button_transition_a  {
-        left: -125px;
+        left: -150px;
     }
 }
 

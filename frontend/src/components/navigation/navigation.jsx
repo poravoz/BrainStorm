@@ -8,7 +8,7 @@ const NavigationBar = () => {
     <div className={style.container}>
       <div className={style.box}>
         <div className={style.logo}>
-          <a href=""> BrainStorm </a>
+          <a href=""> WillCode </a>
         </div>
         <ul
           className={nav ? [style.menu, style.active].join(' ') : [style.menu]}
