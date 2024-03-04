@@ -1,0 +1,28 @@
+.container_our_team {
+    max-width: 800px; 
+    margin: 0 auto; 
+  }
+  .slick-slider { 
+    margin: 100px;
+  }
+
+.img_our_team {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.name_our_team, .review_our_team {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width:360px) {
+    .container_our_team { 
+        display: none;
+    }
+}
