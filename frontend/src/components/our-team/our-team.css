@@ -1,20 +1,26 @@
 .container_our_team {
-    max-width: 800px; 
+    width: 100%;
+    height: 550px; 
     margin: 0 auto; 
+    background-color: #3cbbac;
 }
 
 .text_our_team {
+    font-family: "Kode Mono";
     position: relative;
     top: 120px;
     text-align: center;
     right: 50px;
     font-size: 36px;
+    color: #05386b;
 }
 
 .slick-slider { 
-    top: 200px;
+    position: relative;
+    margin: 0 auto;
+    top: 140px;
     width: 500px;
-    left: 100px;
+    right: 50px;
 }
 
 .img_our_team {
@@ -28,11 +34,25 @@
 }
 
 .name_our_team, .review_our_team {
-    margin-top: 10px;
     text-align: center;
+    font-family: "Kode Mono";
+    color: #05386b;
 }
 
 @media (max-width:360px) {
+    .container_our_team { 
+        display: none;
+    }
+}
+
+@media (max-width:1250px) { 
+    .img_our_team { 
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width:900px) {
     .container_our_team { 
         display: none;
     }

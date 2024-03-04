@@ -39,7 +39,7 @@ const data = [
   {
     name: `Mykola Rud`,
     img: kolya,
-    review: `TEST`
+    review: `Just the coolest person`
   },
   {
     name: `Dmytro Zavorotniy`,
@@ -54,7 +54,7 @@ const data = [
   {
     name: `Yana Trofymenko`,
     img: yana,
-    review: `TEST`
+    review: `She didn't come up with a short description`
   },
 ];
 
