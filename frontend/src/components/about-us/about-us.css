@@ -69,12 +69,14 @@
     font-weight: 700;
     text-align: center;
     color: var(#eb904b);
+    color: #05386b;
 }
 
 .p_about_us {
     font-family: 'Montserrat';
     color: #555;
     font-size: 16px;
+    color: #05386b;
 }
 
 .item_about_us:hover::after {
@@ -83,6 +85,12 @@
 
 .layer_about_us:hover {
     left: 50px;
+}
+
+@supports (-moz-appearance:none) { 
+    .container_about_us { 
+        top: 130px;
+    }
 }
 
 @media (max-width:1200px) { 

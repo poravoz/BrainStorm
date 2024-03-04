@@ -90,6 +90,17 @@
     opacity: 0.9;
 }
 
+@supports (-moz-appearance:none) {
+    .mdPassword_header {
+        top: 112px;
+    }
+
+    .input_signUp_header {
+        margin-bottom: 0px;
+    }
+}
+
+
 @media (max-width: 1600px) {
     .robot_header {
         display: none;
@@ -165,16 +176,9 @@
         background-color: #5cdb95;
     }
 
-    .mdEmail_header {
-        right: -12px;
-        top: 14px;
+    .mdEmail_header, .mdPassword_header {
+        display: none;
     }
-
-    .mdPassword_header { 
-        right: -12px;
-        top: 72px;
-    }
-
     .email_header, .password_header {
         left: -5px;
         font-size: 12px;
