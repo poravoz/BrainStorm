@@ -122,11 +122,3 @@ a {
   }
 
 }
-
-@media (max-width: 150px) {
-  .logo {
-    font-size: 9px;
-    left: 5px;
-  }
-
-}

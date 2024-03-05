@@ -163,7 +163,10 @@
     }
 }
 
+@media (max-width: 230px) {
+    .container_about_us   {
+        width: 230px;
+    }
 
 
-
-
+}

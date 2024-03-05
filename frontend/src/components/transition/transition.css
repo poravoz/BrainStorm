@@ -157,7 +157,7 @@
     }
 }
 
-@media (max-width:300px) { 
+@media (max-width:340px) { 
     .text_transition {
       font-size: 16px;
     }
@@ -171,3 +171,10 @@
         height: 125px;
     }
 }
+
+@media (max-width:230px) { 
+    .container_transition {
+        width: 230px;
+    }
+}
+

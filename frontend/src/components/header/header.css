@@ -188,7 +188,7 @@
 
 @media (max-width: 300px) {
     .title_header  {
-        font-size: 9px;
+        font-size: 14px;
         max-width: 100px;
     }
 
@@ -199,7 +199,7 @@
 
     .mdEmail_header {
         right: 0px;
-        top: 9px;
+        top: 14px;
     }
 
     .mdPassword_header { 
@@ -213,9 +213,9 @@
     }
 }
 
-@media (max-width: 105px) {
+@media (max-width: 230px) {
     .container  {
-        width: 105px;
+        width: 230px;
     }
 
 }
