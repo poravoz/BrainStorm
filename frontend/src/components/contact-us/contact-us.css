@@ -17,6 +17,10 @@
 
 .robotSendMessage_img {
     position: absolute;
+    transform: translate(-50%, -50%);
+    right: 400px;
+    left: 150%;
+    top: 40%;
 }
 
 .form_contactUs {

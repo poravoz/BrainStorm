@@ -24,9 +24,9 @@
 .robot_header {
     z-index: 1;
     position: absolute;
-    transform: translate(-50%, -50%);
-    right: 400px;
-    top: 250px;
+    left: 600px;
+    bottom: -100px;
+
 }
 
 .form_signUp_header {
