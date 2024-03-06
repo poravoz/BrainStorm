@@ -144,6 +144,7 @@
 }
 
 @media (max-width: 475px) {
+
     .title_header  {
         max-width: 290px;
         font-size: 16px;
@@ -153,11 +154,10 @@
     .input_signUp_header {
         margin: 0 auto;
         display: block;
-        width: 125px;
+        width: 200px;
         height: 24px;
         font-size: 8px;
         padding-left: 15px;
-        margin-left: -10px;
         border-radius: 5px;
     }
     .button_signUp_header {
@@ -166,10 +166,12 @@
         font-size: 8px;
         margin-left: 10px;
         border-radius: 5px;
+        position: relative;
+        left: 40px;
     }
 
     .form_signUp_header {
-        max-width: 100px;
+        width: 200px;
     }
 
     .container {
@@ -181,12 +183,15 @@
         display: none;
     }
     .email_header, .password_header {
-        left: -5px;
+        left: 5px;
         font-size: 12px;
     }
 }
 
 @media (max-width: 300px) {
+    .form_signUp_header {
+        max-width: 100px;
+    }
     .title_header  {
         font-size: 14px;
         max-width: 100px;
@@ -205,6 +210,10 @@
     .mdPassword_header { 
         right: 0px;
         top: 62px;
+    }
+
+    .button_signUp_header {
+        left: 0px;
     }
 
     .email_header, .password_header {
