@@ -144,6 +144,10 @@
     .email_header, .password_header {
         left: 110px;
     }
+
+    .container {
+        height: 350px;
+    }
 }
 
 @media (max-width: 475px) {

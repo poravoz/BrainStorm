@@ -127,17 +127,21 @@
         font-size: 24px;
         top: 15px;
     }
+
+    .container_contactUs {
+        height: 465px;
+    }
 }
 
-@media (max-width:475px) { 
+@media (max-width:375px) { 
 
     .form_contactUs {
         top: 25px;
-        width: 200px;
+        width: 230px;
     }
 
     .input_contactUs, .textarea_contact_us {
-        width: 200px;
+        width: 230px;
     }
 
     .button_contactUs {
