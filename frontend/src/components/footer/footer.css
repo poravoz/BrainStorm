@@ -42,6 +42,10 @@
     top: 25px;
 }
 
+.my_github_footer:hover { 
+    opacity: 0.9;
+}
+
 @media (max-width:800px) {
     .my_github_footer, .text_footer { 
         font-size: 36px;
