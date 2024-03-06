@@ -4,6 +4,7 @@ import AboutUs from "./components/about-us/about-us";
 import Transition from "./components/transition/transition"
 import OurTeam from "./components/our-team/our-team";
 import ContactUs from "./components/contact-us/contact-us";
+import Footer from "./components/footer/footet";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Transition />
       <OurTeam />
       <ContactUs />
+      <Footer />
    </>
   );
 }
