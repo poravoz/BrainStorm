@@ -13,23 +13,26 @@
 .title_header {
     position: relative;
     font-family: "Kode Mono", monospace;
+    margin: 0 auto;
     color: #05386b;
     font-size: 40px;
+    right: 300px;
     top: 15px;
-    left: 400px;
     width: 480px;
 }
 
 .robot_header {
     z-index: 1;
     position: absolute;
+    transform: translate(-50%, -50%);
     right: 400px;
-    top: 0px;
+    top: 250px;
 }
 
 .form_signUp_header {
     position: relative;
-    left: 400px;
+    margin: 0 auto;
+    right: 300px;
     top: 25px;
     width: 475px;
 }
