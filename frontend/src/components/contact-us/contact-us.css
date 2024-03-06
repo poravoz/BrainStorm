@@ -21,6 +21,7 @@
     right: 400px;
     left: 150%;
     top: 40%;
+    pointer-events: none;
 }
 
 .form_contactUs {
@@ -45,7 +46,7 @@
 }
 
 .input_contactUs:hover, .textarea_contact_us:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .input_contactUs:hover, .textarea_contact_us:hover {

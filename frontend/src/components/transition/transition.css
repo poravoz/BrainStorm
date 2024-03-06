@@ -12,6 +12,7 @@
 .robot_transition {
     position: relative;
     left: 150px;
+    pointer-events: none;
 }
 
 .text_transition {    

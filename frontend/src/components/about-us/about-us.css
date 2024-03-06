@@ -1,6 +1,10 @@
+@font-face {
+    font-family: "Kode Mono";
+    src: url("../fonts/KodeMono-SemiBold.ttf");
+  }
+
 .text_about_us {
     color: #05386b;
-    font-family: 'Kode Mono';
     position: absolute;
     display: flex;
     font-size: 36px;
@@ -65,7 +69,7 @@
 
 .h3_about_us {
     margin-bottom: 10px;
-    font-family: 'Montserrat';
+    font-family: "Kode Mono";
     font-weight: 700;
     text-align: center;
     color: var(#eb904b);
