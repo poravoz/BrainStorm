@@ -99,12 +99,12 @@
 
 @media (max-width:800px) { 
     .text_transition {
-        left: 100px;
         text-wrap: nowrap;
+        left: 93px;
     }
 
-    .google_play_button_transition_a  {
-        left: -150px;
+    .google_play_button_transition_a {
+        left: -155px;
     }
 }
 
@@ -119,18 +119,12 @@
     }
 
     .google_play_button_transition_a  {
-        right: 75px;
+        right: 190px;
         top: 35px;
     }
 
     .container_transition { 
         height: 150px;
-    }
-}
-
-@media (max-width:765px) { 
-    .google_play_button_transition_a  {
-        right: 125px;
     }
 }
 
