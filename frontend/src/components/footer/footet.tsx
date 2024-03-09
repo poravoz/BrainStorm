@@ -3,7 +3,7 @@ import "./footer.css"
 const Footer = () => { 
     return (
         <div className="container_footer"> 
-            <p className="text_footer"> Wuzi </p>
+            <p className="text_footer"> Codito </p>
             <a href="https://github.com/poravoz/BrainStorm" className="my_github_footer"> GitHub </a>
             
             <hr className="hr_footer" />

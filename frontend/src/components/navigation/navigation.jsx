@@ -26,7 +26,7 @@ const NavigationBar = () => {
     <div className={style.container_navigation}>
       <div className={style.box} style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
         <div className={style.logo}>
-          <a href=""> Wuzi </a>
+          <a href=""> Codito </a>
         </div>
         <ul className={nav ? [style.menu, style.active].join(' ') : style.menu}>
           <li>
