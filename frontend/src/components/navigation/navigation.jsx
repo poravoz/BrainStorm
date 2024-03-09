@@ -24,7 +24,7 @@ const NavigationBar = () => {
 
   return (
     <div className={style.container_navigation}>
-      <div className={style.box} style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
+      <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
         <div className={style.logo}>
           <a href=""> Codito </a>
         </div>
