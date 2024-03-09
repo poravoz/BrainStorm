@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import {useState } from 'react';
 import style from './navigation.module.css';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
   return (
-    <div className={style.container}>
+    
+    <div className={style.container_navigation}>
       <div className={style.box}>
         <div className={style.logo}>
           <a href=""> Wuzi </a>
@@ -31,6 +32,7 @@ const NavigationBar = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
