@@ -28,11 +28,11 @@ const NavigationBar = () => {
         <div className={style.logo}>
           <a href=""> Codito </a>
         </div>
-        <ul className={nav ? [style.menu, style.active].join(' ') : style.menu}>
+        <ul className={nav ? [style.menu, style.active].join(' ') : style.menu} style={{backgroundColor: theme.backgroundColor_header, color: theme.color_header}}>
           <li>
             <div onClick={handleToggleTheme}>
               {isLightOn ?
-                <FaRegLightbulb size={25} color='#fff' />
+                <FaRegLightbulb size={25} color='azure' />
                : 
                 <FaLightbulb size={25} color='#05386b' />
               }
@@ -52,7 +52,7 @@ const NavigationBar = () => {
           </li>
         </ul>
         <div onClick={() => setNav(!nav)} className={style.mobile_btn}>
-          {nav ? <AiOutlineClose size={25} color='#05386b' /> : <AiOutlineMenu size={25} color='#05386b' />}
+          {nav ? <AiOutlineClose size={25} color='azure' /> : <AiOutlineMenu size={25} color='azure' />}
         </div>
       </div>
     </div>

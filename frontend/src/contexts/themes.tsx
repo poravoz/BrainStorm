@@ -1,7 +1,7 @@
 const themes = {
     dark: {
-        backgroundColor_header: "black",
-        color_header: "white"
+        backgroundColor_header: "#001F3F",
+        color_header: "azure"
     },
     light: {
         backgroundColor_header: "#5cdb95",
