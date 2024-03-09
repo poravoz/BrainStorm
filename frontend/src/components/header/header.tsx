@@ -3,6 +3,8 @@ import robot from './images/robot.png'
 import { MdEmail, MdPassword } from "react-icons/md";
 
 const Header = () => {
+    // Продовжити дороблювати темну тему
+
     return (
         <div className="container">
             <h2 className="title_header">  Transform your ideas <br /> 
