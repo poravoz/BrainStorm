@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { GrAccessibility } from "react-icons/gr";
 
 import {useContext } from 'react';
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../../contexts/theme';
 
 const ContactUs = () => { 
     const [{ theme }] = useContext(ThemeContext);

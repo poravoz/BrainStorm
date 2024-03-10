@@ -8,7 +8,7 @@ import settings from './settingsAndArray/settigs-for-slider';
 import './our-team.css';
 
 import {useContext } from 'react';
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../../contexts/theme';
 
 const OurTeam = () => {
   const [{ theme }] = useContext(ThemeContext);
