@@ -20,7 +20,7 @@ const themes = {
 
 
         // transition
-        backgroundColor_transition: "#452D35",
+        backgroundColor_transition: "#412227",
         color_transition: "azure",
         robot_transition: "hue-rotate(400deg)",
 
@@ -33,7 +33,7 @@ const themes = {
         
         
         //contact-us
-        backgroundColor_contact_us: "#464544",
+        backgroundColor_contact_us: "#303030",
         color_contact_us: "azure",
         backgroundColor_input_contact_us: "lightgray",
         backgroundColor_button_contact_us: "#3492eb",
