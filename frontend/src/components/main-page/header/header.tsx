@@ -18,10 +18,10 @@ const Header = () => {
             <form className="form_signUp_header">
             <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
                 <p className="email_header" style={{color: theme.color_header}}>Email:</p>
-                <MdEmail size={25} className='mdEmail_header' color="#05386b" />
+                <MdEmail size={25} className='mdEmail_header' style={{color: theme.color_icon_header}} />
                 <input placeholder="Your email" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header}}  type="email" /> <br />
                 
-                <MdPassword size={25} className='mdPassword_header' color="#05386b" />
+                <MdPassword size={25} className='mdPassword_header' style={{color: theme.color_icon_header}} />
                 
                 <p className="password_header" style={{color: theme.color_header}}>Password:</p>
                 <input placeholder="Your password" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header}} type="password"/> <br />           
