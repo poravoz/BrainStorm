@@ -42,9 +42,6 @@ const NavigationBar = () => {
             <a href="">Store</a>
           </li>
           <li>
-            <a href="">Our team</a>
-          </li>
-          <li>
             <a href="">Photos</a>
           </li>
           <li>
