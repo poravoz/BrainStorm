@@ -3,7 +3,7 @@ import robot from './images/robot.png'
 import google_play_button from './images/google-play-badge.png'
 
 import {useContext } from 'react';
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../../contexts/theme';
 
 const Transition = () => { 
     const [{ theme }] = useContext(ThemeContext);
