@@ -2,7 +2,7 @@ import './header.css'
 import robot from './images/robot.png'
 import { MdEmail, MdPassword } from "react-icons/md";
 
-import {useContext, useEffect } from 'react';
+import {useContext } from 'react';
 import { ThemeContext } from '../../contexts/theme';
 
 const Header = () => {
