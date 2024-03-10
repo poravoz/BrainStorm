@@ -3,8 +3,8 @@ import MainPage from './components/main-page/main-page';
 function App() {
   return (
     <>
-    <MainPage />
-    </>
+      <MainPage />
+    </> 
   );
 }
 

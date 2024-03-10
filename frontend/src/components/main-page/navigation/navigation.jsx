@@ -36,10 +36,9 @@ const NavigationBar = () => {
                   :
                   <FaLightbulb size={25} color='#05386b' />}
               </div>
-
             </li>
             <li>
-              <a href=""> Store </a>
+              <a href="">Store</a>
             </li>
             <li>
               <a href="">Photos</a>
