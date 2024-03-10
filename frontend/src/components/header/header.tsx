@@ -25,7 +25,7 @@ const Header = () => {
                 
                 <p className="password_header" style={{color: theme.color_header}}>Password:</p>
                 <input placeholder="Your password" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header}} type="password"/> <br />           
-                <button className="button_signUp_header" style={{backgroundColor: theme.backgroundColor_header_button }} > Sign up </button>
+                <button className="button_signUp_header" style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }} > Sign up </button>
             </form>
 
         </div>

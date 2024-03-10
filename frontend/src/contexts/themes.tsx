@@ -6,6 +6,7 @@ const themes = {
         color_header: "#ecf0f1",
         backgroundColor_header_input: "lightgray",
         backgroundColor_header_button: "#3492eb",
+        color_header_button: "azure",
 
 
 
@@ -36,6 +37,7 @@ const themes = {
         color_contact_us: "azure",
         backgroundColor_input_contact_us: "lightgray",
         backgroundColor_button_contact_us: "#3492eb",
+        color_contact_us_button: "azure",
     },
     light: {
         // nav + header
@@ -43,6 +45,7 @@ const themes = {
         color_header: "#05386b",
         backgroundColor_header_input: "azure",
         backgroundColor_header_button: "#355ea6",
+        color_header_button: "azure",
 
 
 
@@ -73,6 +76,7 @@ const themes = {
         color_contact_us: "#05386b",
         backgroundColor_input_contact_us: "azure",
         backgroundColor_button_contact_us: "#355ea6",
+        color_contact_us_button: "azure",
 
     },
 
