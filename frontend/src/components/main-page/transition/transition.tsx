@@ -9,7 +9,7 @@ const Transition = () => {
     const [{ theme }] = useContext(ThemeContext);
     return(
        <div className="container_transition" style={{backgroundColor: theme.backgroundColor_transition}}>
-            <img className="robot_transition" src={robot} />
+            <img className="robot_transition" style={{filter: theme.robot_transition}} src={robot} />
             <p className="text_transition" style={{color: theme.color_transition}}> Learn to code anytime, <br /> from anywhere </p>
             
             <a className='google_play_button_transition_a' href="">

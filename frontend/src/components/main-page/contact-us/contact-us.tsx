@@ -21,7 +21,7 @@ const ContactUs = () => {
                 <p className="message_contactUs" style={{color: theme.color_contact_us}}> Your message: </p>
                 <textarea className="textarea_contact_us" style={{backgroundColor: theme.backgroundColor_input_contact_us}} placeholder="Enter Something"></textarea> <br />
                 <button className="button_contactUs" style={{backgroundColor: theme.backgroundColor_button_contact_us, color: theme.color_contact_us_button}} > Submit </button>
-                <img className="robotSendMessage_img" src={robotSendMessage} />
+                <img className="robotSendMessage_img" src={robotSendMessage} style={{filter: theme.robot_contact_us}} />
             </form>
 
         </div>

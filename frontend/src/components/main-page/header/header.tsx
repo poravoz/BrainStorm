@@ -16,7 +16,7 @@ const Header = () => {
                                     code into success. <br /></h2>
 
             <form className="form_signUp_header">
-            <img className="robot_header" src={robot}/>
+            <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
                 <p className="email_header" style={{color: theme.color_header}}>Email:</p>
                 <MdEmail size={25} className='mdEmail_header' color="#05386b" />
                 <input placeholder="Your email" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header}}  type="email" /> <br />

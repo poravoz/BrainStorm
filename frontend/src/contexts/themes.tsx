@@ -7,8 +7,7 @@ const themes = {
         backgroundColor_header_input: "lightgray",
         backgroundColor_header_button: "#3492eb",
         color_header_button: "azure",
-
-
+        robot_header: "saturate(1) hue-rotate(180deg)",
 
         // about us
         backgroundColor_about_us: "#222222",
@@ -23,6 +22,7 @@ const themes = {
         // transition
         backgroundColor_transition: "#452D35",
         color_transition: "azure",
+        robot_transition: "hue-rotate(400deg)",
 
 
 
@@ -38,6 +38,7 @@ const themes = {
         backgroundColor_input_contact_us: "lightgray",
         backgroundColor_button_contact_us: "#3492eb",
         color_contact_us_button: "azure",
+        robot_contact_us: "hue-rotate(100deg)",
     },
     light: {
         // nav + header
@@ -46,6 +47,7 @@ const themes = {
         backgroundColor_header_input: "azure",
         backgroundColor_header_button: "#355ea6",
         color_header_button: "azure",
+        robot_header: "none",
 
 
 
