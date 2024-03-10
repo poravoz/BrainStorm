@@ -3,7 +3,7 @@ import style from './navigation.module.css';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../../contexts/theme';
 
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);

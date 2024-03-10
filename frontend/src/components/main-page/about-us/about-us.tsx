@@ -1,6 +1,6 @@
 import './about-us.css'
 import {useContext } from 'react';
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../../contexts/theme';
 
 const AboutUs = () => { 
     const [{ theme }] = useContext(ThemeContext);
