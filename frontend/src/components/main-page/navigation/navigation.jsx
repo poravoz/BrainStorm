@@ -5,6 +5,8 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
 import { ThemeContext } from '../../../contexts/theme';
 
+import { Link } from 'react-router-dom';
+
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
   const [isLightOn, setIsLightOn] = useState(false);
@@ -37,9 +39,10 @@ const NavigationBar = () => {
                 <FaLightbulb size={25} color='#05386b' />
               }
             </div>
+
           </li>
           <li>
-            <a href="">Store</a>
+            <Link to="store"> Store </Link>
           </li>
           <li>
             <a href="">Photos</a>
