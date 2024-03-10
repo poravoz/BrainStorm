@@ -4,7 +4,6 @@
   }
 
 .text_about_us {
-    color: #05386b;
     position: absolute;
     display: flex;
     font-size: 36px;
@@ -19,7 +18,6 @@
 .container_about_us {
     height: 450px;
     top: 79px;
-    background-color: #8ee4af;
     position: relative;
     display: flex;
     gap: 100px;
@@ -73,14 +71,12 @@
     font-weight: 700;
     text-align: center;
     color: var(#eb904b);
-    color: #05386b;
 }
 
 .p_about_us {
     font-family: 'Montserrat';
     color: #555;
     font-size: 16px;
-    color: #05386b;
 }
 
 .item_about_us:hover::after {
