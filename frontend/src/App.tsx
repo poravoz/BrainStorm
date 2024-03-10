@@ -1,4 +1,4 @@
-import Header from "./components/header/header";
+import Header from "./components/main-page/header/header";
 import NavigationBar from "./components/main-page/navigation/navigation";
 import AboutUs from "./components/main-page/about-us/about-us";
 import Transition from "./components/transition/transition"

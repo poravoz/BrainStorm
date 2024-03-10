@@ -3,7 +3,7 @@ import robot from './images/robot.png'
 import { MdEmail, MdPassword } from "react-icons/md";
 
 import {useContext } from 'react';
-import { ThemeContext } from '../../contexts/theme';
+import { ThemeContext } from '../../../contexts/theme';
 
 const Header = () => {
 
