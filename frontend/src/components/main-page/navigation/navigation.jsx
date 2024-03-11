@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
+  
   const [isLightOn, setIsLightOn] = useState(false);
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
 
@@ -39,7 +40,7 @@ const NavigationBar = () => {
               </div>
             </li>
             <li>
-              <Link to="/store">Store</Link>
+              <Link to="/store"> Store </Link>
             </li>
             <li>
             <Link to="/photos">Photos</Link>
