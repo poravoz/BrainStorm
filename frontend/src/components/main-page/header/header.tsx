@@ -8,7 +8,6 @@ import { ThemeContext } from '../../../contexts/theme';
 const Header = () => {
 
     const [{ theme }] = useContext(ThemeContext);
-
     return (
         <div className="container" style={{backgroundColor : theme.backgroundColor_header}}>
             <h2 className="title_header" style={{color: theme.color_header}}>  Transform your ideas <br /> 
