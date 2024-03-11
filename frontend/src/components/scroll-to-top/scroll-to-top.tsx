@@ -9,7 +9,7 @@ export default function ScrollToTop() {
     const [{ theme }] = useContext(ThemeContext);
     return (
         <div className="scrollToTop" onClick={top}>
-            <IoMdRocket size={40} style={{color: theme.color_icon_scroll_up}}> Top </IoMdRocket>
+            <IoMdRocket size={40} style={{color: theme.color_icon_scroll_up}} />
         </div>
     )
   }
