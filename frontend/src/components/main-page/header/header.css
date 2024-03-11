@@ -55,14 +55,14 @@
 .mdEmail_header {
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 32px;
     z-index: 1;
 }
 
 .mdPassword_header {
     position: absolute;
     right: 10px;
-    top: 107px;
+    top: 110px;
     z-index: 1;
 }
 
@@ -132,7 +132,7 @@
 
     .mdPassword_header { 
         right: 105px;
-        top: 112px;
+        top: 114px;
     }
 
     .email_header, .password_header {
@@ -181,12 +181,12 @@
     }
 
     .mdEmail_header {
-        top: 14px;
+        top: 17px;
         right: 3px;
     }
 
     .mdPassword_header {
-        top: 72px;
+        top: 74px;
         right: 3px;
     }
 
@@ -216,12 +216,12 @@
 
     .mdEmail_header {
         right: 3px;
-        top: 14px;
+        top: 17px;
     }
 
     .mdPassword_header { 
         right: 3px;
-        top: 72px;
+        top: 74px;
     }
 
     .container {

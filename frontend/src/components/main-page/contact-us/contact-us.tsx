@@ -12,11 +12,11 @@ const ContactUs = () => {
         <div className="container_contactUs" style={{backgroundColor: theme.backgroundColor_contact_us}} >
             <p className="text_contactUs" style={{color: theme.color_contact_us}}> Contact us </p> 
             <form className="form_contactUs">
-                <GrAccessibility size={25} className="mdName_contact_us" style={{color: theme.color_icon_contact_us}} />
+                <GrAccessibility size={20} className="mdName_contact_us" style={{color: theme.color_icon_contact_us}} />
                 <p className="name_contactUs" style={{color: theme.color_contact_us}}>Name:</p>
                 <input placeholder="Your name" className="input_contactUs" style={{backgroundColor: theme.backgroundColor_input_contact_us}} type="text" /> <br />
                 <p className="email_contactUs" style={{color: theme.color_contact_us}}>Email:</p>
-                <MdEmail size={25} className='mdEmail_contact_us' style={{color: theme.color_icon_contact_us}} />
+                <MdEmail size={20} className='mdEmail_contact_us' style={{color: theme.color_icon_contact_us}} />
                 <input placeholder="Your email" className="input_contactUs" style={{backgroundColor: theme.backgroundColor_input_contact_us}} type="email"/> <br />
                 <p className="message_contactUs" style={{color: theme.color_contact_us}}> Your message: </p>
                 <textarea className="textarea_contact_us" style={{backgroundColor: theme.backgroundColor_input_contact_us}} placeholder="Enter Something"></textarea> <br />
