@@ -41,6 +41,11 @@ const themes = {
         color_contact_us_button: "azure",
         robot_contact_us: "hue-rotate(100deg)",
         color_icon_contact_us: "#222",
+
+
+
+        //button_scroll_up
+        color_icon_scroll_up: "#3492eb",
     },
     light: {
         // nav + header
@@ -83,6 +88,10 @@ const themes = {
         backgroundColor_button_contact_us: "#355ea6",
         color_contact_us_button: "azure",
         color_icon_contact_us: "#05386b",
+
+
+        //button_scroll_up
+        color_icon_scroll_up: "355ea6",
 
     },
 

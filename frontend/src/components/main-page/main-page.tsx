@@ -5,6 +5,8 @@ import Transition from "./transition/transition"
 import OurTeam from "./our-team/our-team";
 import ContactUs from "./contact-us/contact-us";
 import Footer from "./footer/footet";
+import ScrollToTop from "../scroll-to-top/scroll-to-top";
+
 
 
 function MainPage() {
@@ -17,6 +19,8 @@ function MainPage() {
         <OurTeam />
         <ContactUs />
         <Footer />
+        <ScrollToTop />
+
     </>
     )
 }

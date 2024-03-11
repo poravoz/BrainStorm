@@ -1,0 +1,15 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.scrollToTop {
+    z-index: 100;
+    bottom: 10px;
+    position: fixed;
+    right: 10px;
+    cursor: pointer;
+}
+
+.scrollToTop:hover {
+    opacity: 0.9;
+}

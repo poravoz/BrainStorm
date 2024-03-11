@@ -1,3 +1,4 @@
+import { IoMdRocket } from "react-icons/io";
 import "./footer.css"
 
 const Footer = () => { 
@@ -9,6 +10,8 @@ const Footer = () => {
             <hr className="hr_footer" />
             <p className="rights_text_footer"> ©2024 Glossy, All right reserved. </p>
         </div>
+
+        
     )
 }
 
