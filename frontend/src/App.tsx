@@ -1,6 +1,6 @@
 import MainPage from './components/main-page/main-page';
-import Store from './components/store/store';
-import Photos from './components/photos/photos';
+import Store from './components/store-page/store';
+import Photos from './components/photos-page/photos';
 import {Routes, Route} from 'react-router-dom';
 
 function App() {
