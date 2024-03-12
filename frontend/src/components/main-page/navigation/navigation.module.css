@@ -48,6 +48,10 @@ a {
   opacity: 0.8;
 }
 
+.link_our_team {
+  cursor: pointer;
+}
+
 .menu {
   position: relative;
   display: flex;
@@ -138,7 +142,7 @@ a {
   outline: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .mobile_btn {
     display: block;
     position: fixed;
@@ -172,6 +176,23 @@ a {
   .menu a {
     font-size: 24px;
   }
+
+  .icon_dark_theme {
+    position: relative;
+    top: 20px;
+  }
+  
+  .select_language {
+    position: relative;
+    top: 15px;
+  }
+
+  .link_our_team {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+
 }
 
 @media (max-width: 285px) {

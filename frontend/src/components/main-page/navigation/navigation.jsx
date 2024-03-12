@@ -23,8 +23,9 @@ const NavigationBar = () => {
 
   const [modalActive, setModalActive] = useState(false);
   const [t, i18n] = useTranslation("global");
+  const top = () => {window.scrollTo(0, 0)}
+  const scrollToTeam = () => {window.scrollTo(0, 1450)}
 
-  
   const getLanguageFromLocalStorage = () => {
     return localStorage.getItem('language');
   };
@@ -78,7 +79,7 @@ const NavigationBar = () => {
       <div className={style.container_navigation}>
         <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
           <div className={style.logo}>
-            <Link to="/"> {t("navigation.logo")} </Link>
+            <Link onClick={top} to="/"> {t("navigation.logo")} </Link>
           </div>
           <ul className={nav ? [style.menu, style.active].join(' ') : style.menu} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
             <li>
@@ -95,6 +96,7 @@ const NavigationBar = () => {
                 <option value="ua">Ua</option>
               </select>
             </li>
+              <a onClick={scrollToTeam} className={style.link_our_team}> Our Team </a>
             <li>
               <Link to="/store"> Store </Link>
             </li>
