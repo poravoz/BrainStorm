@@ -69,7 +69,7 @@ a {
   cursor: pointer;
 }
 
-.open_modal_window_navigation {
+.open_modal_window_navigation, .button_register_navigation {
   width: 175px;
   height: 45px;
   border: none;

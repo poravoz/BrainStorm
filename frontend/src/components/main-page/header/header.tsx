@@ -35,11 +35,11 @@ const Header = () => {
             <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
                 <p className="email_header" style={{color: theme.color_header}}>Email:</p>
                 <MdEmail size={20} className='mdEmail_header' style={{color: theme.color_icon_header}} />
-                <input placeholder="Your email" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  type="email" /> <br />
+                <input required placeholder="Your email" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  type="email" /> <br />
                 
                 <Icon onClick={handleToggle} className="mdPassword_header" icon={icon} size={20} style={{color: theme.color_icon_header}}/>
                 <p className="password_header" style={{color: theme.color_header}}>Password:</p>
-                <input placeholder="Your password" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} type={type} value={password} onChange={(e) => setPassword(e.target.value)}/> <br />                 
+                <input required placeholder="Your password" className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} type={type} value={password} onChange={(e) => setPassword(e.target.value)}/> <br />                 
                 <button className="button_signUp_header" style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }} > Sign up </button>
             </form>
 

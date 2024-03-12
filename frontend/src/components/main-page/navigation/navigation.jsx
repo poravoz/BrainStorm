@@ -53,62 +53,13 @@ const NavigationBar = () => {
               <ModalLogin active={modalActive} setActive={setModalActive}> 
                   <div>
                     <div>
-                      <h1> Registration </h1>
+                      <h1> Log In </h1>
                       <form>
-                <input
-                  type="text"
-                  required
-                  placeholder="Имя"
-                  id="name1"
-                  class="input"
-                />
-                <input
-                  type="text"
-                  required
-                  placeholder="Фамилия"
-                  id="name2"
-                  class="input"
-                />
-                <input
-                  type="text"
-                  required
-                  placeholder="Отчество"
-                  id="name3"
-                  class="input"
-                />
-                <input
-                  type="email"
-                  required
-                  placeholder="Емейл"
-                  id="email"
-                  class="input"
-                />
-                <input
-                  type="password"
-                  required
-                  placeholder="Пароль"
-                  id="pass1"
-                  class="input"
-                />
-                <input
-                  type="password"
-                  required
-                  placeholder="Подтвердите пароль"
-                  id="pass2"
-                  class="input"
-                />
-                <input
-                  type="number"
-                  required
-                  placeholder="Номер телефона"
-                  id="tel"
-                  class="input"
-                />
-                <button id="btn">Регистрация</button>
-                Нажимая "Регистрация", вы подтверждаете, что прочитали и
-                согласны с нашими Условиями Пользования и Политикой
-                Конфиденциальности
-              </form>
+                        <input type="password" required placeholder="Name" className={style.input_navigation} /> <br />
+                        <input type="email" required placeholder="Email" className={style.input_navigation} /> <br />
+                        <input type="password" required placeholder="Password" className={style.input_navigation} /> <br />
+                        <button className={style.button_register_navigation}>Registration</button>
+                       </form>
                     </div>
                   </div>
               </ModalLogin>
