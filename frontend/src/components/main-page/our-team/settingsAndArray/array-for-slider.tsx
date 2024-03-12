@@ -1,27 +1,36 @@
+import { useTranslation } from 'react-i18next';
 import dmytro from '../team-images/dmytro.jpg';
 import kolya from '../team-images/kolya.jpg';
 import valeria from '../team-images/valeria.jpg';
 import yana from '../team-images/yana.jpg';
 
-export const data = [
+
+
+export const ArrayData = () => {
+  const [t] = useTranslation("global");
+
+  const data = [
     {
-      name: `Mykola Rud`,
+      name: t("our-team.slider-name1"),
       img: kolya,
-      review: `Just the coolest person`
+      review: t("our-team.slider-review1"),
     },
     {
-      name: `Dmytro Zavorotniy`,
+      name: t("our-team.slider-name2"),
       img: dmytro,
-      review: `The main one decided`
+      review: t("our-team.slider-review2"),
     },
     {
-      name: `Valeria Konovalchuk`,
+      name: t("our-team.slider-name3"),
       img: valeria,
-      review: `Brief description`
+      review: t("our-team.slider-review3"),
     },
     {
-      name: `Yana Trofymenko`,
+      name: t("our-team.slider-name4"),
       img: yana,
-      review: `She didn't come up with a short description`
+      review: t("our-team.slider-review4"),
     },
   ];
+
+  return data;
+}

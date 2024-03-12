@@ -43,6 +43,29 @@
     },
 
     "our-team": {
-        "our-team": "Наша команда"
+        "our-team": "Наша команда",
+
+        "slider-name1": "Микола Рудь",
+        "slider-name2": "Дмитро Заворотній",
+        "slider-name3": "Валерія Коновальчук",
+        "slider-name4": "Яна Трофименко",
+
+        "slider-review1":  "Просто найкрутіша людина",
+        "slider-review2":  "Головний рішала",
+        "slider-review3":  "Короткий опис",
+        "slider-review4":  "Вона так і не придумала короткого опису"
+    },
+
+    "contact-us": {
+        "contact-us": "Зв'яжіться з нами", 
+
+        "text_up_placeholder_name": "Ім'я:",
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_message": "Повідомлення:",
+
+        "placeholder_name": "Ваше ім'я",
+        "placeholder_email": "Ваш Email",
+        "placeholder_message": "Введіть щось",
+        "button_text": "Надіслати"
     }
 }

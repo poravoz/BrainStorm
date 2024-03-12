@@ -44,6 +44,29 @@
     },
 
     "our-team": {
-        "our-team": "Our team"
+        "our-team": "Our team",
+
+        "slider-name1": "Mykola Rud",
+        "slider-name2": "Dmytro Zavorotniy",
+        "slider-name3": "Valeria Konovalchuk",
+        "slider-name4": "Yana Trofymenko",
+
+        "slider-review1":  "Just the coolest person",
+        "slider-review2":  "The main one decided",
+        "slider-review3":  "Brief description",
+        "slider-review4":  "She didn't come up with a short description"
+    },
+
+    "contact-us": {
+        "contact-us": "Contact us",
+
+        "text_up_placeholder_name": "Name:",
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_message": "Message:",
+
+        "placeholder_name": "Your Name",
+        "placeholder_email": "Your Email",
+        "placeholder_message": "Enter Something",
+        "button_text": "Submit"
     }
 }
