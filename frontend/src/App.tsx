@@ -10,7 +10,6 @@ function App() {
       <Route path="/store" element={<Store />} />
       <Route path="/photos" element={<Photos />} />
     </Routes>
-
   );
 }
 

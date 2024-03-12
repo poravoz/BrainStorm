@@ -1,8 +1,9 @@
 import "./modal-login.css";
 import {useContext } from 'react';
 import { ThemeContext } from '../../../contexts/theme';
+
 const ModalLogin = ({ active, setActive, children }) => {
-  const [{ theme }] = useContext(ThemeContext);
+const [{ theme }] = useContext(ThemeContext);
 
   return (
     <div
