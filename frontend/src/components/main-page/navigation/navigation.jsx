@@ -5,12 +5,15 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
 import { ThemeContext } from '../../../contexts/theme';
 import { Link } from "react-router-dom";
+import ModalLogin from '../modal-login/modal-login';
 
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
   
   const [isLightOn, setIsLightOn] = useState(false);
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
+
+  const [modalActive, setModalActive] = useState(false);
 
   useEffect(() => {
     const isLightOnStored = localStorage.getItem("isLightOn") === "true";
@@ -34,9 +37,9 @@ const NavigationBar = () => {
             <li>
               <div onClick={handleToggleTheme}>
                 {isLightOn ?
-                  <FaRegLightbulb size={25} color='azure' />
+                  <FaRegLightbulb size={25} color='azure' className={style.icon_dark_theme} />
                   :
-                  <FaLightbulb size={25} color='#05386b' />}
+                  <FaLightbulb size={25} color='#05386b' className={style.icon_dark_theme} />}
               </div>
             </li>
             <li>
@@ -46,7 +49,69 @@ const NavigationBar = () => {
             <Link to="/photos">Photos</Link>
             </li>
             <li>
-              <a href="">Log in</a>
+              <button className={style.open_modal_window_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button}} onClick={() => setModalActive(true)}>Log in</button>
+              <ModalLogin active={modalActive} setActive={setModalActive}> 
+                  <div>
+                    <div>
+                      <h1> Registration </h1>
+                      <form>
+                <input
+                  type="text"
+                  required
+                  placeholder="Имя"
+                  id="name1"
+                  class="input"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Фамилия"
+                  id="name2"
+                  class="input"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Отчество"
+                  id="name3"
+                  class="input"
+                />
+                <input
+                  type="email"
+                  required
+                  placeholder="Емейл"
+                  id="email"
+                  class="input"
+                />
+                <input
+                  type="password"
+                  required
+                  placeholder="Пароль"
+                  id="pass1"
+                  class="input"
+                />
+                <input
+                  type="password"
+                  required
+                  placeholder="Подтвердите пароль"
+                  id="pass2"
+                  class="input"
+                />
+                <input
+                  type="number"
+                  required
+                  placeholder="Номер телефона"
+                  id="tel"
+                  class="input"
+                />
+                <button id="btn">Регистрация</button>
+                Нажимая "Регистрация", вы подтверждаете, что прочитали и
+                согласны с нашими Условиями Пользования и Политикой
+                Конфиденциальности
+              </form>
+                    </div>
+                  </div>
+              </ModalLogin>
             </li>
           </ul>
           <div onClick={() => setNav(!nav)} className={style.mobile_btn}>

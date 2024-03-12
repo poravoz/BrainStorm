@@ -11,7 +11,7 @@ li {
 }
 
 li:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 
@@ -42,7 +42,6 @@ a {
   left: 50px;
   font-size: 30px;
   align-items: center;
-
 }
 
 .logo:hover {
@@ -64,6 +63,20 @@ a {
 
 .title_header {
   z-index: 100;
+}
+
+.icon_dark_theme {
+  cursor: pointer;
+}
+
+.open_modal_window_navigation {
+  width: 175px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {

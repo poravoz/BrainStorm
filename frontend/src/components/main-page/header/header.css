@@ -82,6 +82,7 @@
     color: #edf5e1;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
 }
 
 .button_signUp_header:hover {

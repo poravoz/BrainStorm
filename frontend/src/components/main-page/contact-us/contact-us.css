@@ -73,6 +73,7 @@
     border-radius: 10px;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
 }
 
 .button_contactUs:hover {
