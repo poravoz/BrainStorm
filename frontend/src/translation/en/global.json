@@ -26,5 +26,17 @@
         "placeholder_email": "Your Email",
         "placeholder_password": "Your Password",
         "text_button": "Sign up"
+    },
+
+    "about-us": {
+        "about-us": "About us",
+        
+        "title-card1": "We are creators of the Future",
+        "title-card2": "Our Direction",
+        "title-card3": "Learning is Easy",
+
+        "text-card1": "We are a team of inventors creating a unique application for learning programming. Our mission is not just to teach you how to code, but to open up to you the limitless possibilities of the technological future.",
+        "text-card2": "We are not just an app - we are here to improve you. With our experience and passion for code, we give you the tools to learn programming successfully. Overcoming challenges is easy when you choose our way.",
+        "text-card3": "We are enthusiasts who create an educational application where each of you can discover the world of programming. Join us and let's change the world together with every block of code we write"
     }
 }
