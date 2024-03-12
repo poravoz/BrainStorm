@@ -41,5 +41,9 @@
     "transition": {
         "text1": "Learn coding anywhere,",
         "text2": "anytime."
+    },
+
+    "our-team": {
+        "our-team": "Our team"
     }
 }

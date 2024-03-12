@@ -9,13 +9,14 @@ import './our-team.css';
 
 import {useContext } from 'react';
 import { ThemeContext } from '../../../contexts/theme';
+import { useTranslation } from 'react-i18next';
 
 const OurTeam = () => {
   const [{ theme }] = useContext(ThemeContext);
-
+  const [t] = useTranslation("global");
   return (
     <div className="container_our_team" style={{backgroundColor: theme.backgroundColor_our_team}}>
-      <p className="text_our_team" style={{color: theme.color_our_team}}> Our team </p>
+      <p className="text_our_team" style={{color: theme.color_our_team}}> {t("our-team.our-team")} </p>
       <Slider {...settings}>
         {data.map((item) => (
             <>
