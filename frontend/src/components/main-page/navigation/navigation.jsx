@@ -131,10 +131,13 @@ const NavigationBar = () => {
                       <h1 className={style.login_text}> {t("navigation.text_button")} </h1>
                       <form>
                         <GrAccessibility size={20} className={style.mdName_navigation} style={{color: theme.color_icon_navigation}} />
+                        <p className={style.navigation_name} style={{color: theme.color_header}}>{t("navigation.text_up_placeholder_email")}</p>
                         <input type="text" required placeholder={t("navigation.placeholder_name")} className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  /> <br />
                         <MdEmail size={20} className={style.mdEmail_navigation} style={{color: theme.color_icon_navigation}} />
+                        <p className={style.navigation_email} style={{color: theme.color_header}}>{t("navigation.text_up_placeholder_password")}</p>
                         <input type="email" required placeholder={t("navigation.placeholder_email")} className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} /> <br />
                         <Icon onClick={handleToggle} className={style.mdPassword_navigation} icon={icon} size={20} style={{color: theme.color_icon_navigation}}/>
+                        <p className={style.navigation_password} style={{color: theme.color_header}}>{t("navigation.text_up_placeholder_password")}</p>
                         <input required placeholder={t("navigation.placeholder_password")} className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} type={type} value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
                         <button className={style.button_register_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }}>Registration</button>
                        </form>

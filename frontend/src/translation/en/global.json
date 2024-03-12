@@ -4,10 +4,27 @@
         "store": "Store",
         "photos": "Photos",
         "text_button": "Log in",
+        
+        "text_up_placeholder_name": "Name:",
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_password": "Password:",
 
         "placeholder_name": "Your Name",
         "placeholder_email": "Your Email",
         "placeholder_password": "Your Password"
         
+    },
+
+    "header": {
+        "title_header1": "Transform your ideas",
+        "title_header2": "into code,",
+        "title_header3": "code into success.",
+
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_password": "Password:",
+
+        "placeholder_email": "Your Email",
+        "placeholder_password": "Your Password",
+        "text_button": "Sign up"
     }
 }

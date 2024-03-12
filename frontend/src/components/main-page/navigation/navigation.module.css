@@ -100,21 +100,21 @@ a {
 .mdName_navigation {
   position: absolute;
   right: 30px;
-  top: 87px;
+  top: 111px;
   z-index: 1;
 }
 
 .mdEmail_navigation {
   position: absolute;
   right: 30px;
-  top: 147px;
+  top: 197px;
   z-index: 1;
 }
 
 .mdPassword_navigation {
   position: absolute;
   right: 30px;
-  top: 204px;
+  top: 279px;
   z-index: 1;
 }
 
@@ -142,6 +142,11 @@ a {
 
 .select_language:focus {
   outline: none;
+}
+.navigation_name, .navigation_email, .navigation_password {
+  position: relative;
+  left: 10px;
+  margin-bottom: 3px;
 }
 
 @media (max-width: 900px) {

@@ -5,8 +5,25 @@
         "photos": "Фотографії",
         "text_button": "Увійти",
 
+        "text_up_placeholder_name": "Ім'я:",
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_password": "Пароль:",
+
         "placeholder_name": "Ваше Ім'я",
         "placeholder_email": "Ваш Email",
         "placeholder_password": "Ваш пароль"
+    },
+
+    "header": {
+        "title_header1": "Трансформуйте ідеї",
+        "title_header2": "у код,",
+        "title_header3": "код у свій успіх.",
+
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_password": "Пароль:",
+
+        "placeholder_email": "Ваш Email",
+        "placeholder_password": "Ваш пароль",
+        "text_button": "Увійти"
     }
 }
