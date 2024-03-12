@@ -40,7 +40,7 @@ a {
   position: relative;
   display: flex;
   left: 50px;
-  font-size: 30px;
+  font-size: 24px;
   align-items: center;
 }
 
@@ -55,7 +55,7 @@ a {
 .menu {
   position: relative;
   display: flex;
-  font-size: 24px;
+  font-size: 18px;
   gap: 30px;
   right: 50px;
   align-items: center;
@@ -135,14 +135,14 @@ a {
   height: 30px;
   border: none;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 18px;
 } 
 
 .select_language:focus {
   outline: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .mobile_btn {
     display: block;
     position: fixed;

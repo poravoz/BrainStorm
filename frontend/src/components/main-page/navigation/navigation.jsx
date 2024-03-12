@@ -115,7 +115,9 @@ const NavigationBar = () => {
                 <option value="ua">Укр</option>
               </select>
             </li>
+            <li>
               <a onClick={scrollToOurTeam} className={style.link_our_team}> Our Team </a>
+            </li>
             <li>
               <Link to="/store"> Store </Link>
             </li>
