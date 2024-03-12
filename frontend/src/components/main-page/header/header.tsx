@@ -28,9 +28,7 @@ const Header = () => {
     const [{ theme }] = useContext(ThemeContext);
     return (
         <div className="container" style={{backgroundColor : theme.backgroundColor_header}}>
-            <h2 className="title_header" style={{color: theme.color_header}}>  {t("header.title_header1")} <br /> 
-                                    {t("header.title_header2")} <br /> 
-                                    {t("header.title_header3")} <br /></h2>
+            <h2 className="title_header" style={{color: theme.color_header}}> {t("header.title_header")} </h2>
 
             <form className="form_signUp_header">
             <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
