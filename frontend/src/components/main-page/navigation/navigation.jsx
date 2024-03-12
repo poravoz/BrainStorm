@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext, useEffect, useRef } from 'react';
 import style from './navigation.module.css';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
@@ -24,8 +24,27 @@ const NavigationBar = () => {
   const [modalActive, setModalActive] = useState(false);
   const [t, i18n] = useTranslation("global");
   const top = () => {window.scrollTo(0, 0)}
-  const scrollToTeam = () => {window.scrollTo(0, 1450)}
 
+
+  const scrollToPosition = (position) => {
+    window.scrollTo(0, position);
+  }
+  const scrollToOurTeam = () => {
+    const screenWidth = window.innerWidth;
+    if(screenWidth > 1470) {
+      scrollToPosition(1450);
+    }
+    if(screenWidth <= 1470) {
+      scrollToPosition(1250);
+    }
+    if(screenWidth <= 1250) {
+      scrollToPosition(1150);
+    }
+    if(screenWidth <= 1200) {
+      scrollToPosition(1400);
+    }
+  };
+ 
   const getLanguageFromLocalStorage = () => {
     return localStorage.getItem('language');
   };
@@ -92,11 +111,11 @@ const NavigationBar = () => {
             </li>
             <li>
               <select value={currentLanguage} onChange={(e) => handleToggleLanguage(e.target.value)} className={style.select_language} style={{backgroundColor: theme.backgroundColor_header, color: theme.color_header}}>
-                <option value="en">En</option>
-                <option value="ua">Ua</option>
+                <option value="en">Eng</option>
+                <option value="ua">Укр</option>
               </select>
             </li>
-              <a onClick={scrollToTeam} className={style.link_our_team}> Our Team </a>
+              <a onClick={scrollToOurTeam} className={style.link_our_team}> Our Team </a>
             <li>
               <Link to="/store"> Store </Link>
             </li>
