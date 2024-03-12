@@ -1,6 +1,6 @@
 import './header.css'
 import robot from './images/robot.png'
-import { MdEmail, MdPassword } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 
 import {useState, useContext } from 'react';
 import { ThemeContext } from '../../../contexts/theme';

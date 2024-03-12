@@ -69,6 +69,10 @@ a {
   cursor: pointer;
 }
 
+.login_text {
+  text-align: center;
+  padding-bottom: 10px;
+}
 .open_modal_window_navigation, .button_register_navigation {
   width: 175px;
   height: 45px;
@@ -77,6 +81,24 @@ a {
   margin: 0 auto;
   display: block;
   cursor: pointer;
+}
+
+.input_navigation {
+  border: none;
+  width: 480px;
+  margin-bottom: 15px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 25px;
+}
+
+.input_navigation:hover, .button_register_navigation:hover { 
+  opacity: 0.9;
+}
+
+.input_navigation:focus {
+  outline: none;
 }
 
 @media (max-width: 800px) {

@@ -51,16 +51,14 @@ const NavigationBar = () => {
             <li>
               <button className={style.open_modal_window_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button}} onClick={() => setModalActive(true)}>Log in</button>
               <ModalLogin active={modalActive} setActive={setModalActive}> 
-                  <div>
-                    <div>
-                      <h1> Log In </h1>
+                  <div style={{backgroundColor: theme.backgroundColor_header}}>
+                      <h1 className={style.login_text}> Log In </h1>
                       <form>
-                        <input type="password" required placeholder="Name" className={style.input_navigation} /> <br />
-                        <input type="email" required placeholder="Email" className={style.input_navigation} /> <br />
-                        <input type="password" required placeholder="Password" className={style.input_navigation} /> <br />
-                        <button className={style.button_register_navigation}>Registration</button>
+                        <input type="text" required placeholder="Your name" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  /> <br />
+                        <input type="email" required placeholder="Your email" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} /> <br />
+                        <input type="password" required placeholder="Your password" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} /> <br />
+                        <button className={style.button_register_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }}>Registration</button>
                        </form>
-                    </div>
                   </div>
               </ModalLogin>
             </li>
