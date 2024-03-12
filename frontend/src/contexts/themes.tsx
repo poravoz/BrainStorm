@@ -10,6 +10,7 @@ const themes = {
         robot_header: "saturate(1) hue-rotate(180deg)",
         color_icon_header: "#222",
         color_header_input: "#222",
+        color_icon_navigation: "#222",
 
         // about us
         backgroundColor_about_us: "#222222",
@@ -59,7 +60,7 @@ const themes = {
         robot_header: "none",
         color_icon_header: "#05386b",
         color_header_input: "#05386b",
-
+        color_icon_navigation: "#05386b",
 
 
         // about us

@@ -93,12 +93,37 @@ a {
   padding-left: 25px;
 }
 
+.mdName_navigation {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  z-index: 1;
+}
+
+.mdEmail_navigation {
+  position: absolute;
+  right: 30px;
+  top: 160px;
+  z-index: 1;
+}
+
+.mdPassword_navigation {
+  position: absolute;
+  right: 30px;
+  top: 214px;
+  z-index: 1;
+}
+
 .input_navigation:hover, .button_register_navigation:hover { 
   opacity: 0.9;
 }
 
 .input_navigation:focus {
   outline: none;
+}
+
+.modalActive:hover {
+  opacity: 1;
 }
 
 @media (max-width: 800px) {

@@ -7,6 +7,13 @@ import { ThemeContext } from '../../../contexts/theme';
 import { Link } from "react-router-dom";
 import ModalLogin from '../modal-login/modal-login';
 
+import { GrAccessibility } from "react-icons/gr";
+import { MdEmail } from "react-icons/md";
+
+import { Icon } from 'react-icons-kit'
+import {eyeOff} from 'react-icons-kit/feather/eyeOff'
+import {eye} from 'react-icons-kit/feather/eye'
+
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
   
@@ -14,6 +21,19 @@ const NavigationBar = () => {
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
 
   const [modalActive, setModalActive] = useState(false);
+
+  const [password, setPassword] = useState("");
+  const [type, setType] = useState('password');
+  const [icon, setIcon] = useState(eyeOff);
+  const handleToggle = () => {
+    if (type==='password'){
+       setIcon(eye);
+       setType('text')
+    } else {
+       setIcon(eyeOff)
+       setType('password')
+    }
+  }
 
   useEffect(() => {
     const isLightOnStored = localStorage.getItem("isLightOn") === "true";
@@ -54,9 +74,12 @@ const NavigationBar = () => {
                   <div style={{backgroundColor: theme.backgroundColor_header}}>
                       <h1 className={style.login_text}> Log In </h1>
                       <form>
+                        <GrAccessibility size={20} className={style.mdName_navigation} style={{color: theme.color_icon_navigation}} />
                         <input type="text" required placeholder="Your name" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  /> <br />
+                        <MdEmail size={20} className={style.mdEmail_navigation} style={{color: theme.color_icon_navigation}} />
                         <input type="email" required placeholder="Your email" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} /> <br />
-                        <input type="password" required placeholder="Your password" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} /> <br />
+                        <Icon onClick={handleToggle} className={style.mdPassword_navigation} icon={icon} size={20} style={{color: theme.color_icon_navigation}}/>
+                        <input required placeholder="Your password" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} type={type} value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
                         <button className={style.button_register_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }}>Registration</button>
                        </form>
                   </div>
