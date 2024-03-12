@@ -1,5 +1,12 @@
 {
     "navigation": {
-        "logo": "Кодіто"
+        "our_team": "Команда",
+        "store": "Магазин",
+        "photos": "Фотографії",
+        "text_button": "Увійти",
+
+        "placeholder_name": "Ваше Ім'я",
+        "placeholder_email": "Ваш Email",
+        "placeholder_password": "Ваш пароль"
     }
 }

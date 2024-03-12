@@ -1,5 +1,13 @@
 {
     "navigation": {
-        "logo": "Codito"
+        "our_team": "Our Team",
+        "store": "Store",
+        "photos": "Photos",
+        "text_button": "Log in",
+
+        "placeholder_name": "Your Name",
+        "placeholder_email": "Your Email",
+        "placeholder_password": "Your Password"
+        
     }
 }

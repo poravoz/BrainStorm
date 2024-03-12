@@ -98,7 +98,7 @@ const NavigationBar = () => {
       <div className={style.container_navigation}>
         <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
           <div className={style.logo}>
-            <Link onClick={top} to="/"> {t("navigation.logo")} </Link>
+            <Link onClick={top} to="/"> Codito </Link>
           </div>
           <ul className={nav ? [style.menu, style.active].join(' ') : style.menu} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
             <li>
@@ -116,26 +116,26 @@ const NavigationBar = () => {
               </select>
             </li>
             <li>
-              <a onClick={scrollToOurTeam} className={style.link_our_team}> Our Team </a>
+              <a onClick={scrollToOurTeam} className={style.link_our_team}> {t("navigation.our_team")} </a>
             </li>
             <li>
-              <Link to="/store"> Store </Link>
+              <Link to="/store"> {t("navigation.store")} </Link>
             </li>
             <li>
-            <Link to="/photos">Photos</Link>
+            <Link to="/photos"> {t("navigation.photos")} </Link>
             </li>
             <li>
-              <button className={style.open_modal_window_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button}} onClick={() => setModalActive(true)}>Log in</button>
+              <button className={style.open_modal_window_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button}} onClick={() => setModalActive(true)}>{t("navigation.text_button")}</button>
               <ModalLogin active={modalActive} setActive={setModalActive}> 
                   <div style={{backgroundColor: theme.backgroundColor_header}}>
-                      <h1 className={style.login_text}> Log In </h1>
+                      <h1 className={style.login_text}> {t("navigation.text_button")} </h1>
                       <form>
                         <GrAccessibility size={20} className={style.mdName_navigation} style={{color: theme.color_icon_navigation}} />
-                        <input type="text" required placeholder="Your name" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  /> <br />
+                        <input type="text" required placeholder={t("navigation.placeholder_name")} className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  /> <br />
                         <MdEmail size={20} className={style.mdEmail_navigation} style={{color: theme.color_icon_navigation}} />
-                        <input type="email" required placeholder="Your email" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} /> <br />
+                        <input type="email" required placeholder={t("navigation.placeholder_email")} className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} /> <br />
                         <Icon onClick={handleToggle} className={style.mdPassword_navigation} icon={icon} size={20} style={{color: theme.color_icon_navigation}}/>
-                        <input required placeholder="Your password" className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} type={type} value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
+                        <input required placeholder={t("navigation.placeholder_password")} className={style.input_navigation} style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} type={type} value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
                         <button className={style.button_register_navigation} style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }}>Registration</button>
                        </form>
                   </div>
