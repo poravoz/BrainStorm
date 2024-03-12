@@ -20,6 +20,9 @@ const themes = {
         border_about_us_card: "lightgray",
         color_about_us_card: "#222",
 
+        backgroundColor_item_about_us_1: "#a96734",
+        backgroundColor_item_about_us_2: "#541d57",
+        backgroundColor_item_about_us_3: "#09581c",
 
 
         // transition
@@ -70,6 +73,10 @@ const themes = {
         backgroundColor_about_us_card: "azure",
         border_about_us_card: "azure",
         color_about_us_card: "#05386b",
+
+        backgroundColor_item_about_us_1: "#eb904b",
+        backgroundColor_item_about_us_2: "#813085",
+        backgroundColor_item_about_us_3: "#119630",
 
 
 
