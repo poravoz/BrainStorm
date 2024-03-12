@@ -13,6 +13,7 @@ import { MdEmail } from "react-icons/md";
 import { Icon } from 'react-icons-kit'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
+import { useTranslation } from 'react-i18next';
 
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
@@ -21,6 +22,32 @@ const NavigationBar = () => {
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
 
   const [modalActive, setModalActive] = useState(false);
+  const [t, i18n] = useTranslation("global");
+
+  
+  const getLanguageFromLocalStorage = () => {
+    return localStorage.getItem('language');
+  };
+
+  const [currentLanguage, setCurrentLanguage] = useState(getLanguageFromLocalStorage() || 'en');
+
+  const setLanguageToLocalStorage = (lang) => {
+    localStorage.setItem('language', lang);
+  };
+
+  const handleToggleLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setLanguageToLocalStorage(lang);
+    setCurrentLanguage(lang);
+  };  
+
+  useEffect(() => {
+    const language = getLanguageFromLocalStorage();
+    if(language) {
+      i18n.changeLanguage(language);
+      setCurrentLanguage(language);
+    }
+  }, []);
 
   const [password, setPassword] = useState("");
   const [type, setType] = useState('password');
@@ -51,7 +78,7 @@ const NavigationBar = () => {
       <div className={style.container_navigation}>
         <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
           <div className={style.logo}>
-            <Link to="/"> Codito </Link>
+            <Link to="/"> {t("navigation.logo")} </Link>
           </div>
           <ul className={nav ? [style.menu, style.active].join(' ') : style.menu} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
             <li>
@@ -61,6 +88,12 @@ const NavigationBar = () => {
                   :
                   <FaLightbulb size={25} color='#05386b' className={style.icon_dark_theme} />}
               </div>
+            </li>
+            <li>
+              <select value={currentLanguage} onChange={(e) => handleToggleLanguage(e.target.value)} className={style.select_language} style={{backgroundColor: theme.backgroundColor_header, color: theme.color_header}}>
+                <option value="en">En</option>
+                <option value="ua">Ua</option>
+              </select>
             </li>
             <li>
               <Link to="/store"> Store </Link>

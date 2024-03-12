@@ -7,7 +7,7 @@ const AboutUs = () => {
 
     return(
         <div className="container_about_us" style={{backgroundColor: theme. backgroundColor_about_us}}>
-             <p className='text_about_us' style={{color: theme.color_about_us}}> About us</p>
+             <p className='text_about_us' style={{color: theme.color_about_us}}> About us </p>
             <div className="item_about_us">
                 <div className="layer_about_us" style={{backgroundColor: theme.backgroundColor_about_us_card, border: theme.border_about_us_card}}>
                     <h3 className="h3_about_us" style={{color: theme.color_about_us_card}}> Creators of the Future </h3>
