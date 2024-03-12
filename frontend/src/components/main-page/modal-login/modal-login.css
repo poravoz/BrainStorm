@@ -28,3 +28,26 @@
 .modal_content.active {
     transform: scale(1);
 }
+
+@media (max-width: 600px) {
+    .modal_content.active {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 500px) {
+    .modal_content.active {
+        transform: scale(0.5);
+    }
+}
+@media (max-width: 300px) {
+    .modal_content.active {
+        transform: scale(0.3);
+    }
+}
+
+@media (max-width: 230px) {
+    .modal {
+        width: 230px;
+    }
+}
