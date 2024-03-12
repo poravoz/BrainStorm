@@ -33,41 +33,18 @@ const NavigationBar = () => {
     const screenWidth = window.innerWidth;
     if(screenWidth > 1470) {
       scrollToPosition(1450);
-    }
-    if(screenWidth <= 1470) {
+    } else if(screenWidth <= 1470) {
       scrollToPosition(1250);
-    }
-    if(screenWidth <= 1250) {
+    } else if(screenWidth <= 1250) {
       scrollToPosition(1150);
-    }
-    if(screenWidth <= 1200) {
+    } else if(screenWidth <= 1200) {
       scrollToPosition(1400);
     }
-  };
- 
-  const getLanguageFromLocalStorage = () => {
-    return localStorage.getItem('language');
-  };
-
-  const [currentLanguage, setCurrentLanguage] = useState(getLanguageFromLocalStorage() || 'en');
-
-  const setLanguageToLocalStorage = (lang) => {
-    localStorage.setItem('language', lang);
   };
 
   const handleToggleLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    setLanguageToLocalStorage(lang);
-    setCurrentLanguage(lang);
   };  
-
-  useEffect(() => {
-    const language = getLanguageFromLocalStorage();
-    if(language) {
-      i18n.changeLanguage(language);
-      setCurrentLanguage(language);
-    }
-  }, []);
 
   const [password, setPassword] = useState("");
   const [type, setType] = useState('password');
@@ -110,7 +87,7 @@ const NavigationBar = () => {
               </div>
             </li>
             <li>
-              <select value={currentLanguage} onChange={(e) => handleToggleLanguage(e.target.value)} className={style.select_language} style={{backgroundColor: theme.backgroundColor_header, color: theme.color_header}}>
+              <select onChange={(e) => handleToggleLanguage(e.target.value)} className={style.select_language} style={{backgroundColor: theme.backgroundColor_header, color: theme.color_header}}>
                 <option value="en">Eng</option>
                 <option value="ua">Укр</option>
               </select>
