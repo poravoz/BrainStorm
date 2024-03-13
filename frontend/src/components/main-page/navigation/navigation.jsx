@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect, useRef } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import style from './navigation.module.css';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
