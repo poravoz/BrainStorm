@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import dmytro from '../team-images/dmytro.jpg';
-import kolya from '../team-images/kolya.jpg';
+import mykola from '../team-images/mykola.jpg';
 import valeria from '../team-images/valeria.jpg';
 import yana from '../team-images/yana.jpg';
 
@@ -12,7 +12,7 @@ export const ArrayData = () => {
   const data = [
     {
       name: t("our-team.slider-name1"),
-      img: kolya,
+      img: mykola,
       review: t("our-team.slider-review1"),
     },
     {
