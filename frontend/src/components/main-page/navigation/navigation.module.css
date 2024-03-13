@@ -186,12 +186,12 @@ a {
 
   .icon_dark_theme {
     position: relative;
-    top: 20px;
+    top: 55px;
   }
   
   .select_language {
     position: relative;
-    top: 15px;
+    top: 50px;
   }
 
   .link_our_team {
@@ -202,14 +202,9 @@ a {
 
 }
 
-@media (max-width: 285px) {
-  .logo {
-    font-size: 14px;
-    left: 15px;
+@media (max-width: 230px) { 
+  .menu { 
+    width: 100%;
+    height: 100%;
   }
-
-  .menu a {
-    font-size: 12px;
-  }
-
 }
