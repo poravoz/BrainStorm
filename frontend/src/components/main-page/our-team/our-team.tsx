@@ -19,9 +19,9 @@ const OurTeam = () => {
     <div className="container_our_team" style={{backgroundColor: theme.backgroundColor_our_team}}>
       <p className="text_our_team" style={{color: theme.color_our_team}}> {t("our-team.our-team")} </p>
       <Slider {...settings}>
-        {data.map((item, index) => (
-            <div key={index}>
-              <img className="img_our_team" src={item.img} alt={item.name} />
+        {data.map((item) => (
+            <div>
+              <img className="img_our_team" src={item.img} />
               <h3 className="name_our_team" style={{color: theme.color_our_team}}>{item.name}</h3>
               <h4 className="review_our_team" style={{color: theme.color_our_team}}>{item.review}</h4>
             </div>
