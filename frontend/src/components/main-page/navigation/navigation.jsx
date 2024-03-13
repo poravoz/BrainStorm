@@ -115,7 +115,7 @@ const NavigationBar = () => {
                 <form>
                   <GrAccessibility size={20} className={style.mdName_navigation} style={{ color: theme.color_icon_navigation }} />
                   <p className={style.navigation_name}
-                    style={{ color: theme.color_header }}>{t("navigation.text_up_placeholder_email")}</p>
+                    style={{ color: theme.color_header }}>{t("navigation.text_up_placeholder_name")}</p>
 
                   <input type="text" required placeholder={t("navigation.placeholder_name")}
                     className={style.input_navigation}
@@ -125,7 +125,7 @@ const NavigationBar = () => {
                            style={{ color: theme.color_icon_navigation }} />
 
                   <p className={style.navigation_email} 
-                      style={{ color: theme.color_header }}>{t("navigation.text_up_placeholder_password")}</p>
+                      style={{ color: theme.color_header }}>{t("navigation.text_up_placeholder_email")}</p>
 
                   <input type="email" required placeholder={t("navigation.placeholder_email")} 
                         className={style.input_navigation} 
