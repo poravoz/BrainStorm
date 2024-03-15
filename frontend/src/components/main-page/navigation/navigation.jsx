@@ -9,13 +9,11 @@ import { useTranslation } from 'react-i18next';
 
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
-
   const [isLightOn, setIsLightOn] = useState(false);
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
-
   const [t, i18n] = useTranslation("global");
   const top = () => { window.scrollTo(0, 0) }
-
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
 
   const scrollToPosition = (position) => {
     window.scrollTo(0, position);
@@ -37,6 +35,8 @@ const NavigationBar = () => {
   };
 
   const handleToggleLanguage = (lang) => {
+    setSelectedLanguage(lang);
+    localStorage.setItem("language", lang);
     i18n.changeLanguage(lang);
   };
 
@@ -44,6 +44,12 @@ const NavigationBar = () => {
     const isLightOnStored = localStorage.getItem("isLightOn") === "true";
     setIsLightOn(isLightOnStored);
   }, []);
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    setSelectedLanguage(savedLanguage);
+    i18n.changeLanguage(savedLanguage);
+  }, [i18n]);
 
   const handleToggleTheme = () => {
     const newIsLightOn = !isLightOn;
@@ -69,7 +75,7 @@ const NavigationBar = () => {
             </div>
           </li>
           <li>
-            <select onChange={(e) => handleToggleLanguage(e.target.value)}
+            <select value={selectedLanguage} onChange={(e) => handleToggleLanguage(e.target.value)}
               className={style.select_language}
               style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
               <option value="en">Eng</option>
