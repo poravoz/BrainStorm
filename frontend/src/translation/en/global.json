@@ -3,7 +3,8 @@
         "our_team": "Our Team",
         "store": "Store",
         "photos": "Photos",
-        "text_button": "Log in",
+        "sign_up": "Sign up",
+        "sign_in": "Sign_in",
         
         "text_up_placeholder_name": "Name:",
         "text_up_placeholder_email": "Email:",
@@ -23,7 +24,7 @@
 
         "placeholder_email": "Your Email",
         "placeholder_password": "Your Password",
-        "text_button": "Sign up"
+        "text_button": "Sign in"
     },
 
     "about-us": {

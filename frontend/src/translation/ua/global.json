@@ -3,7 +3,8 @@
         "our_team": "Команда",
         "store": "Магазин",
         "photos": "Фотографії",
-        "text_button": "Увійти",
+        "sign_up": "Зареєструватися",
+        "sign_in": "Увійти",
 
         "text_up_placeholder_name": "Ім'я:",
         "text_up_placeholder_email": "Email:",
