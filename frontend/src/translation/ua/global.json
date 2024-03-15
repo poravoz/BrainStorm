@@ -83,7 +83,10 @@
         "text_placeholder_password": "Ваш пароль",
 
         "sign_up": "Зареєструватися",
-        "sign_in": "Увійти"
+        "sign_in": "Увійти",
+        "sign_in_account": "Ви вже маєте акаунт?",
+        "sign_up_account_question": "Не маєте акаунта?",
+        "sign_up_account": "Створіть акаунт"
     }
 
 }

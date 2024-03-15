@@ -52,7 +52,7 @@ export default function SignUp() {
                     <button className="submit_sign_up" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in_button, color: theme.color_sign_up_sign_in_button}}> {t("sign-up&sign-in.sign_up")} </button>
                 </div>
 
-                <p className="create_acount_sign_up" style={{color: theme.color_text_sign_up_sign_in}}>You already have an account? <Link className="create_acount_sign_up_link" to="login"> Log in</Link></p>
+                <p className="create_acount_sign_up" style={{color: theme.color_text_sign_up_sign_in}}>{t("sign-up&sign-in.sign_in_account")} <Link className="create_acount_sign_up_link" to="/login"> {t("sign-up&sign-in.text_sign_in")} </Link></p>
             </form>
         </div>
 

@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { Icon } from 'react-icons-kit'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
+import { Link } from "react-router-dom";
 
 export default function SignIn() {
     const [{ theme }] = useContext(ThemeContext);
@@ -44,6 +45,8 @@ export default function SignIn() {
                 <div className="submit_container_sign_in">
                     <button className="submit_sign_in" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in_button, color: theme.color_sign_up_sign_in_button}}> {t("sign-up&sign-in.sign_in")} </button>
                 </div>
+
+                <p className="create_account_sign_in" style={{color: theme.color_text_sign_up_sign_in}} > {t("sign-up&sign-in.sign_up_account_question")} <Link to="/register" className="create_account_sign_in_link"> {t("sign-up&sign-in.sign_up_account")} </Link></p>
             </form>
         </div>
 

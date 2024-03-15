@@ -84,6 +84,9 @@
         "text_placeholder_password": "Your password",
 
         "sign_up": "Sign Up",
-        "sign_in": "Sign In"
+        "sign_in": "Sign In",
+        "sign_in_account": "You already have an account?",
+        "sign_up_account_question": "Don't have an account?",
+        "sign_up_account": "Create account"
     }
 }
