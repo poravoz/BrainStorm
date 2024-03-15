@@ -8,6 +8,7 @@ import { MdEmail } from "react-icons/md";
 import { Icon } from 'react-icons-kit'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
+import { Link } from "react-router-dom";
 
 
 
@@ -48,8 +49,10 @@ export default function SignUp() {
                 </div>
                 
                 <div className="submit_container_sign_up">
-                    <button className="submit_sign_up" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in_button, color: theme.color_sign_up_sign_in_button}}> {t("sign-up&sign-in.text_button")} </button>
+                    <button className="submit_sign_up" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in_button, color: theme.color_sign_up_sign_in_button}}> {t("sign-up&sign-in.sign_up")} </button>
                 </div>
+
+                <p className="create_acount_sign_up" style={{color: theme.color_text_sign_up_sign_in}}>You already have an account? <Link className="create_acount_sign_up_link" to="login"> Log in</Link></p>
             </form>
         </div>
 

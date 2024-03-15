@@ -28,7 +28,7 @@ export default function SignIn() {
         <div className="container_sign_in" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in}}>
             <form className="form_sign_in" style={{backgroundColor: theme.backgroundColor_form_sign_up_sign_in}}>
                 <div className="header_sign_in">
-                    <div className="text_sign_in" style={{color: theme.color_text_sign_up_sign_in}}> {t("sign-up&sign-in.text_sign_up")} </div>
+                    <div className="text_sign_in" style={{color: theme.color_text_sign_up_sign_in}}> {t("sign-up&sign-in.text_sign_in")} </div>
                     <div className="underline_sign_in" style={{backgroundColor: theme.color_text_sign_up_sign_in}}></div>
                 </div>
 
@@ -42,7 +42,7 @@ export default function SignIn() {
                 </div>
                 
                 <div className="submit_container_sign_in">
-                    <button className="submit_sign_in" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in_button, color: theme.color_sign_up_sign_in_button}}> {t("sign-up&sign-in.text_button")} </button>
+                    <button className="submit_sign_in" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in_button, color: theme.color_sign_up_sign_in_button}}> {t("sign-up&sign-in.sign_in")} </button>
                 </div>
             </form>
         </div>

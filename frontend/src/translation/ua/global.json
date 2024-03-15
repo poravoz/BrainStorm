@@ -72,6 +72,7 @@
 
     "sign-up&sign-in": {
         "text_sign_up": "Реєстрація",
+        "text_sign_in": "Увійти",
 
         "text_up_placeholder_name": "Ім'я:",
         "text_up_placeholder_email": "Email:",
@@ -81,7 +82,8 @@
         "text_placeholder_email": "Ваш email",
         "text_placeholder_password": "Ваш пароль",
 
-        "text_button": "Зареєструватися"
+        "sign_up": "Зареєструватися",
+        "sign_in": "Увійти"
     }
 
 }

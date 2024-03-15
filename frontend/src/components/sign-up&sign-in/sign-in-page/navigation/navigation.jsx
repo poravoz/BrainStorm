@@ -67,7 +67,12 @@ const NavigationBar = () => {
             <Link to="/photos"> {t("navigation.photos")} </Link>
           </li>
           <li>
-            <Link to="/register"> {t("navigation.sign_in")} </Link>
+            <Link to="/register">
+              <button className={style.button_register} 
+                      style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }}>
+                      {t("navigation.sign_up")} 
+              </button>
+            </Link>
           </li>
         </ul>
         <div onClick={() => setNav(!nav)} className={style.mobile_btn}>

@@ -149,6 +149,17 @@ a {
   margin-bottom: 3px;
 }
 
+.button_register {
+  width: 225px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  color: #edf5e1;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+} 
+
 @media (max-width: 900px) {
   .mobile_btn {
     display: block;

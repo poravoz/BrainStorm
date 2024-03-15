@@ -67,7 +67,7 @@ const NavigationBar = () => {
             <Link to="/photos"> {t("navigation.photos")} </Link>
           </li>
           <li>
-            <Link to="/register"> {t("navigation.sign_in")} </Link>
+            <Link to="/login"> {t("navigation.sign_in")} </Link>
           </li>
         </ul>
         <div onClick={() => setNav(!nav)} className={style.mobile_btn}>
