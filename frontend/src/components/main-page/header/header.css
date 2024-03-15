@@ -6,7 +6,7 @@
     position: relative;
     top: 79px;
     width: 100%;
-    height: 400px;
+    height: 425px;
 }
 
 .title_header {
@@ -93,6 +93,12 @@
     opacity: 0.9;
 }
 
+.create_account_header {
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
 @supports (-moz-appearance:none) {
     .mdPassword_header {
         top: 112px;
@@ -119,7 +125,6 @@
     .title_header  {
         max-width: 290px;
         font-size: 24px;
-        text-align: center;
     }
 
     .input_signUp_header {
@@ -129,6 +134,10 @@
     }
     .button_signUp_header {
         width: 135px;
+    }
+
+    .create_account_header {
+        font-size: 14px;
     }
 
     .mdEmail_header {
@@ -145,7 +154,7 @@
     }
 
     .container {
-        height: 350px;
+        height: 375px;
     }
 }
 
@@ -199,6 +208,10 @@
         left: 5px;
         font-size: 12px;
     }
+
+    .create_account_header {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -230,7 +243,7 @@
     }
 
     .container {
-        height: 235px;
+        height: 240px;
     }
 }
 
