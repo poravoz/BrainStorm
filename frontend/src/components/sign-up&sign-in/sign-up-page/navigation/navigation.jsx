@@ -3,16 +3,9 @@ import style from './navigation.module.css';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
-import { ThemeContext } from '../../../contexts/theme';
+import { ThemeContext } from '../../../../contexts/theme';
 import { Link } from "react-router-dom";
-import ModalLogin from '../modal-login/modal-login';
 
-import { GrAccessibility } from "react-icons/gr";
-import { MdEmail } from "react-icons/md";
-
-import { Icon } from 'react-icons-kit'
-import { eyeOff } from 'react-icons-kit/feather/eyeOff'
-import { eye } from 'react-icons-kit/feather/eye'
 import { useTranslation } from 'react-i18next';
 
 const NavigationBar = () => {
@@ -21,43 +14,11 @@ const NavigationBar = () => {
   const [isLightOn, setIsLightOn] = useState(false);
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
 
-  const [modalActive, setModalActive] = useState(false);
   const [t, i18n] = useTranslation("global");
-  const top = () => { window.scrollTo(0, 0) }
-
-
-  const scrollToPosition = (position) => {
-    window.scrollTo(0, position);
-  }
-  const scrollToOurTeam = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth > 1470) {
-      scrollToPosition(1450);
-    } else if (screenWidth <= 1470) {
-      scrollToPosition(1250);
-    } else if (screenWidth <= 1250) {
-      scrollToPosition(1150);
-    } else if (screenWidth <= 1200) {
-      scrollToPosition(1400);
-    }
-  };
 
   const handleToggleLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
-
-  const [password, setPassword] = useState("");
-  const [type, setType] = useState('password');
-  const [icon, setIcon] = useState(eyeOff);
-  const handleToggle = () => {
-    if (type === 'password') {
-      setIcon(eye);
-      setType('text')
-    } else {
-      setIcon(eyeOff)
-      setType('password')
-    }
-  }
 
   useEffect(() => {
     const isLightOnStored = localStorage.getItem("isLightOn") === "true";
@@ -75,7 +36,7 @@ const NavigationBar = () => {
     <div className={style.container_navigation}>
       <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
         <div className={style.logo}>
-          <Link onClick={top} to="/"> Codito </Link>
+          <Link to="/"> Codito </Link>
         </div>
         <ul className={nav ? [style.menu, style.active].join(' ') : style.menu}
           style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
@@ -94,9 +55,6 @@ const NavigationBar = () => {
               <option value="en">Eng</option>
               <option value="ua">Укр</option>
             </select>
-          </li>
-          <li>
-            <a onClick={scrollToOurTeam} className={style.link_our_team}> {t("navigation.our_team")} </a>
           </li>
           <li>
             <Link to="/store"> {t("navigation.store")} </Link>

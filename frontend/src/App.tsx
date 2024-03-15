@@ -2,6 +2,7 @@ import MainPage from './components/main-page/main-page';
 import Store from './components/store-page/store';
 import Photos from './components/photos-page/photos';
 import {Routes, Route} from 'react-router-dom';
+import SignUpPage from './components/sign-up&sign-in/sign-up-page/sign-up-page';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Route path="/" element={<MainPage />} />
       <Route path="/store" element={<Store />} />
       <Route path="/photos" element={<Photos />} />
+      <Route path="/register" element={<SignUpPage />} />
     </Routes>
   );
 }
