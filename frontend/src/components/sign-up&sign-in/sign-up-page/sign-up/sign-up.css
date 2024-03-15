@@ -95,3 +95,13 @@
     left: 5px;
     bottom: 3px;
 }
+
+@media (max-width: 230px) {
+    .form_sign_up, .container_sign_up { 
+        width: 230px;
+    }
+
+    .container_sign_up {
+        height: 100vh;
+    }  
+}
