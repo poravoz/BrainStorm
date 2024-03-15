@@ -5,14 +5,6 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
 import { ThemeContext } from '../../../contexts/theme';
 import { Link } from "react-router-dom";
-import ModalLogin from '../modal-login/modal-login';
-
-import { GrAccessibility } from "react-icons/gr";
-import { MdEmail } from "react-icons/md";
-
-import { Icon } from 'react-icons-kit'
-import { eyeOff } from 'react-icons-kit/feather/eyeOff'
-import { eye } from 'react-icons-kit/feather/eye'
 import { useTranslation } from 'react-i18next';
 
 const NavigationBar = () => {
@@ -21,7 +13,6 @@ const NavigationBar = () => {
   const [isLightOn, setIsLightOn] = useState(false);
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
 
-  const [modalActive, setModalActive] = useState(false);
   const [t, i18n] = useTranslation("global");
   const top = () => { window.scrollTo(0, 0) }
 
@@ -33,11 +24,14 @@ const NavigationBar = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth > 1470) {
       scrollToPosition(1450);
-    } else if (screenWidth <= 1470) {
+    }
+    if (screenWidth <= 1470) {
       scrollToPosition(1250);
-    } else if (screenWidth <= 1250) {
+    }
+    if (screenWidth <= 1250) {
       scrollToPosition(1150);
-    } else if (screenWidth <= 1200) {
+    }
+    if (screenWidth <= 1200) {
       scrollToPosition(1400);
     }
   };
@@ -45,19 +39,6 @@ const NavigationBar = () => {
   const handleToggleLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
-
-  const [password, setPassword] = useState("");
-  const [type, setType] = useState('password');
-  const [icon, setIcon] = useState(eyeOff);
-  const handleToggle = () => {
-    if (type === 'password') {
-      setIcon(eye);
-      setType('text')
-    } else {
-      setIcon(eyeOff)
-      setType('password')
-    }
-  }
 
   useEffect(() => {
     const isLightOnStored = localStorage.getItem("isLightOn") === "true";
