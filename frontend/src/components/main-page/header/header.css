@@ -89,6 +89,10 @@
     opacity: 0.9;
 }
 
+.create_acount_header_link:hover {
+    opacity: 0.9;
+}
+
 @supports (-moz-appearance:none) {
     .mdPassword_header {
         top: 112px;

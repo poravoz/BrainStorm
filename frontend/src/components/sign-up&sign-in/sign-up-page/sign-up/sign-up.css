@@ -97,14 +97,26 @@
     bottom: 3px;
 }
 
-.create_acount_sign_up {
+.create_account_sign_up {
     text-align: center;
     position: relative;
     top: 20px;
 }
 
-.create_acount_sign_up_link:hover {
+.create_account_sign_up_link:hover {
     opacity: 0.9;
+}
+
+@media (max-width: 350px) { 
+    .create_account_sign_up {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 280px) { 
+    .create_account_sign_up {
+        font-size: 9px;
+    }
 }
 
 @media (max-width: 230px) {
@@ -115,4 +127,8 @@
     .container_sign_up {
         height: 100vh;
     }  
+
+    .create_account_sign_up {
+        font-size: 12px;
+    }
 }

@@ -100,7 +100,30 @@
     opacity: 0.9;
 }
 
+@media (max-width: 410px) { 
+    .create_account_sign_in {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 330px) { 
+    .create_account_sign_in {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 275px) { 
+    .create_account_sign_in {
+        font-size: 8px;
+    }
+}
+
+
 @media (max-width: 230px) {
+    .create_account_sign_in {
+        font-size: 10px;
+    }
+
     .form_sign_in, .container_sign_in { 
         width: 230px;
     }

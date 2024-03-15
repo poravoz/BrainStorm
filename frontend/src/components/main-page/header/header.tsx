@@ -9,6 +9,7 @@ import { Icon } from 'react-icons-kit'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [password, setPassword] = useState("");
@@ -41,7 +42,6 @@ const Header = () => {
                 <input required placeholder={t("header.placeholder_password")} className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}} type={type} value={password} onChange={(e) => setPassword(e.target.value)}/> <br />                 
                 <button className="button_signUp_header" style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }} > {t("header.text_button")} </button>
             </form>
-
         </div>
        
     );
