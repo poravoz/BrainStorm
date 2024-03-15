@@ -68,5 +68,19 @@
         "placeholder_email": "Your Email",
         "placeholder_message": "Enter Something",
         "button_text": "Submit"
+    },
+
+    "sign-up&sign-in": {
+        "text_sign_up": "Sign-Up",
+
+        "text_up_placeholder_name": "Name:",
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_password": "Password:",
+
+        "text_placeholder_name": "Your name",
+        "text_placeholder_email": "Your email",
+        "text_placeholder_password": "Your password",
+
+        "text_button": "Sign Up"
     }
 }

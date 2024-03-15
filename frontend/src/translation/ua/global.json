@@ -67,5 +67,20 @@
         "placeholder_email": "Ваш Email",
         "placeholder_message": "Введіть щось",
         "button_text": "Надіслати"
+    },
+
+    "sign-up&sign-in": {
+        "text_sign_up": "Реєстрація",
+
+        "text_up_placeholder_name": "Ім'я:",
+        "text_up_placeholder_email": "Email:",
+        "text_up_placeholder_password": "Пароль:",
+
+        "text_placeholder_name": "Ваше ім'я",
+        "text_placeholder_email": "Ваш email",
+        "text_placeholder_password": "Ваш пароль",
+
+        "text_button": "Зареєструватися"
     }
+
 }

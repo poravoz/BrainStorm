@@ -71,14 +71,14 @@
 
 .mdName_sign_up {
     position: absolute;
-    top: 91px;
+    top: 110px;
     right: 25px;
     z-index: 1;
 }
 
 .mdEmail_sign_up {
     position: absolute;
-    top: 139px;
+    top: 178px;
     right: 25px;
     z-index: 1;
 }
@@ -86,6 +86,12 @@
 .mdPassword_sign_up {
     position: absolute;
     right: 25px;
-    top: 187px;
+    top: 244px;
     z-index: 1;
+}
+
+.name_sign_up, .email_sign_up, .password_sign_up {
+    position: relative;
+    left: 5px;
+    bottom: 3px;
 }

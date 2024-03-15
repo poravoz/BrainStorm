@@ -52,6 +52,18 @@ const themes = {
 
         //button_scroll_up
         color_icon_scroll_up: "#3492eb",
+
+
+
+        // sign in & sign up
+        backgroundColor_sign_up_sign_in: "#222222",
+        backgroundColor_form_sign_up_sign_in: "#1c1c1c", 
+        color_text_sign_up_sign_in: "#ecf0f1",
+        backgroundColor_input_sign_up_sign_in: "lightgray",
+        backgroundColor_sign_up_sign_in_button: "#3492eb",
+        color_sign_up_sign_in_button: "azure",
+        color_text_sign_up_sign_in_input: "#222",
+
     },
     light: {
         // nav + header
@@ -104,6 +116,16 @@ const themes = {
 
         //button_scroll_up
         color_icon_scroll_up: "355ea6",
+
+
+
+        // sign in & sign up
+        backgroundColor_sign_up_sign_in: "#8ee4af",
+        backgroundColor_form_sign_up_sign_in: "#5cdb95",
+        color_text_sign_up_sign_in: "#05386b", 
+        backgroundColor_input_sign_up_sign_in: "azure",
+        backgroundColor_sign_up_sign_in_button: "#355ea6",
+        color_text_sign_up_sign_in_input: "#05386b",
 
     },
 
