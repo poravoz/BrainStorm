@@ -66,6 +66,9 @@ const NavigationBar = () => {
           <li>
             <Link to="/photos"> {t("navigation.photos")} </Link>
           </li>
+          <li>
+            <Link to="/register"> {t("navigation.sign_in")} </Link>
+          </li>
         </ul>
         <div onClick={() => setNav(!nav)} className={style.mobile_btn}>
           {nav ? <AiOutlineClose size={25} style={{ color: theme.color_header }} />
