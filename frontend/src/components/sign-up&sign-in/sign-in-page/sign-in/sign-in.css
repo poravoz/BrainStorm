@@ -7,12 +7,12 @@
 
 .form_sign_in {
     width: 80%; 
-    width: 400px; 
+    max-width: 400px; 
     padding: 20px;
     border-radius: 10px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: 325px;
+    height: 330px;
     top: 37px;
 }
 
@@ -101,30 +101,82 @@
     opacity: 0.9;
 }
 
-@media (max-width: 410px) { 
+.create_account_sign_in_link {
+    white-space: nowrap;
+    line-height: 1.5em;
+ }
+
+ @media (max-width: 444px) {  
     .create_account_sign_in {
         font-size: 12px;
     }
-}
 
-@media (max-width: 330px) { 
+    .form_sign_in {
+        height: 325px;
+    }
+ }
+
+@media (max-width: 410px) { 
+    .form_sign_in {
+        height: 310px;
+    }
+
+    .email_sign_in, .password_sign_in {
+        font-size: 12px;
+    }
+
+    .mdEmail_sign_in {
+        top: 106px;
+    }
+
+    .mdPassword_sign_in {
+        top: 169px; 
+    }
+
+    .form_sign_in {
+        height: 315px;
+    }
+
     .create_account_sign_in {
-        font-size: 10px;
+        top: 15px;
     }
 }
 
-@media (max-width: 275px) { 
+@media (max-width: 346px) {  
+    .create_account_sign_in {
+        font-size: 10px;
+    }
+
+    .form_sign_in {
+        height: 305px;
+    }
+ }
+
+ @media (max-width: 297px) { 
     .create_account_sign_in {
         font-size: 8px;
     }
-}
 
+    .form_sign_in {
+        height: 300px;
+    }
+ }
 
-@media (max-width: 230px) {
+@media (max-width: 247px) { 
     .create_account_sign_in {
-        font-size: 10px;
+        font-size: 7px;
     }
 
+    .create_account_sign_in {
+        top: 10px;
+    }
+
+    .form_sign_in {
+        height: 290px;
+    }
+}
+
+@media (max-width: 230px) {
     .form_sign_in, .container_sign_in { 
         width: 230px;
     }

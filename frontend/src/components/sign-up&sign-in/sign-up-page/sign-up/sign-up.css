@@ -12,7 +12,7 @@
     border-radius: 10px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: 400px;
+    height: 395px;
     top: 40px;
 }
 
@@ -104,19 +104,67 @@
     top: 20px;
 }
 
+.create_account_sign_up_link {
+    white-space: nowrap;
+    line-height: 1.5em;
+}
+
 .create_account_sign_up_link:hover {
     opacity: 0.9;
 }
 
-@media (max-width: 350px) { 
+@media (max-width: 425px) { 
     .create_account_sign_up {
         font-size: 12px;
+        top: 12px;
+    }
+
+    .form_sign_up {
+        height: 380px;
     }
 }
 
-@media (max-width: 280px) { 
+@media (max-width: 350px) { 
+
+    .name_sign_up, .email_sign_up, .password_sign_up {
+        font-size: 12px;
+    }
+
+    .mdName_sign_up {
+        top: 106px;
+    }
+
+    .mdEmail_sign_up {
+        top: 169px;
+    }
+
+    .mdPassword_sign_up {
+        top: 232px;
+    }
+
+    .form_sign_up {
+        height: 365px;
+    }
+}
+
+@media (max-width: 331px) { 
     .create_account_sign_up {
         font-size: 9px;
+    }
+
+    .form_sign_up {
+        height: 360px;
+    }
+}
+
+@media (max-width: 331px) { 
+    .create_account_sign_up {
+        font-size: 7px;
+        top: 10px;
+    }
+
+    .form_sign_up {
+        height: 355px;
     }
 }
 
@@ -130,7 +178,11 @@
     }  
 
     .create_account_sign_up {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .form_sign_up {
+        height: 360px;
     }
 }
 
