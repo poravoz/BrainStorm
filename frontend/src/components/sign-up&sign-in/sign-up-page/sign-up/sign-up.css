@@ -132,3 +132,15 @@
         font-size: 12px;
     }
 }
+
+@media (max-height: 620px) { 
+    .form_sign_up {
+        top: 50px;
+    }
+}
+
+@media (max-height: 560px) { 
+    .form_sign_up {
+        top: 40px;
+    }
+}

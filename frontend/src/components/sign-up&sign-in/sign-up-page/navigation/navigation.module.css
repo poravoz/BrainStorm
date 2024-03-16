@@ -184,16 +184,6 @@ a {
     font-size: 24px;
   }
 
-  .icon_dark_theme {
-    position: relative;
-    top: 55px;
-  }
-  
-  .select_language {
-    position: relative;
-    top: 50px;
-  }
-
   .link_our_team {
     visibility: hidden;
     width: 0px;
