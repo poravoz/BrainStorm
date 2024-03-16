@@ -13,6 +13,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     height: 325px;
+    top: 37px;
 }
 
 .header_sign_in {
@@ -133,20 +134,8 @@
     }  
 }
 
-@media (max-height: 620px) { 
-    .form_sign_in {
-        top: 50px;
-    }
-}
-
 @media (max-height: 500px) { 
-    .form_sign_in {
-        top: 30px;
-    }
-}
-
-@media (max-height: 440px) { 
-    .form_sign_in {
-        top: 40px;
+    .container_sign_in {
+        height: 500px;
     }
 }
