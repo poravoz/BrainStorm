@@ -29,12 +29,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <BrowserRouter>
-        <I18nextProvider i18n={i18next}>
-          <App />
-        </I18nextProvider>
-      </BrowserRouter>
-    </ThemeProvider>
+      <ThemeProvider>
+        <BrowserRouter>
+          <I18nextProvider i18n={i18next}>
+            <App />
+          </I18nextProvider>
+        </BrowserRouter>
+      </ThemeProvider>
   </React.StrictMode>
 );

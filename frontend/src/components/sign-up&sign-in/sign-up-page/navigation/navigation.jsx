@@ -64,9 +64,6 @@ const NavigationBar = () => {
             <Link to="/store"> {t("navigation.store")} </Link>
           </li>
           <li>
-            <Link to="/photos"> {t("navigation.photos")} </Link>
-          </li>
-          <li>
             <Link to="/login"> {t("navigation.sign_in")} </Link>
           </li>
         </ul>

@@ -64,9 +64,6 @@ const NavigationBar = () => {
             <Link to="/store"> {t("navigation.store")} </Link>
           </li>
           <li>
-            <Link to="/photos"> {t("navigation.photos")} </Link>
-          </li>
-          <li>
             <Link to="/register">
               <button className={style.button_register} 
                       style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }}>

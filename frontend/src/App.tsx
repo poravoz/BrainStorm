@@ -1,6 +1,5 @@
 import MainPage from './components/main-page/main-page';
 import Store from './components/store-page/store';
-import Photos from './components/photos-page/photos-page';
 import {Routes, Route} from 'react-router-dom';
 import SignUpPage from './components/sign-up&sign-in/sign-up-page/sign-up-page';
 import SignInPage from './components/sign-up&sign-in/sign-in-page/sign-in-page';
@@ -10,7 +9,6 @@ function App() {
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/store" element={<Store />} />
-      <Route path="/photos" element={<Photos />} />
       <Route path="/register" element={<SignUpPage />} />
       <Route path="/login" element={<SignInPage />} />
     </Routes>
