@@ -64,9 +64,6 @@ const NavigationBar = () => {
             </select>
           </li>
           <li>
-            <Link to="/store"> {t("navigation.store")} </Link>
-          </li>
-          <li>
             <Link to="/login"> {t("navigation.sign_in")} </Link>
           </li>
           <li>
