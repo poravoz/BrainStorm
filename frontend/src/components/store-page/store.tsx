@@ -1,8 +1,9 @@
+import NavigationBar from "./navigation/navigation";
 
 export default function Store() {
   return (
-    <div>  
-     <div> TEST </div>
-    </div>
+    <>
+      <NavigationBar />
+    </>
   )
 }
