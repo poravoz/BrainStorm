@@ -14,7 +14,6 @@ li:hover {
   opacity: 0.9;
 }
 
-
 a {
   text-decoration: none;
   color: inherit;
@@ -196,12 +195,12 @@ a {
 @media (max-width: 900px) { 
   .icon_dark_theme {
     position: relative;
-    top: 55px;
+    top: 40px;
   }
   
   .select_language {
     position: relative;
-    top: 50px;
+    top: 40px;
   }
   
   .link_our_team {
@@ -209,6 +208,8 @@ a {
     width: 0px;
     height: 0px;
   }
+
+  
 }
 
 @media (max-width: 230px) { 

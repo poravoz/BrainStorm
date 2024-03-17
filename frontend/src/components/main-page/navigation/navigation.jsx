@@ -21,16 +21,16 @@ const NavigationBar = () => {
   const scrollToOurTeam = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth > 1470) {
-      scrollToPosition(1450);
+      scrollToPosition(1470);
     }
     if (screenWidth <= 1470) {
-      scrollToPosition(1250);
+      scrollToPosition(1270);
     }
     if (screenWidth <= 1250) {
-      scrollToPosition(1150);
+      scrollToPosition(1170);
     }
     if (screenWidth <= 1200) {
-      scrollToPosition(1400);
+      scrollToPosition(1420);
     }
   };
 
@@ -92,7 +92,7 @@ const NavigationBar = () => {
             <Link to="/login"> {t("navigation.sign_in")} </Link>
           </li>
           <li>
-            <Link to="/register">
+            <Link className={style.link_sign_up_navigation} to="/register">
               <button className={style.button_register} 
                       style={{backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button }}>
                       {t("navigation.sign_up")} 
