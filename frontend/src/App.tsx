@@ -1,6 +1,6 @@
 import MainPage from './components/main-page/main-page';
 import Store from './components/store-page/store';
-import Photos from './components/photos-page/photos';
+import Photos from './components/photos-page/photos-page';
 import {Routes, Route} from 'react-router-dom';
 import SignUpPage from './components/sign-up&sign-in/sign-up-page/sign-up-page';
 import SignInPage from './components/sign-up&sign-in/sign-in-page/sign-in-page';
