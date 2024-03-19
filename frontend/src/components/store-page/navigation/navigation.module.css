@@ -42,6 +42,16 @@ a {
   font-size: 24px;
   align-items: center;
 }
+.logo_navigation {
+  position: relative;
+  left: 10px;
+  bottom: 1px;
+}
+.logo_img_navigation {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
 
 .logo:hover {
   opacity: 0.8;

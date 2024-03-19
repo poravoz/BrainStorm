@@ -6,6 +6,7 @@ import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
 import { ThemeContext } from '../../../contexts/theme';
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import logo_codito from './image/logo_codito.png';
 
 const NavigationBar = () => {
   const [nav, setNav] = useState(false);
@@ -42,8 +43,9 @@ const NavigationBar = () => {
   return (
     <div className={style.container_navigation}>
       <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
-        <div className={style.logo}>
-          <Link onClick={top} to="/"> Codito </Link>
+      <div className={style.logo}>
+          <Link onClick={top} to="/"> <img className={style.logo_img_navigation} src={logo_codito} /> </Link>
+          <Link onClick={top} to="/" className={style.logo_navigation} > Codito </Link>
         </div>
         <ul className={nav ? [style.menu, style.active].join(' ') : style.menu}
           style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>

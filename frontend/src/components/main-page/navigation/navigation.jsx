@@ -1,5 +1,6 @@
 import { useState, useContext, useEffect } from 'react';
 import style from './navigation.module.css';
+import logo_codito from './image/logo_codito.png';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
@@ -62,7 +63,8 @@ const NavigationBar = () => {
     <div className={style.container_navigation}>
       <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
         <div className={style.logo}>
-          <Link onClick={top} to="/"> Codito </Link>
+          <Link onClick={top} to="/"> <img className={style.logo_img_navigation} src={logo_codito} /> </Link>
+          <Link onClick={top} to="/" className={style.logo_navigation} > Codito </Link>
         </div>
         <ul className={nav ? [style.menu, style.active].join(' ') : style.menu}
           style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
