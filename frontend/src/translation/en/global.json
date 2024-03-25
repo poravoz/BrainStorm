@@ -24,7 +24,7 @@
 
         "placeholder_email": "Your Email",
         "placeholder_password": "Your Password",
-        "text_button": "Sign in"
+        "text_button": "Sign up"
     },
 
     "about-us": {
@@ -88,5 +88,23 @@
         "sign_in_account": "You already have an account?",
         "sign_up_account_question": "Don't have an account?",
         "sign_up_account": "Create account"
+    },
+
+    "store-page": {
+        "monitors": "Monitors",
+        "keyboards": "Keyboards",
+        "mice": "Mice",
+        "microphones": "Microphones",
+        "headphones": "Headphones",
+        "mouse_pads": "Mouse pads",
+        "usb_hubs": "USB hubs",
+
+        "buy_now": "BUY NOW",
+        "add_to_washlist" : "ADD TO WISHLIST",
+        "read_more" : "READ MORE",
+
+        "new_releases": "New Releases",
+        "new_releases_ps5_xbox": "XBox Series X and Playstation 5",
+        "new_releases_games": "Games for PS5 and XBox"
     }
 }

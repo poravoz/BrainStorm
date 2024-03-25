@@ -1,0 +1,44 @@
+.primary-content-container {
+  /* padding: 20px 312px 29px; */
+  padding-top: 12vmin;
+  /* padding-left: 5vw; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  /* min-width: 1920px; */
+}
+.flex-row-with-gap {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 3vmin;
+  align-items: stretch;
+  justify-content: flex-start;
+  /* max-width: 726px; */
+  height: 4vmin;
+}
+.rounded-container-with-icons-and-text {
+  flex: 0 0 auto;
+  border-radius: var(--border-radius-9999);
+  border: 0.1vmin solid var(--color-dimgrey-ee4a52a);
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2vmin;
+}
+.rounded-container-with-icons-and-text:hover,
+.rounded-container-with-icons-and-text:focus {
+  background: var(--color-honeydew-822a6976);
+  transition: 0.3s;
+}
+.options-description-text-style {
+  flex: 0 0 auto;
+  font: var(--font-weight-500) var(--font-size-14) "Roboto";
+  /* color: var(--color-dimgrey-ee4a52a); */
+  letter-spacing: 0.1vmin;
+}

@@ -64,6 +64,10 @@ const themes = {
         color_sign_up_sign_in_button: "azure",
         color_text_sign_up_sign_in_input: "#222",
 
+        //store
+        backgroundColor_store: "#222222",
+        color_text_store: "rgb(174, 178, 184)",
+
     },
     light: {
         // nav + header
@@ -126,6 +130,10 @@ const themes = {
         backgroundColor_input_sign_up_sign_in: "azure",
         backgroundColor_sign_up_sign_in_button: "#355ea6",
         color_text_sign_up_sign_in_input: "#05386b",
+
+        //store
+        backgroundColor_store: "#8ee4af",
+        color_text_store: "#000000",
 
     },
 

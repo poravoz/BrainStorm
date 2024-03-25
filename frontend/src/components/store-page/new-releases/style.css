@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.new-releases {
+    width: 100%;
+    height: 60vmin;
+    margin-bottom: 2em;
+}
+.releases{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vmin;
+    height: 90%;
+}
+.link-to-certain-category-item {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2vmin;
+}
+.h2-link-to-certain-category-item {
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-size: var(--font-size-22);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+}
+.one-release {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vmin;
+    border-radius: 2vmin;
+}
+.detail-one-release {
+    margin: 0.1vmin;
+    height: 90%;
+    border-radius: 2vmin;
+    position: relative !important;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2vmin;
+    z-index: 1;
+}
+.detail-one-release:before, .detail-one-release:after {
+    content: '';
+	position: absolute;
+    left: -0.2vmin;
+	top: -0.25vmin;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 200%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: 0;
+	animation: steam 20s linear infinite;
+    border-radius: 2vmin;
+}
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+.detail-one-release:after {
+	filter: blur(50px);
+}
+.buttons-new-releases {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    left: 3vmin;
+    bottom: 3vmin;
+    z-index: 1;
+}
+.btn-new-releases {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white-opacity);
+    font: var(--font-weight-300) var(--color-black-dark);
+    font-family: "Inter", sans-serif;
+    padding: 1em;
+    border-radius: 5px;
+    min-width: 13vw;
+}
+.buttons-new-releases:hover {
+    filter: brightness(150%);
+}
+.text-new-releases {
+    bottom: 0;
+    font-size: var(--font-size-22);
+    font-family: "Inter", sans-serif;
+    color: var(--color-white)
+}
