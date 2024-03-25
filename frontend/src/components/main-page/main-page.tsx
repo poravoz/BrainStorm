@@ -11,17 +11,16 @@ import ScrollToTop from "../scroll-to-top/scroll-to-top";
 
 function MainPage() {
     return (
-    <>
-        <NavigationBar /> 
-        <Header />
-        <AboutUs />
-        <Transition />
-        <OurTeam />
-        <ContactUs />
-        <Footer />
-        <ScrollToTop />
-
-    </>
+        <>
+            <NavigationBar /> 
+            <Header />
+            <AboutUs />
+            <Transition />
+            <OurTeam />
+            <ContactUs />
+            <Footer />
+            <ScrollToTop />
+        </>
     )
 }
 

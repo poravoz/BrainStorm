@@ -1,0 +1,36 @@
+/* These are Kombai generated variables */
+:root {
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-opacity: rgba(255, 255, 255, 0.8);
+  --color-white-text: #F5F5F5;
+  --color-dimgrey-ee4a52a: rgb(174, 178, 184);
+  --color-teal-55032a1f: rgba(1, 135, 95, 1);
+  --color-honeydew-822a6976: rgba(230, 243, 239, 1);
+  --color-darkslategrey-988b4616: rgba(5, 100, 73, 1);
+  --color-gainsboro-e44dcec2: rgba(218, 220, 224, 1);
+  --color-black-67adb616: rgba(24, 24, 24, 1);
+  --color-black-b20acc0b: rgba(32, 33, 36, 1);
+  --color-black-dark: rgba(52, 52, 52, 1);
+  --color-blue-discount: rgb(0, 119, 255);
+  --font-size-15_5: 15.5px;
+  --font-size-14: 14px;
+  --font-size-12: 12px;
+  --font-size-8: 8px;
+  --font-size-16: 16px;
+  --font-size-44: 44px;
+  --font-size-22: 22px;
+  --font-size-6_5: 6.5px;
+  --font-size-28: 28px;
+  --font-weight-700: 700;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+  --font-weight-300: 300;
+  --border-radius-3: 3px;
+  --border-radius-0: 0px;
+  --border-radius-32: 32px;
+  --border-radius-9999: 9999px;
+  --border-radius-16: 16px;
+  --border-radius-8: 8px;
+  --border-radius-12: 12px;
+}

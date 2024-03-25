@@ -44,7 +44,6 @@ const Header = () => {
                 <p className="create_account_header" style={{color: theme.color_text_sign_up_sign_in}} > {t("sign-up&sign-in.sign_up_account_question")} <Link to="/register" className="create_account_sign_in_link"> {t("sign-up&sign-in.sign_up_account")} </Link></p>
             </form>
         </div>
-       
     );
 };
 

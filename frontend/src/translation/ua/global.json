@@ -3,7 +3,8 @@
         "our_team": "Команда",
         "store": "Магазин",
         "photos": "Фотографії",
-        "sign_up": "Зареєструватися",
+        "text_button": "Увійти",
+        "sign_up": "Зареєструватись",
         "sign_in": "Увійти",
 
         "text_up_placeholder_name": "Ім'я:",
@@ -71,8 +72,8 @@
     },
 
     "sign-up&sign-in": {
-        "text_sign_up": "Реєстрація",
-        "text_sign_in": "Увійти",
+        "text_sign_up": "Увійти",
+        "text_sign_in": "Зареєструватись",
 
         "text_up_placeholder_name": "Ім'я:",
         "text_up_placeholder_email": "Email:",
@@ -82,11 +83,28 @@
         "text_placeholder_email": "Ваш email",
         "text_placeholder_password": "Ваш пароль",
 
-        "sign_up": "Зареєструватися",
+        "sign_up": "Зареєструватись",
         "sign_in": "Увійти",
-        "sign_in_account": "Ви вже маєте акаунт?",
-        "sign_up_account_question": "Не маєте акаунта?",
-        "sign_up_account": "Створіть акаунт"
-    }
+        "sign_in_account": "Вже маєте акаунт?",
+        "sign_up_account_question": "Ще не маєте акаунт?",
+        "sign_up_account": "Створити акаунт"
+    },
 
+    "store-page": {
+        "monitors": "Монітори",
+        "keyboards": "Клавіатури",
+        "mice": "Мишки",
+        "microphones": "Мікрофони",
+        "headphones": "Навушники",
+        "mouse_pads": "Килимки для миші",
+        "usb_hubs": "USB хаби",
+
+        "buy_now": "КУПИТИ",
+        "add_to_washlist" : "ДОДАТИ",
+        "read_more" : "ДЕТАЛЬНІШЕ",
+
+        "new_releases": "Нові релізи",
+        "new_releases_ps5_xbox": "XBox Series X та Playstation 5",
+        "new_releases_games": "Ігри для PS5 та XBox"
+    }
 }
