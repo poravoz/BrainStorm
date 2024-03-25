@@ -1,5 +1,6 @@
 import { useState, useContext, useEffect } from 'react';
 import style from './navigation.module.css';
+import logo_codito from './image/logo_codito.png';
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa';
@@ -13,12 +14,14 @@ const NavigationBar = () => {
   const [{ theme }, toggleTheme] = useContext(ThemeContext);
   const [t, i18n] = useTranslation("global");
   const location = useLocation();
+  
+  const top = () => { window.scrollTo(0, 0) }
 
   const handleToggleLanguage = (lang) => {
     i18n.changeLanguage(lang);
     localStorage.setItem("language", lang);
   };
-
+  
   useEffect(() => {
     const savedLanguage = localStorage.getItem("language");
     i18n.changeLanguage(savedLanguage);
@@ -39,8 +42,9 @@ const NavigationBar = () => {
   return (
     <div className={style.container_navigation}>
       <div className={style.box} style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
-        <div className={style.logo}>
-          <Link to="/"> Codito </Link>
+      <div className={style.logo}>
+          <Link onClick={top} to="/"> <img className={style.logo_img_navigation} src={logo_codito} /> </Link>
+          <Link onClick={top} to="/" className={style.logo_navigation} > Codito </Link>
         </div>
         <ul className={nav ? [style.menu, style.active].join(' ') : style.menu}
           style={{ backgroundColor: theme.backgroundColor_header, color: theme.color_header }}>
