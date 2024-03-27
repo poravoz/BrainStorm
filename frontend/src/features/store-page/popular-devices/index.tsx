@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
-import { connect } from 'react-redux'
+import { connect, useDispatch, useSelector } from 'react-redux'
 import './style.css';
+import { addProduct,  } from './store-slider-slice';
+import { Product } from './entities/entities';
+import { useAppDispatch, useAppSelector } from '../../../app/hooks';
 
 const StoreSlider = () => {
     const [t] = useTranslation("global");
-
+    const PRODUCT_DISC = 0.1;
     const newsData = [
         {
             _id: 1,
@@ -34,12 +37,13 @@ const StoreSlider = () => {
     ]
 
     const [counter, setCounter] = useState<number>(0);
+    const dispatch = useAppDispatch()
 
     useEffect(() => {
         const interval = setInterval(() => {
             if (counter === newsData.length - 1) return setCounter(0);
             setCounter(counter + 1);
-        }, 8000);
+        }, 16000); // @todo find 8000 
 
         return () => clearInterval(interval);
     }, [newsData.length, counter]);
@@ -53,6 +57,19 @@ const StoreSlider = () => {
         }
     }
 
+    const handleAddToWishList = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        const aElement = e.currentTarget;
+        const {_id, title, price, images } = newsData[counter];
+        const product: Product = {
+            _id: _id,
+            name: title,
+            category: 'default Category @todo',
+            discount: Number(price.slice(1)) * PRODUCT_DISC 
+        };
+        console.log(product);
+        dispatch(addProduct(product));
+    }
+
     return (
         <div className="sliderWrapper">
             <div className="featured main-page" style={{ backgroundImage: `url(${newsData[counter].images[0]})` }}>
@@ -61,7 +78,7 @@ const StoreSlider = () => {
                     <p style={{color: `white`}}>{newsData[counter].price}</p>
                     <div className="buttons">
                         <a href="#!" className="btn btnDownload">{t("store-page.buy_now")}</a>
-                        <a href="#!" className="btn btnWishlist">
+                        <a onClick={handleAddToWishList} href="#!" className="btn btnWishlist">
                             <div className="icon-add-to-washlist">+</div>
                             <p className="add-to-washlist">{t("store-page.add_to_washlist")}</p>
                         </a>
