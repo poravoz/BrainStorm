@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Product, WishList } from "./entities/entities";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { storeSliderState } from "../../../app/reducers";
+import { RootState} from "../../../app/store";
 
 const initialState: WishList = {
     products: []
@@ -13,11 +13,18 @@ const StoreSliderSlice = createSlice({
     reducers: {
         addProduct: (state, action: PayloadAction<Product>) => {
             state.products.push(action.payload);
+        },
+        remProduct: (state, action: PayloadAction<Product>) => {
+            const index = state.products.findIndex(product => product._id === action.payload._id);
+            
+            if (index !== -1) {
+                state.products.splice(index, 1);
+            }
         }
     }
 })
 
-export const selectProduct= (state: storeSliderState) => {return state.storeSlider.products}
+export const selectProduct= (state: RootState) => {return state.storeSlider.products}
 
-export const {addProduct} = StoreSliderSlice.actions;
+export const {addProduct, remProduct} = StoreSliderSlice.actions;
 export default StoreSliderSlice.reducer;
