@@ -8,7 +8,6 @@ import NewReleases from './new-releases';
 import Footer from "../main-page/footer/footet";
 import "../../styles/variables.css";
 import { ThemeContext } from '../../contexts/theme';
-import { RootState } from "../../reducers";
 
 
 const Store = () => {
