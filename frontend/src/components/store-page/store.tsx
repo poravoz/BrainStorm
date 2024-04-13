@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
 import React, { CSSProperties, useContext } from 'react';
-import NavigationBar from "../main-page/navigation/navigation";
+import NavigationBar from "./navigation/navigation";
 import OptionsTechDevices from './options-tech-devices';
 import PopularDevices from './popular-devices';
 import ContentDevices from './content-devices';

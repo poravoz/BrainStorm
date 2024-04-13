@@ -21,16 +21,7 @@ function OptionsTechDevice() {
           <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.mice")}</p>
         </div>
         <div className="rounded-container-with-icons-and-text">
-          <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.microphones")}</p>
-        </div>
-        <div className="rounded-container-with-icons-and-text">
-          <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.headphones")}</p>
-        </div>
-        <div className="rounded-container-with-icons-and-text">
           <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.mouse_pads")}</p>
-        </div>
-        <div className="rounded-container-with-icons-and-text">
-          <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.usb_hubs")}</p>
         </div>
       </div>
     </div>

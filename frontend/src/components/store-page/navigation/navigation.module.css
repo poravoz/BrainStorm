@@ -14,7 +14,6 @@ li:hover {
   opacity: 0.9;
 }
 
-
 a {
   text-decoration: none;
   color: inherit;
@@ -81,13 +80,14 @@ a {
 
 .icon_dark_theme {
   cursor: pointer;
+  z-index: 1;
 }
 
 .login_text {
   text-align: center;
   padding-bottom: 10px;
 }
-.open_modal_window_navigation, .button_register_navigation {
+.button_register_navigation {
   width: 175px;
   height: 45px;
   border: none;
@@ -136,10 +136,6 @@ a {
   outline: none;
 }
 
-.modalActive:hover {
-  opacity: 1;
-}
-
 .select_language {
   width: 70px;
   height: 30px;
@@ -170,7 +166,7 @@ a {
   cursor: pointer;
 } 
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .mobile_btn {
     display: block;
     position: fixed;
@@ -191,7 +187,7 @@ a {
     bottom: 0;
     width: 100%;
     height: 100vh;
-    gap: 5px;
+    gap: 10px;
     z-index: 10;
     transition: left 1s;
     align-items: center;
@@ -205,23 +201,30 @@ a {
     font-size: 24px;
   }
 
+}
+
+@media (max-width: 900px) { 
+  .icon_dark_theme {
+    position: relative;
+    top: 40px;
+  }
+  
+  .select_language {
+    position: relative;
+    top: 40px;
+  }
+  
   .link_our_team {
     visibility: hidden;
     width: 0px;
     height: 0px;
   }
 
-}
-
-@media (max-width: 300px) { 
-  .button_register {
-    width: 125px;
-  }
+  
 }
 
 @media (max-width: 230px) { 
   .menu { 
     height: 100%;
   }
-  
 }
