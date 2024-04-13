@@ -1,11 +1,11 @@
-export interface IWishListState {
+export interface WishList {
     products: Product[];
-
-};
+}
 
 export interface Product {
     _id: number;
     name: string;
     category: string;
-    discount: number;
+    price: number;
+    images: string[];
 }

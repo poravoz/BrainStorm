@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
 import React, { CSSProperties, useContext } from 'react';
-import NavigationBar from "./navigation/navigation";
+import NavigationBar from "../main-page/navigation/navigation";
 import OptionsTechDevices from './options-tech-devices';
 import PopularDevices from './popular-devices';
 import ContentDevices from './content-devices';
@@ -8,7 +8,6 @@ import NewReleases from './new-releases';
 import Footer from "../main-page/footer/footet";
 import "../../styles/variables.css";
 import { ThemeContext } from '../../contexts/theme';
-import { RootState } from "../../reducers";
 
 
 const Store = () => {

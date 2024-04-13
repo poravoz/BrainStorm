@@ -7,8 +7,6 @@ import global_en from './translation/en/global.json';
 import global_ua from './translation/ua/global.json';
 import i18next from "i18next";
 import { I18nextProvider } from 'react-i18next';
-import { Provider } from 'react-redux'
-import store from './app/store';
 
 i18next.init({
   interpolation: {
@@ -31,14 +29,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
       <ThemeProvider>
         <BrowserRouter>
-          <I18nextProvider i18n={i18next}>            
-              <App />            
+          <I18nextProvider i18n={i18next}>
+            <App />
           </I18nextProvider>
         </BrowserRouter>
       </ThemeProvider>
-      </Provider>
   </React.StrictMode>
 );
