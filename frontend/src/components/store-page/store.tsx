@@ -8,7 +8,6 @@ import NewReleases from './new-releases';
 import Footer from "../main-page/footer/footet";
 import "../../styles/variables.css";
 import { ThemeContext } from '../../contexts/theme';
-import { RootState } from "../../reducers";
 
 
 const Store = () => {
@@ -17,10 +16,8 @@ const Store = () => {
   };
 
   const [{ theme }] = useContext(ThemeContext);
-  // const { backgroundColor, textColor } = useSelector((state: RootState) => state.theme);
 
   return (
-    // <div style={{backgroundColor, position: `relative`}}>
     <div style={{backgroundColor : theme.backgroundColor_store, position: `relative`}}>
       <div style={containerStyle}>
       <NavigationBar />

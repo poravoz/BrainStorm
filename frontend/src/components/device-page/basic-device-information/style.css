@@ -5,56 +5,51 @@
   font-style: normal;
 }
 
-.primary-content-container {
-  /* position: fixed; */
-  padding-top: 12vmin;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  background-color: var(--color-dark-background);
-  width: 100%;
-  /* height: 18vmin; */
+.device-name {
+  padding-top: 5vmin;
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-50);
+  color: var(--color-white-text);
 }
-.flex-row-with-gap {
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  gap: 2vmin;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 4vmin;
-}
-.rounded-container-with-icons-and-text {
-  flex: 0 0 auto;
-  /* border-radius: var(--border-radius-9999); */
-  /* border: 0.1vmin solid var(--color-dimgrey-ee4a52a); */
-  /* background: transparent; */
+.popularity-container {
+  margin-top: 1vmin;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  margin-top: 1vmin;
+  gap: 1vmin;
+}
+.rating-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.number-popularity {
+  height: 100%;
+  display: flex;
   justify-content: center;
-  padding: 0 2vmin;
-  cursor: pointer;
+  align-items: center;
+  background-color: var(--color-light-dark-50);
+  padding: 0.2vmin 1.3vmin;
+  border-radius: 0.5vmin;
 }
-/* .rounded-container-with-icons-and-text:hover,
-.rounded-container-with-icons-and-text:focus {
-  color: var(--color-white) !important;
-  transition: 0.3s;
-} */
-.options-description-text-style {
-  flex: 0 0 auto;
-  font: var(--font-weight-500) var(--font-size-18) "Roboto";
+.popularity {
+  font: var(--font-size-14);
   font-family: "Inter", sans-serif !important;
-  color: var(--color-dimgrey-ee4a52a);
+  color: var(--color-white-opacity);
   letter-spacing: 0.1vmin;
+  font-weight: bold;
 }
-.options-description-text-style:hover,
-.options-description-text-style:focus {
-  color: var(--color-white);
-  transition: 0.2s;
+.category-information {
+  margin-left: 1.5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-22);
+  color: var(--color-white-text);
+  letter-spacing: 0.2vmin;
 }
 .sb-example-3 .search__input {
   width: 100%;

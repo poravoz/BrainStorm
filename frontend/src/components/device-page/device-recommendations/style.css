@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.device-name-recommendations {
+  padding-top: 5vmin;
+  margin-bottom: 3vmin;
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-44);
+  color: var(--color-white-text);
+}
+.saleslist-recommendations {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* flex-direction: row;
+  list-style: none; */
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  color: var(--color-white);
+  /* gap: 2vmin; */
+}
+.card-recommendations {
+  width: 32%;
+  height: 60vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2vmin;
+  position: relative;
+}
+.cardHeader-recommendations {
+  position: relative;
+  width: 100%;
+  height: 88%;
+  gap: 0.5vmin;
+  color: var(--color-white-text);
+}
+.text-category-recommendations {
+  margin-top: 0.7vmin;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.5vmin;
+  letter-spacing: 0.1vmin;
+  color: var(--color-dimgrey-ee4a52a);
+}
+.text-title-recommendations {
+  margin-top: 0.5vmin;
+  font-family: "Inter", sans-serif !important;
+  font-size: 2.3vmin;
+}
+.icon-add-to-wishlist-for-item-recommendations {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vmin;
+  border: 0.3vmin solid var(--color-white);
+  border-radius: var(--border-radius-9999);
+  height: 4vmin;
+  width: 4vmin;
+  color: var(--color-white);
+  font-size: var(--font-size-28);
+  font-weight: bold;
+  background-color: var(--color-black-b20acc0b);
+}
+.saleslist-recommendations img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 1vmin;
+}
+.cardFooter-recommendations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+}
+.discount-recommendations {
+  background: var(--color-blue-discount);
+  border-radius: 5px;
+  padding: .5em;
+  height: 100%;
+  display: flex;
+  font-size: 2vmin;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+}
+.priceContainer-recommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.5vmin;
+  letter-spacing: 0.1vmin;
+}
+.oldprice-recommendations {
+  color: var(--color-dimgrey-ee4a52a);
+  text-decoration: line-through;
+}
+.pricetag-recommendations {
+  color: var(--color-white);
+}
+.saleslist-recommendations a {
+  text-decoration: none;
+  color: var(--color-white-text);
+}
+.saleslist-recommendations a:hover img {
+  filter: brightness(110%);
+}

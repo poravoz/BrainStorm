@@ -106,5 +106,10 @@
         "new_releases": "Нові релізи",
         "new_releases_ps5_xbox": "XBox Series X та Playstation 5",
         "new_releases_games": "Ігри для PS5 та XBox"
+    },
+
+    "device-page": {
+        "description": "Опис",
+        "recommendations": "Рекомендації"
     }
 }

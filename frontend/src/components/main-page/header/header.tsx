@@ -27,12 +27,13 @@ const Header = () => {
     }
 
     const [{ theme }] = useContext(ThemeContext);
+    
     return (
         <div className="container" style={{backgroundColor : theme.backgroundColor_header}}>
             <h2 className="title_header" style={{color: theme.color_header}}> {t("header.title_header")} </h2>
 
             <form className="form_signUp_header">
-            <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
+                <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
                 <p className="email_header" style={{color: theme.color_header}}>{t("header.text_up_placeholder_email")}</p>
                 <MdEmail size={20} className='mdEmail_header' style={{color: theme.color_icon_header}} />
                 <input required placeholder={t("header.placeholder_email")} className="input_signUp_header" style={{backgroundColor : theme.backgroundColor_header_input, color: theme.color_header_input}}  type="email" /> <br />

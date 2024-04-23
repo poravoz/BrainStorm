@@ -106,5 +106,10 @@
         "new_releases": "New Releases",
         "new_releases_ps5_xbox": "XBox Series X and Playstation 5",
         "new_releases_games": "Games for PS5 and XBox"
+    },
+
+    "device-page": {
+        "description": "Description",
+        "recommendations": "Recommendations"
     }
 }
