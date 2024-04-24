@@ -220,12 +220,7 @@ a {
     height: 0px;
   }
 
-}
-
-@media (max-width: 300px) { 
-  .button_register {
-    width: 125px;
-  }
+  
 }
 
 @media (max-width: 230px) { 

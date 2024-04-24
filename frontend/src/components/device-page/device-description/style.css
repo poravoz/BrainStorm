@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.device-name-description {
+  padding-top: 5vmin;
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-44);
+  color: var(--color-white-text);
+}

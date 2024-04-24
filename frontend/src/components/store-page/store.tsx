@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
 import React, { CSSProperties, useContext } from 'react';
-import NavigationBar from "./navigation/navigation";
+import NavigationBar from "../main-page/navigation/navigation";
 import OptionsTechDevices from './options-tech-devices';
 import PopularDevices from './popular-devices';
 import ContentDevices from './content-devices';
@@ -16,10 +16,8 @@ const Store = () => {
   };
 
   const [{ theme }] = useContext(ThemeContext);
-  // const { backgroundColor, textColor } = useSelector((state: RootState) => state.theme);
 
   return (
-    // <div style={{backgroundColor, position: `relative`}}>
     <div style={{backgroundColor : theme.backgroundColor_store, position: `relative`}}>
       <div style={containerStyle}>
       <NavigationBar />

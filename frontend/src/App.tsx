@@ -1,5 +1,6 @@
 import MainPage from './components/main-page/main-page';
 import Store from './components/store-page/store';
+import Device from './components/device-page/device';
 import {Routes, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './app/store';
@@ -12,10 +13,11 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/device" element={<Device />} />
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/login" element={<SignInPage />} />
       </Routes>
-    </Provider>
+    // </Provider>
   );
 }
 
