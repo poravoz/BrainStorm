@@ -1,4 +1,4 @@
-import React, { CSSProperties, useContext } from 'react';
+import React, { CSSProperties, useContext, useEffect } from 'react';
 import { useLocation } from "react-router";
 import NavigationBar from "../main-page/navigation/navigation";
 import OptionsTechDevices from '../store-page/options-tech-devices';
@@ -29,6 +29,10 @@ const Device = () => {
 
   const [{ theme }] = useContext(ThemeContext);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div style={{backgroundColor : theme.backgroundColor_store, position: `relative`}}>
       <div style={containerStyle}>
@@ -37,12 +41,9 @@ const Device = () => {
         <DevicePrice 
           id={location.state._id} 
           category={location.state.category} 
-          title={location.state.title} 
           old_price={location.state.old_price} 
           discount={location.state.discount} 
           price={location.state.price} 
-          popularity={location.state.popularity} 
-          images={location.state.images}
         />
         <DeviceDetails 
           id={location.state._id} 

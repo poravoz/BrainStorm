@@ -10,15 +10,12 @@ import { ThemeContext } from '../../../contexts/theme';
 interface ItemProp {
   id: number;
   category: string;
-  title: string;
   old_price: string;
   discount: string;
   price: string;
-  popularity: number;
-  images: string[];
 }
 
-const DevicePrice: React.FC<ItemProp> = ({ id, category, title, old_price, discount, price, popularity, images }) => {
+const DevicePrice: React.FC<ItemProp> = ({ id, category, old_price, discount, price }) => {
   const [t] = useTranslation("global");
 
   const [{ theme }] = useContext(ThemeContext);

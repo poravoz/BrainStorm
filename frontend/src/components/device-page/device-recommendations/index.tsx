@@ -1,5 +1,5 @@
 import React, {useState, useContext, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../../contexts/theme';
@@ -11,8 +11,8 @@ interface ItemProp {
 
 const DeviceRecommendations: React.FC<ItemProp> = ({ id, category }) => {
   const [t] = useTranslation("global");
-
   const [{ theme }] = useContext(ThemeContext);
+  const location = useLocation();
 
   const [categoryData, setCategoryData] = useState<any[]>([]);
 
@@ -29,6 +29,10 @@ const DeviceRecommendations: React.FC<ItemProp> = ({ id, category }) => {
 
     fetchData();
   }, [category]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
@@ -58,7 +62,10 @@ const DeviceRecommendations: React.FC<ItemProp> = ({ id, category }) => {
                 onMouseEnter={() => handleMouseEnter(item._id)}
                 onMouseLeave={handleMouseLeave}
             >
-              <Link to="/device" className="cardHeader-recommendations" state={item}>
+              <Link to="/device" 
+                className="cardHeader-recommendations" 
+                state={item}
+              >
                   <img src={item.images[0]} className='image-devices-recommendations' alt="sales game" />
                   <p className="text-category-recommendations">{item.category}</p>
                   <p className="text-title-recommendations">{item.title}</p>
