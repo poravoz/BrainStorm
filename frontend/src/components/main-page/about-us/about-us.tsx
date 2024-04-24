@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 const AboutUs = () => { 
     const [{ theme }] = useContext(ThemeContext);
     const [t] = useTranslation("global");
+
     return(
         <div className="container_about_us" style={{backgroundColor: theme. backgroundColor_about_us}}>
              <p className='text_about_us' style={{color: theme.color_about_us}}> {t("about-us.about-us")} </p>
