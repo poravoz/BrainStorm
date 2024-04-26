@@ -99,7 +99,16 @@
         "mouse_pads": "Килимки для миші",
         "usb_hubs": "USB хаби",
 
+        "shopping-cart": "Кошик",
+        "summary": "Всього",
+        "shipping": "ДОСТАВКА",
+        "give_code": "ПРОМОКОД",
+        "total_price": "ДО ОПЛАТИ",
+        "checkout": "ОФОРМИТИ ЗАМОВЛЕННЯ",
+        "enter_your_code": "Введіть промокод",
+
         "buy_now": "КУПИТИ",
+        "delete_form_cart": "ВИДАЛИТИ З КОШИКУ",
         "add_to_washlist" : "ДОДАТИ",
         "remove_from_washlist" : "ВИДАЛИТИ",
         "read_more" : "ДЕТАЛЬНІШЕ",

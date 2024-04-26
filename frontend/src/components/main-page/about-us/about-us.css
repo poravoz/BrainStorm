@@ -1,7 +1,20 @@
 @font-face {
     font-family: "Kode Mono";
     src: url("../../fonts/KodeMono-SemiBold.ttf");
-  }
+}
+
+.container_about_us {
+    /* height: 450px; */
+    height: 48vmin;
+    /* top: 79px; */
+    position: relative;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+}
+
 
 .text_about_us {
     position: absolute;
@@ -13,17 +26,6 @@
 
 .p_about_us {
     font-size: 9px;
-}
-
-.container_about_us {
-    height: 450px;
-    top: 79px;
-    position: relative;
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.5em;
 }
 
 .item_about_us {

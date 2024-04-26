@@ -11,28 +11,28 @@ const StoreSlider = () => {
 
     const newsData = [
         {
-            _id: 1,
+            id: 1,
             name: "Monitor KNV",
             price: 300,
             category: "Monitors",
             images: ["assets/popular-monitors.jpg"],
         },
         {
-            _id: 2,
+            id: 2,
             name: "Keyboard KNV",
             price: 100,
             category: "Keyboards",
             images: ["assets/popular-keyboard.jpg"],
         },
         {
-            _id: 3,
+            id: 3,
             name: "Mouse KNV",
             price: 50,
             category: "Mouses",
             images: ["assets/popular-mouse.jpg"],
         },
         {
-            _id: 4,
+            id: 4,
             name: "Mouse pad KNV",
             price: 30,
             category: "Mouse pads",
@@ -66,9 +66,9 @@ const StoreSlider = () => {
     // const handleAddToWishList = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     function handleAddToWishList(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
         const aElement = e.currentTarget;
-        const {_id, name, category, price, images} = newsData[counter];
+        const {id, name, category, price, images} = newsData[counter];
         const product: Product = {
-            _id: _id,
+            id: id,
             name: name,
             category: category,
             price: price,
@@ -86,7 +86,7 @@ const StoreSlider = () => {
     }
 
     function isInWishList(newProduct: Product, products: Product[]): boolean {
-        const compareIdFunc = (product: Product) => product._id === newProduct._id;
+        const compareIdFunc = (product: Product) => product.id === newProduct.id;
         return  products.some(compareIdFunc);
     }
 
@@ -111,7 +111,7 @@ const StoreSlider = () => {
             </div>
             <ul className="gamelist">
                 {newsData.map((game, index) => (
-                    <li key={game._id} onClick={onClick} style={{ display: 'block' }} >
+                    <li key={game.id} onClick={onClick} style={{ display: 'block' }} >
                         <div id={index.toString()} className={`game ${index === counter ? 'current' : ''}`}>
                             <div className="progress"></div>
                             <img src={game.images[0]} alt="game" />

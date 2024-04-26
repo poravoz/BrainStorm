@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.items-sc {
+    width: 100%;
+    height: 95%;
+    overflow-y: auto;
+}
+.header-shopping-cart {
+    /* width: 100%; */
+    margin: 0 5vmin;
+    padding: 0 2vmin;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2vmin solid var(--color-light-grey);
+}
+.h2-shopping-cart {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-black);
+    font-size: var(--font-size-28);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+}
+

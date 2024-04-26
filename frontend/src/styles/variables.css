@@ -3,6 +3,10 @@
   --color-white: rgba(255, 255, 255, 1);
   --color-white-opacity: rgba(255, 255, 255, 0.8);
   --color-white-text: #F5F5F5;
+  --color-light-grey: rgb(205, 205, 205);
+  --color-light-grey-text: rgb(159, 159, 159);
+  --color-dark-grey: rgb(141, 141, 141);
+  --color-dark-grey-text: rgb(74, 74, 74);
   --color-dimgrey-ee4a52a: rgb(174, 178, 184);
   --color-teal-55032a1f: rgba(1, 135, 95, 1);
   --color-honeydew-822a6976: rgba(230, 243, 239, 1);
@@ -15,6 +19,8 @@
   --color-light-dark-50: rgb(99, 99, 99, 0.5);
   --color-blue-discount: rgb(0, 119, 255);
   --color-dark-background: #222222;
+  --color-button-cart: #19bc8b;
+  --color-black: rgb(0,0,0,1);
   --font-size-15_5: 15.5px;
   --font-size-14: 1.5vmin;
   --font-size-12: 1.2vmin;
@@ -26,6 +32,7 @@
   --font-size-22: 2.5vmin;
   --font-size-6_5: 6.5px;
   --font-size-28: 3vmin;
+  --font-size-32: 3.5vmin;
   --font-weight-700: 700;
   --font-weight-600: 600;
   --font-weight-500: 500;

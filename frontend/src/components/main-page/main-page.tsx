@@ -11,7 +11,7 @@ import ScrollToTop from "../scroll-to-top/scroll-to-top";
 
 function MainPage() {
     return (
-        <>
+        <div style={{backgroundColor : `#222` }}>
             <NavigationBar /> 
             <Header />
             <AboutUs />
@@ -21,7 +21,7 @@ function MainPage() {
             <ContactUs />
             <Footer />
             <ScrollToTop />
-        </>
+        </div>
     )
 }
 

@@ -99,7 +99,16 @@
         "mouse_pads": "Mouse pads",
         "usb_hubs": "USB hubs",
 
+        "shopping-cart": "Shopping Cart",
+        "summary": "Summary",
+        "shipping": "SHIPPING",
+        "give_code": "GIVE CODE",
+        "total_price": "TOTAL PRICE",
+        "checkout": "CHECKOUT",
+        "enter_your_code": "Enter your code",
+
         "buy_now": "BUY NOW",
+        "delete_form_cart": "DELETE FROM CART",
         "add_to_washlist" : "ADD TO WISHLIST",
         "remove_from_washlist" : "REMOVE FROM WISHLIST",
         "read_more" : "READ MORE",
