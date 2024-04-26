@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.item-shopping-cart {
+    /* width: 100%; */
+    margin: 0 5vmin;
+    padding: 0 2vmin;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2vmin solid var(--color-light-grey);
+}
+.count-items-sc {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-light-grey-text);
+    font-size: var(--font-size-16);
+    line-height: 1.4;
+    /* letter-spacing: 0.1vmin; */
+}
+.image-item-sc {
+    width: 15vmin;
+    height: 10vmin;
+}
+.details-item-sc {
+    width: 15vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1vmin;
+}
+.category-item-sc {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-light-grey-text);
+    font-size: var(--font-size-16);
+    line-height: 1.4;
+}
+.title-item-sc {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-black);
+    font-size: var(--font-size-18);
+    line-height: 1.4;
+}
+.container-count-item-sc {
+    display: flex;
+    flex-direction: row;
+    width: 8vmin;
+    align-items: center;
+    justify-content: space-between;
+}
+.change-count-item-sc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-32);
+    color: var(--color-light-grey-text);
+    font-weight: bold;
+    background-color: transparent;
+}
+.change-count-item-sc:hover {
+    color: var(--color-black);
+    transition: 0.3s;
+}
+.count-item-sc {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: var(--color-black);
+    font-size: var(--font-size-18);
+    line-height: 1.4;
+    height: 100%;
+}
+.price-item-sc {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-black);
+    font-size: var(--font-size-18);
+    line-height: 1.6;
+    letter-spacing: 0.1vmin;
+}
+.delete-item-from-cart-cs {
+    color: var(--color-light-grey-text);
+}
+.delete-item-from-cart-cs:hover {
+    color: var(--color-black);
+}

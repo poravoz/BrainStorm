@@ -6,7 +6,7 @@ import Arrow from './icons/arrow';
 
 
 interface ItemProp {
-    _id: number;
+    id: number;
     category: string;
     title: string;
     old_price: string;
@@ -53,16 +53,16 @@ const ContentItems: React.FC<Props> = ({ items }) => {
                         const currentItem = items[itemIndex];
                         return (
                             <li
-                                key={item._id} 
+                                key={item.id} 
                                 className="card"
-                                onMouseEnter={() => handleMouseEnter(currentItem._id)}
+                                onMouseEnter={() => handleMouseEnter(currentItem.id)}
                                 onMouseLeave={handleMouseLeave}
                             >
                                 <Link to="/device" className="cardHeader" state={currentItem}>
                                     <img src={currentItem.images[0]} className='image-devices' alt="sales game" />
                                     <p className="text-category">{currentItem.category}</p>
                                     <p className="text-title">{currentItem.title}</p>
-                                    {hoveredId === currentItem._id && <div className="icon-add-to-washlist-for-item">+</div>}
+                                    {hoveredId === currentItem.id && <div className="icon-add-to-washlist-for-item">+</div>}
                                 </Link>
                                 <div className="cardFooter">
                                     <span className="discount">-{currentItem.discount}</span>

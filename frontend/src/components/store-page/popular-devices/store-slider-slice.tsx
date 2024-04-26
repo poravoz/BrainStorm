@@ -15,7 +15,7 @@ const StoreSliderSlice = createSlice({
             state.products.push(action.payload);
         },
         remProduct: (state, action: PayloadAction<Product>) => {
-            const index = state.products.findIndex(product => product._id === action.payload._id);
+            const index = state.products.findIndex(product => product.id === action.payload.id);
             
             if (index !== -1) {
                 state.products.splice(index, 1);

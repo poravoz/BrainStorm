@@ -5,6 +5,9 @@
   font-style: normal;
 }
 
+.container-recommendations {
+  margin-bottom: 3vmin;
+}
 .device-name-recommendations {
   padding-top: 5vmin;
   margin-bottom: 3vmin;

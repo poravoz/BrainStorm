@@ -11,7 +11,7 @@ import "../../styles/variables.css";
 import { ThemeContext } from '../../contexts/theme';
 
 interface ItemProp {
-  _id: number;
+  id: number;
   category: string;
   title: string;
   old_price: string;
@@ -19,9 +19,10 @@ interface ItemProp {
   price: string;
   popularity: number;
   images: string[];
+  count: number;
 }
 
-const Device = () => {
+const Device: React.FC<{ cartItems: ItemProp[]; addToCart: (product: ItemProp) => void; removeFromCart: (productId: number, productCategory: string) => void }> = ({ removeFromCart, cartItems, addToCart }) => {
   let location = useLocation();
   const containerStyle: CSSProperties = {
     margin: '0 10vw'
@@ -39,14 +40,13 @@ const Device = () => {
         <NavigationBar />
         <OptionsTechDevices />
         <DevicePrice 
-          id={location.state._id} 
-          category={location.state.category} 
-          old_price={location.state.old_price} 
-          discount={location.state.discount} 
-          price={location.state.price} 
+          cartItems={cartItems}
+          product={location.state}
+          addToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
         <DeviceDetails 
-          id={location.state._id} 
+          id={location.state.id} 
           category={location.state.category} 
           title={location.state.title} 
           popularity={location.state.popularity} 
@@ -54,13 +54,12 @@ const Device = () => {
         />
         <DeviceDescription />
         <DeviceRecommendations 
-          id={location.state._id} 
+          id={location.state.id} 
           category={location.state.category} 
         />
       </div>
       <Footer />
     </div>
-
   )
 }
 

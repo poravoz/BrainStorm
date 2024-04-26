@@ -46,20 +46,20 @@ const DeviceRecommendations: React.FC<ItemProp> = ({ id, category }) => {
 
   
   return (
-    <div>
+    <div className='container-recommendations'>
       <p className="device-name-recommendations">{t("device-page.recommendations")}</p>
       <ul className="saleslist-recommendations">
         {categoryData.reduce((acc, item) => {
-          if (acc.length < 3 && item._id !== id) {
+          if (acc.length < 3 && item.id !== id) {
             acc.push(item);
           }
           return acc;
-        }, []).map((item: any) => ( 
-          item._id !== id &&
+        }, []).map((item: any) => ( item && item.id &&
+          item.id !== id &&
             <li
-                key={item._id} 
+                key={item.id} 
                 className="card-recommendations"
-                onMouseEnter={() => handleMouseEnter(item._id)}
+                onMouseEnter={() => handleMouseEnter(item.id)}
                 onMouseLeave={handleMouseLeave}
             >
               <Link to="/device" 
@@ -69,7 +69,7 @@ const DeviceRecommendations: React.FC<ItemProp> = ({ id, category }) => {
                   <img src={item.images[0]} className='image-devices-recommendations' alt="sales game" />
                   <p className="text-category-recommendations">{item.category}</p>
                   <p className="text-title-recommendations">{item.title}</p>
-                  {hoveredId === item._id && <div className="icon-add-to-wishlist-for-item-recommendations">+</div>}
+                  {item && item.id && hoveredId === item.id && <div className="icon-add-to-wishlist-for-item-recommendations">+</div>}
               </Link>
               <div className="cardFooter-recommendations">
                   <span className="discount-recommendations">-{item.discount}</span>
