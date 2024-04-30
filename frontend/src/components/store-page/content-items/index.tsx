@@ -3,27 +3,22 @@ import { Link } from "react-router-dom";
 import './style.css';
 import { useTranslation } from 'react-i18next';
 import Arrow from './icons/arrow';
-
-
-interface ItemProp {
-    id: number;
-    category: string;
-    title: string;
-    old_price: string;
-    discount: string;
-    price: string;
-    popularity: number;
-    images: string[];
-}
+import { addProduct, remProduct, selectProduct } from '../store-page-slice';
+import { Product } from '../entities/entities';
+import { useSelector } from 'react-redux';
+import { useAppDispatch } from '../../../app/hooks';
 
 interface Props {
-    items: ItemProp[];
+    items: Product[];
 }
 
 const ContentItems: React.FC<Props> = ({ items }) => {
     const [t] = useTranslation("global");
     const [hoveredId, setHoveredId] = useState<number | null>(null);
     const [startIndex, setStartIndex] = useState(0);
+
+    let wishListPtoducts = useSelector(selectProduct)
+    const dispatch = useAppDispatch();
 
     const handleMouseEnter = (id: number) => {
         setHoveredId(id);
@@ -40,6 +35,22 @@ const ContentItems: React.FC<Props> = ({ items }) => {
     const handleNextClick = () => {
         setStartIndex((prevIndex) => (prevIndex + 1) % items.length);
     };
+
+    function handleAddToWishList(e: React.MouseEvent<HTMLDivElement, MouseEvent>, product: Product) {
+        const inWishList = isInWishList(product, wishListPtoducts); 
+
+        if (!inWishList) {
+            dispatch(addProduct(product));
+        }
+        else {
+            dispatch(remProduct(product));
+        }
+    }
+
+    function isInWishList(newProduct: Product, products: Product[]): boolean {
+        const compareIdFunc = (product: Product) => product.title === newProduct.title;
+        return  products.some(compareIdFunc);
+    }
 
     return (
         <div>
@@ -62,8 +73,11 @@ const ContentItems: React.FC<Props> = ({ items }) => {
                                     <img src={currentItem.images[0]} className='image-devices' alt="sales game" />
                                     <p className="text-category">{currentItem.category}</p>
                                     <p className="text-title">{currentItem.title}</p>
-                                    {hoveredId === currentItem.id && <div className="icon-add-to-washlist-for-item">+</div>}
+                                    
                                 </Link>
+                                {hoveredId === currentItem.id && <div className="icon-add-to-wishlist-for-item" onClick={(e) => handleAddToWishList(e, item)}>
+                                    {isInWishList(item, wishListPtoducts) ? "-" : "+"}
+                                </div>}
                                 <div className="cardFooter">
                                     <span className="discount">-{currentItem.discount}</span>
                                     <div className="priceContainer">

@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./reducers";
-import storeSliderReducer from "../components/store-page/popular-devices/store-slider-slice";
+import storeSliderReducer from "../components/store-page/store-page-slice";
 import themeReducer from "../themeReducer";
 
 const store = configureStore({

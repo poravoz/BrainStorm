@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Product, WishList } from "./entities/entities";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { RootState} from "../../../app/store";
+import { RootState} from "../../app/store";
 
 const initialState: WishList = {
     products: []
