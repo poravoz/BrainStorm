@@ -11,7 +11,7 @@ export interface RemoveProduct {
   payload: ProductItem;
 }
 
-export type AppAction = AddProduct | RemoveProduct;
+export type CartAction = AddProduct | RemoveProduct;
 
 export function addProduct(product: ProductItem): AddProduct {
   return {

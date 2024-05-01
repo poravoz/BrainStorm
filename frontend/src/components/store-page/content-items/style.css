@@ -71,7 +71,7 @@
     font-family: "Inter", sans-serif !important;
     font-size: 2.3vmin;
 }
-.icon-add-to-washlist-for-item {
+.icon-add-to-wishlist-for-item {
     position: absolute; 
     top: 0;
     right: 0;
@@ -87,6 +87,9 @@
     font-size: var(--font-size-28);
     font-weight: bold;
     background-color: var(--color-black-b20acc0b);
+}
+.icon-add-to-wishlist-for-item:hover {
+    cursor: pointer;
 }
 .saleslist img {
     width: 100%;

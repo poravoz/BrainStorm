@@ -23,37 +23,16 @@ interface ItemProp {
   count: number;
 }
 
-interface ShippingOption {
-  name: string;
-  price: number;
-  value: string;
-}
-
 function App() {
-  const [cartItems, setCartItems] = useState<ItemProp[]>([]);
-
-  const addToCart = (product: ItemProp) => {
-    setCartItems([...cartItems, product]);
-  };
-
-  const removeFromCart = (productId: number, productCategory: string) => {
-    const updatedCartItems = cartItems.filter(item => (item.id !== productId || item.category !== productCategory));
-    setCartItems(updatedCartItems);
-  };
-
-  const updateCartItems = (updatedItems: ItemProp[]) => {
-    setCartItems(updatedItems);
-  };
-
   return (
     <Provider store={store}>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/store" element={<Store />} />
         <Route path="/category" element={<ContentCategory />} />
-        <Route path="/device" element={<Device addToCart={addToCart} cartItems={cartItems} removeFromCart={removeFromCart}/>} />
-        <Route path="/cart" element={<Cart addToCart={addToCart} cartItems={cartItems} updateCartItems={updateCartItems} removeFromCart={removeFromCart}/>} />
-        <Route path="/checkout" element={<Checkout products={cartItems}/>} />
+        <Route path="/device" element={<Device />} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/login" element={<SignInPage />} />
       </Routes>

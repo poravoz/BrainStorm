@@ -8,7 +8,6 @@ const mouse_pads = [
         price: "$350",
         popularity: 4,
         images: ["assets/mouse-pad1.jpg", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
     },
     {
         id: 2,
@@ -19,7 +18,6 @@ const mouse_pads = [
         price: "$300",
         popularity: 4.5,
         images: ["assets/mouse-pad2.webp", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
     },
     {
         id: 3,
@@ -30,7 +28,6 @@ const mouse_pads = [
         price: "$250",
         popularity: 5,
         images: ["assets/mouse-pad3.webp", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
     },
     {
         id: 4,
@@ -41,7 +38,6 @@ const mouse_pads = [
         price: "$200",
         popularity: 3.5,
         images: ["assets/mouse-pad4.webp", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
     },
 ]
 

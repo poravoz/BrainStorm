@@ -4,8 +4,11 @@ export interface WishList {
 
 export interface Product {
     id: number;
-    name: string;
     category: string;
-    price: number;
+    title: string;
+    old_price: string;
+    discount: string;
+    price: string;
+    popularity: number;
     images: string[];
 }

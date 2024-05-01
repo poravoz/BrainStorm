@@ -5,18 +5,8 @@ import "../../../../styles/variables.css";
 import ArrowCode from './icons/arrow-code';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../../../contexts/theme';
-
-interface ItemProp {
-  id: number;
-  category: string;
-  title: string;
-  old_price: string;
-  discount: string;
-  price: string;
-  popularity: number;
-  images: string[];
-  count: number;
-}
+import { useAppDispatch, useAppSelector } from '../../../../app/hooks';
+import { selectProductSC } from '../../../../slices/shoping-cart-slice';
 
 interface ShippingOption {
   name: string;
@@ -24,9 +14,12 @@ interface ShippingOption {
   value: string;
 }
 
-const SummaryPrice: React.FC<{ products: ItemProp[] }> = ({ products }) => {
+const SummaryPrice = () => {
   const [t] = useTranslation("global");
   const [{ theme }] = useContext(ThemeContext);
+
+  let cartProducts = useAppSelector(selectProductSC)
+  const dispatch = useAppDispatch();
 
   const shippingOptions: ShippingOption[] = [
     { name: "Nova Poshta", price: 10.00, value: "option1" },
@@ -35,12 +28,12 @@ const SummaryPrice: React.FC<{ products: ItemProp[] }> = ({ products }) => {
   ];
 
   const [selectedShipping, setSelectedShipping] = useState(shippingOptions[0].value);
-  const itemCountText = products.length <= 1 ? `ITEM ${products.length}` : `ITEMS ${products.length}`;
+  const itemCountText = cartProducts.length <= 1 ? `ITEM ${cartProducts.length}` : `ITEMS ${cartProducts.length}`;
 
-  const total = products.reduce((acc, product) => {
+  const total = cartProducts.reduce((acc, item) => {
     let itemPrice = 0;
-    itemPrice = parseFloat(product.price.substr(1).replace(",", "."));
-    return acc + itemPrice * product.count;
+    itemPrice = parseFloat(item.product.price.substr(1).replace(",", "."));
+    return acc + itemPrice * item.count;
   }, 0);
 
   const selectedOption = shippingOptions.find(option => option.value === selectedShipping);
@@ -85,13 +78,12 @@ const SummaryPrice: React.FC<{ products: ItemProp[] }> = ({ products }) => {
           <Link 
             to="/checkout"
             className='button-checkout'
-            state={{products, selectedShippingOption: selectedOption, totalOrders: total, totalPrice: totalPrice}}
+            state={{cartProducts, selectedShippingOption: selectedOption, totalOrders: total, totalPrice: totalPrice}}
           >
               {t("store-page.checkout")}
           </Link>
       </div>
     </div>
-    
   )
 }
 

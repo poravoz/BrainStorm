@@ -2,47 +2,20 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { connect, useDispatch, useSelector } from 'react-redux'
 import './style.css';
-import { addProduct, remProduct, selectProduct } from './store-slider-slice';
-import { Product } from './entities/entities';
-import { useAppDispatch } from '../../../app/hooks';
+import { addProductWL, remProductWL, selectProductWL } from '../../../slices/wishlist-slice';
+import { addProductSC, remProductSC, selectProductSC } from '../../../slices/shoping-cart-slice';
+import { Product } from '../entities/entities';
+import { useAppDispatch, useAppSelector } from '../../../app/hooks';
+import popular_devices from '../../../data/popular-devices';
 
 const StoreSlider = () => {
     const [t] = useTranslation("global");
 
-    const newsData = [
-        {
-            id: 1,
-            name: "Monitor KNV",
-            price: 300,
-            category: "Monitors",
-            images: ["assets/popular-monitors.jpg"],
-        },
-        {
-            id: 2,
-            name: "Keyboard KNV",
-            price: 100,
-            category: "Keyboards",
-            images: ["assets/popular-keyboard.jpg"],
-        },
-        {
-            id: 3,
-            name: "Mouse KNV",
-            price: 50,
-            category: "Mouses",
-            images: ["assets/popular-mouse.jpg"],
-        },
-        {
-            id: 4,
-            name: "Mouse pad KNV",
-            price: 30,
-            category: "Mouse pads",
-            images: ["assets/popular-mouse-pads.jpg"],
-        },
-    ]
+    const newsData = popular_devices
 
     const [counter, setCounter] = useState<number>(0);
 
-    let wishListPtoducts = useSelector(selectProduct)
+    let wishListPtoducts = useAppSelector(selectProductWL)
     const dispatch = useAppDispatch();
 
     useEffect(() => {
@@ -63,30 +36,32 @@ const StoreSlider = () => {
         }
     }
 
-    // const handleAddToWishList = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    function handleAddToWishList(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    const handleAddToWishList = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         const aElement = e.currentTarget;
-        const {id, name, category, price, images} = newsData[counter];
+        const {id,category,  title, old_price, discount, price, popularity, images} = newsData[counter];
         const product: Product = {
             id: id,
-            name: name,
             category: category,
+            title: title,
+            old_price: old_price,
+            discount: discount,
             price: price,
+            popularity: popularity,
             images: images
         };
 
         const inWishList = isInWishList(product, wishListPtoducts); 
 
         if (!inWishList) {
-            dispatch(addProduct(product));
+            dispatch(addProductWL(product));
         }
         else {
-            dispatch(remProduct(product));
+            dispatch(remProductWL(product));
         }
     }
 
     function isInWishList(newProduct: Product, products: Product[]): boolean {
-        const compareIdFunc = (product: Product) => product.id === newProduct.id;
+        const compareIdFunc = (product: Product) => product.title === newProduct.title;
         return  products.some(compareIdFunc);
     }
 
@@ -94,8 +69,8 @@ const StoreSlider = () => {
         <div className="sliderWrapper">
             <div className="featured main-page" style={{ backgroundImage: `url(${newsData[counter].images[0]})` }}>
                 <div className="itemText">
-                    <h3 className="title-popular-device">{newsData[counter].name}</h3>
-                    <p style={{color: `white`}}>${newsData[counter].price}</p>
+                    <h3 className="title-popular-device">{newsData[counter].title}</h3>
+                    <p style={{color: `white`}}>{newsData[counter].price}</p>
                     <div className="buttons">
                         <a href="#!" className="btn btnDownload">{t("store-page.buy_now")}</a>
                         <a onClick={ handleAddToWishList } href="#!" className="btn btnWishlist">
@@ -115,7 +90,7 @@ const StoreSlider = () => {
                         <div id={index.toString()} className={`game ${index === counter ? 'current' : ''}`}>
                             <div className="progress"></div>
                             <img src={game.images[0]} alt="game" />
-                       {  game.name.split(' ').slice(0, 4).join(' ') }
+                       {  game.title.split(' ').slice(0, 4).join(' ') }
                         </div>
                     </li>
                 ))}
