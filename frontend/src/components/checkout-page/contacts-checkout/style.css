@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contacts-checkout-container {
+    padding: 5vmin 5vmin 0 5vmin;
+    /* border-radius: 1vmin; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.h2-contacts-checkout {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-black);
+    font-size: var(--font-size-28);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+    border-bottom: 0.3vmin solid var(--color-black);
+    padding-bottom: 1.5vmin;
+}
+.container-details {
+    margin-top: 3vmin;
+    padding: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 0.1vmin solid var(--color-light-grey);
+    border-radius: 0.2vmin;
+    box-shadow: 0 0 1vmin rgba(0,0,0,0.5);;
+}
+.label-form-checkout {
+    font-family: "Inter", sans-serif;
+    color: var(--color-dark-grey-text);
+    font-size: var(--font-size-18);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+    padding-bottom: 1vmin;
+}
+.input-form-checkout {
+    width: 70%;
+    height: 4vmin;
+    border: 0.1vmin solid var(--color-dark-grey);
+    padding-left: 2vmin;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 2vmin;
+}
+.container-details:focus,
+input-form-checkout:focus {
+    border: 0.1vmin solid var(--color-dark-grey-text);
+}
+.bottom-line {
+    margin-top: 3vmin;
+    border-bottom: 0.3vmin solid var(--color-black);
+}

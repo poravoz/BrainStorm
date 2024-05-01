@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* .contacts-checkout-container {
+    padding: 5vmin 5vmin 0 5vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.h2-contacts-checkout {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-black);
+    font-size: var(--font-size-28);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+    border-bottom: 0.3vmin solid var(--color-black);
+    padding-bottom: 1.5vmin;
+} */
+.my-order-container {
+    padding: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vmin;
+    /* border-bottom: 0.4vmin solid var(--color-light-grey); */
+}
+.order-container {
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.order-bottom-line {
+    padding-bottom: 2vmin;
+    border-bottom: 0.4vmin solid var(--color-light-grey);
+}
+.img-details-order-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2vmin;
+}
+.image-order {
+    width: 25vmin;
+    height: 15vmin;
+    object-fit: cover;
+}
+.details-order-product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title-category-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmin;
+}
+.details-order-product-container p {
+    font-family: "Inter", sans-serif;
+    line-height: 1.4;
+    color: var(--color-dark-grey-text);
+}
+.p-my-order-category {
+    font-size: var(--font-size-16);
+    letter-spacing: 0.05vmin;
+}
+.p-my-order-title {
+    color: var(--color-black) !important;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-600);
+}
+.p-my-order-quantity {
+    font-size: var(--font-size-18);
+}
+.p-my-order-price {
+    font-family: "Inter", sans-serif;
+    line-height: 1.4;
+    color: var(--color-black);
+    font-weight: var(--font-weight-600);
+    font-size: var(--font-size-22);
+}
+.last-order-bottom-line {
+    /* margin-top: 3vmin; */
+    border-bottom: 0.3vmin solid var(--color-black);
+}

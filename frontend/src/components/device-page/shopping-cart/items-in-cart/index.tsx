@@ -1,5 +1,5 @@
 import React, { CSSProperties, useContext, useEffect } from 'react';
-import ItemShoppingCart from '../item-shopping-cart';
+import ItemShoppingCart from './item-shopping-cart';
 import "./style.css";
 import "../../../../styles/variables.css";
 import { useTranslation } from 'react-i18next';

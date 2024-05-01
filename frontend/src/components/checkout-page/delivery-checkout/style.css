@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.delivery-checkout-container {
+    padding: 5vmin 5vmin 0 5vmin;
+    /* border-radius: 1vmin; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.delivery-container-details {
+    margin-top: 3vmin;
+    padding: 3vmin 24vmin 3vmin 3vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vmin;
+    border: 0.1vmin solid var(--color-light-grey);
+    border-radius: 0.2vmin;
+    box-shadow: 0 0 1vmin rgba(0,0,0,0.5);;
+}
+.logo-name-delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vmin;
+}
+.name-delivery-checkout {
+    font-family: "Inter", sans-serif;
+    color: var(--color-dark-grey-text);
+    font-size: var(--font-size-18);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+    align-self: center; 
+}
+.logo-delivery {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.bottom-line {
+    margin-top: 3vmin;
+    border-bottom: 0.3vmin solid var(--color-black);
+}

@@ -121,5 +121,31 @@
     "device-page": {
         "description": "Опис",
         "recommendations": "Рекомендації"
+    },
+
+    "checout-page": {
+        "contacts": "Контактні дані",
+        "name": "Ім'я",
+        "lastname": "Прізвище",
+        "phone": "Телефон",
+
+        "delivery": "Доставка",
+        
+        "payment_method": "Оплата",
+        "card_number": "Номер карти",
+        "expiration_date": "Термін даї",
+        "cvc": "CVC",
+        
+        "order_summary": "Замовлення",
+        "orders": "Товари",
+        "shipping": "Доставка",
+        "total": "Всього",
+
+        "my_order": "Моє замовлення",
+        "quantity": "Кількість",
+        "price": "Ціна",
+
+        "place_order": "ОФОРМИТИ ЗАМОВЛЕННЯ"    
+
     }
 }

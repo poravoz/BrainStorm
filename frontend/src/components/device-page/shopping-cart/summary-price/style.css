@@ -134,6 +134,9 @@
     color: var(--color-white);
     font-size: var(--font-size-18);
     line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .button-checkout:hover {
     background-color: var(--color-black-dark);
