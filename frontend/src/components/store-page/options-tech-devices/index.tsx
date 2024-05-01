@@ -21,26 +21,17 @@ const OptionsTechDevices = () => {
             <input className="search__input" type="text" placeholder="Search"/>
           </div>
           <div className="rounded-container-with-icons-and-text">
-            <p className="options-description-text-style">{t("store-page.monitors")}</p>
+            <Link to="/category" state={{category: "monitors"}} className="options-description-text-style">{t("store-page.monitors")}</Link>
           </div>
           <div className="rounded-container-with-icons-and-text">
-            <p className="options-description-text-style">{t("store-page.keyboards")}</p>
+            <Link to="/category" state={{category: "keyboards"}} className="options-description-text-style">{t("store-page.keyboards")}</Link>
           </div>
           <div className="rounded-container-with-icons-and-text">
-            <p className="options-description-text-style">{t("store-page.mice")}</p>
+            <Link to="/category" state={{category: "mice"}} className="options-description-text-style">{t("store-page.mice")}</Link>
           </div>
-          {/* <div className="rounded-container-with-icons-and-text">
-            <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.microphones")}</p>
-          </div> */}
-          {/* <div className="rounded-container-with-icons-and-text">
-            <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.headphones")}</p>
-          </div> */}
           <div className="rounded-container-with-icons-and-text">
-            <p className="options-description-text-style">{t("store-page.mouse_pads")}</p>
+            <Link to="/category" state={{category: "mouse_pads"}} className="options-description-text-style">{t("store-page.mouse_pads")}</Link>
           </div>
-          {/* <div className="rounded-container-with-icons-and-text">
-            <p className="options-description-text-style" style={{color: theme.color_text_store}}>{t("store-page.usb_hubs")}</p>
-          </div> */}
         </div>
         <Link to='/cart' className="cart-btn offset">
           <ShoppingCartSvg width="4vmin" height='4vmin' color="white" className=''/>

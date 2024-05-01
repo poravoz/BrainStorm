@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MainPage from './components/main-page/main-page';
 import Store from './components/store-page/store';
+import ContentCategory from './components/store-page/content-category';
 import Device from './components/device-page/device';
 import Cart from './components/device-page/shopping-cart/cart';
 import Checkout from './components/checkout-page/checkout';
@@ -49,6 +50,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/category" element={<ContentCategory />} />
         <Route path="/device" element={<Device addToCart={addToCart} cartItems={cartItems} removeFromCart={removeFromCart}/>} />
         <Route path="/cart" element={<Cart addToCart={addToCart} cartItems={cartItems} updateCartItems={updateCartItems} removeFromCart={removeFromCart}/>} />
         <Route path="/checkout" element={<Checkout products={cartItems}/>} />
