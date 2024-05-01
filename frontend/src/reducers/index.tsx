@@ -1,10 +1,10 @@
-import { AppAction } from '../actions';
+import { CartAction } from '../actions';
 import { AppState, ShoppingCartLine } from '../types';
 import { ADD_PRODUCT, REMOVE_PRODUCT } from '../constants';
 
 const calculatePrice = (cart: ShoppingCartLine[]) => cart.reduce((total, item) => total + item.product.price * item.count, 0);
 
-export default function rootReducer(state: AppState, action: AppAction): AppState {
+export default function ShoppingCartReducer(state: AppState, action: CartAction): AppState {
   const { shoppingCart } = state;
   const { payload, type } = action;
 

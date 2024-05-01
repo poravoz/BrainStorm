@@ -2,30 +2,20 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { connect, useDispatch, useSelector } from 'react-redux'
 import './style.css';
-import { addProduct, remProduct, selectProduct } from '../store-page-slice';
+import { addProductWL, remProductWL, selectProductWL } from '../../../slices/wishlist-slice';
+import { addProductSC, remProductSC, selectProductSC } from '../../../slices/shoping-cart-slice';
 import { Product } from '../entities/entities';
-import { useAppDispatch } from '../../../app/hooks';
-import keyboards from '../../../data/keyboards';
-import monitors from '../../../data/monitors';
-import mice from '../../../data/mice';
-import mousePads from '../../../data/mouse_pads';
+import { useAppDispatch, useAppSelector } from '../../../app/hooks';
 import popular_devices from '../../../data/popular-devices';
 
 const StoreSlider = () => {
     const [t] = useTranslation("global");
 
-    /*const newsData = [
-        monitors[0],
-        keyboards[0],
-        mice[0],
-        mousePads[0],
-        
-    ]*/
     const newsData = popular_devices
 
     const [counter, setCounter] = useState<number>(0);
 
-    let wishListPtoducts = useSelector(selectProduct)
+    let wishListPtoducts = useAppSelector(selectProductWL)
     const dispatch = useAppDispatch();
 
     useEffect(() => {
@@ -63,10 +53,10 @@ const StoreSlider = () => {
         const inWishList = isInWishList(product, wishListPtoducts); 
 
         if (!inWishList) {
-            dispatch(addProduct(product));
+            dispatch(addProductWL(product));
         }
         else {
-            dispatch(remProduct(product));
+            dispatch(remProductWL(product));
         }
     }
 

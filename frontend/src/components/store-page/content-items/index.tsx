@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './style.css';
 import { useTranslation } from 'react-i18next';
 import Arrow from './icons/arrow';
-import { addProduct, remProduct, selectProduct } from '../store-page-slice';
+import { addProductWL, remProductWL, selectProductWL } from '../../../slices/wishlist-slice';
 import { Product } from '../entities/entities';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from '../../../app/hooks';
@@ -17,7 +17,7 @@ const ContentItems: React.FC<Props> = ({ items }) => {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
     const [startIndex, setStartIndex] = useState(0);
 
-    let wishListPtoducts = useSelector(selectProduct)
+    let wishListPtoducts = useSelector(selectProductWL)
     const dispatch = useAppDispatch();
 
     const handleMouseEnter = (id: number) => {
@@ -40,10 +40,10 @@ const ContentItems: React.FC<Props> = ({ items }) => {
         const inWishList = isInWishList(product, wishListPtoducts); 
 
         if (!inWishList) {
-            dispatch(addProduct(product));
+            dispatch(addProductWL(product));
         }
         else {
-            dispatch(remProduct(product));
+            dispatch(remProductWL(product));
         }
     }
 

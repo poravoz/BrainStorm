@@ -18,26 +18,18 @@ interface ItemProp {
   count: number;
 }
 
-const WrapperCart: React.FC<{ cartItems: ItemProp[]; addToCart: (product: ItemProp) => void; removeFromCart: (productId: number, productCategory: string) => void; updateCartItems: (product: ItemProp[]) => void }> = ({ removeFromCart, updateCartItems, cartItems, addToCart }) => {
+const WrapperCart = () => {
   const [t] = useTranslation("global");
   const [{ theme }] = useContext(ThemeContext);
-
+  
   return (
     <div className="wrapper-sc">
       <div className='wrapper-shopping-cart'>
         <div className='items-in-cart'>
-          <ItemsInCart 
-            products={cartItems}
-            addToCart={addToCart}
-            updateCartItems={updateCartItems}
-            removeFromCart={removeFromCart}
-          />
+          <ItemsInCart/>
         </div>
         <div className="summary-price">
-          <SummaryPrice 
-            products={cartItems}
-            
-          />
+          <SummaryPrice/>
         </div>
       </div>
     </div>

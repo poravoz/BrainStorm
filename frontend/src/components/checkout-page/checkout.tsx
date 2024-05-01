@@ -19,7 +19,7 @@ interface ItemProp {
 }
 
 // const Cart: React.FC<{ cartItems: ItemProp[]; addToCart: (product: ItemProp) => void; removeFromCart: (productId: number, productCategory: string) => void; updateCartItems: (product: ItemProp[]) => void }> = ({ removeFromCart, updateCartItems, cartItems, addToCart }) => {
-const Checkout: React.FC<{ products: ItemProp[] }> = ({ products }) => {
+const Checkout = () => {
   let location = useLocation();
   const containerStyle: CSSProperties = {
         margin: '0 10vw'

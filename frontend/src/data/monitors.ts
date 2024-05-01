@@ -8,7 +8,7 @@ const monitors = [
         price: "$350",
         popularity: 4,
         images: ["assets/monitor1.jpg", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
+        
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const monitors = [
         price: "$300",
         popularity: 4.5,
         images: ["assets/monitor2.jpg", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
+        
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const monitors = [
         price: "$250",
         popularity: 3.5,
         images: ["assets/monitor3.jpg", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
+        
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const monitors = [
         price: "$200",
         popularity: 3.5,
         images: ["assets/monitor4.jpeg", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
+        
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ const monitors = [
         price: "$200",
         popularity: 4,
         images: ["assets/monitor5.webp", 'assets/white.png', 'assets/black.jpg','assets/white.png', 'assets/black.jpg'],
-        count: 1,
+        
     },
 ]
 

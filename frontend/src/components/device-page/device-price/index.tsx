@@ -7,6 +7,8 @@ import Mouse from './icons/mouse';
 import MousePad from './icons/mouse_pad';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../../contexts/theme';
+import { useAppDispatch, useAppSelector } from '../../../app/hooks';
+import { addProductSC, remProductSC, selectProductSC } from '../../../slices/shoping-cart-slice';
 
 interface ItemProp {
   id: number;
@@ -20,19 +22,23 @@ interface ItemProp {
   count: number;
 }
 
-const DevicePrice: React.FC<{ cartItems: ItemProp[]; product: ItemProp; addToCart: (product: ItemProp) => void; removeFromCart: (productId: number, productCategory: string) => void }> = ({ removeFromCart, cartItems, product, addToCart }) => {
+const DevicePrice: React.FC<{ product: ItemProp; }> = ({ product }) => {
   const [t] = useTranslation("global");
 
   const [{ theme }] = useContext(ThemeContext);
   
   const [icon, setIcon] = useState<React.ReactNode | null>(null);
 
+  let cartProducts = useAppSelector(selectProductSC)
+  const dispatch = useAppDispatch();
+
+
   const handleAddToCart = () => {
-    addToCart(product);
+    dispatch(addProductSC(product));
   };
 
   const handleRemoveFromCart = () => {
-    removeFromCart(product.id, product.category);
+    dispatch(remProductSC(product));
   };
 
   useEffect(() => {
@@ -64,7 +70,7 @@ const DevicePrice: React.FC<{ cartItems: ItemProp[]; product: ItemProp; addToCar
     fetchIcon();
   }, [product.category]);
 
-  const isInCart = cartItems.some(item => item.id === product.id && item.category === product.category);
+  const isInCart = cartProducts.some(item => item.product.id === product.id && item.product.category === product.category);
 
   return (
     <div className="device-price">

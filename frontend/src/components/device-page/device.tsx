@@ -22,7 +22,7 @@ interface ItemProp {
   count: number;
 }
 
-const Device: React.FC<{ cartItems: ItemProp[]; addToCart: (product: ItemProp) => void; removeFromCart: (productId: number, productCategory: string) => void }> = ({ removeFromCart, cartItems, addToCart }) => {
+const Device = () => {
   let location = useLocation();
   const containerStyle: CSSProperties = {
     margin: '0 10vw'
@@ -40,11 +40,8 @@ const Device: React.FC<{ cartItems: ItemProp[]; addToCart: (product: ItemProp) =
         <NavigationBar />
         <OptionsTechDevices />
         <DevicePrice 
-          cartItems={cartItems}
           product={location.state}
-          addToCart={addToCart}
-          removeFromCart={removeFromCart}
-        />
+          />
         <DeviceDetails 
           id={location.state.id} 
           category={location.state.category} 

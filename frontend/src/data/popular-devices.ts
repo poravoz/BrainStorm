@@ -8,7 +8,6 @@ const popular_devices = [
         price: "$300",
         popularity: 4.5,
         images: ["assets/popular-monitors.jpg"],
-        count: 1,
     },
     {
         id: 2,
@@ -19,7 +18,6 @@ const popular_devices = [
         price: "$100",
         popularity: 4,
         images: ["assets/popular-keyboard.jpg"],
-        count: 1,
     },
     {
         id: 3,
@@ -30,7 +28,6 @@ const popular_devices = [
         price: "$50",
         popularity: 5,
         images: ["assets/popular-mouse.jpg"],
-        count: 1,
     },
     {
         id: 4,
@@ -41,7 +38,6 @@ const popular_devices = [
         price: "$30",
         popularity: 3.5,
         images: ["assets/popular-mouse-pads.jpg"],
-        count: 1,
     },
 ]
 

@@ -6,19 +6,7 @@ import Footer from "../../main-page/footer/footet";
 import "../../../styles/variables.css";
 import { ThemeContext } from '../../../contexts/theme';
 
-interface ItemProp {
-  id: number;
-  category: string;
-  title: string;
-  old_price: string;
-  discount: string;
-  price: string;
-  popularity: number;
-  images: string[];
-  count: number;
-}
-
-const Cart: React.FC<{ cartItems: ItemProp[]; addToCart: (product: ItemProp) => void; removeFromCart: (productId: number, productCategory: string) => void; updateCartItems: (product: ItemProp[]) => void }> = ({ removeFromCart, updateCartItems, cartItems, addToCart }) => {
+const Cart = () => {
   let location = useLocation();
   const containerStyle: CSSProperties = {
         margin: '0 10vw'
@@ -33,7 +21,7 @@ const Cart: React.FC<{ cartItems: ItemProp[]; addToCart: (product: ItemProp) => 
   return (
     <div style={{backgroundColor : theme.backgroundColor_store, position: `relative`, height: `100vh`}}>
         <NavigationBar />
-        <WrapperCart cartItems={cartItems} addToCart={addToCart} updateCartItems={updateCartItems} removeFromCart={removeFromCart}/>
+        <WrapperCart/>
 
         <Footer />
     </div>
