@@ -3,6 +3,7 @@ import MainPage from './components/main-page/main-page';
 import Store from './components/store-page/store';
 import Device from './components/device-page/device';
 import Cart from './components/device-page/shopping-cart/cart';
+import Checkout from './components/checkout-page/checkout';
 import {Routes, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './app/store';
@@ -19,6 +20,12 @@ interface ItemProp {
   popularity: number;
   images: string[];
   count: number;
+}
+
+interface ShippingOption {
+  name: string;
+  price: number;
+  value: string;
 }
 
 function App() {
@@ -44,6 +51,7 @@ function App() {
         <Route path="/store" element={<Store />} />
         <Route path="/device" element={<Device addToCart={addToCart} cartItems={cartItems} removeFromCart={removeFromCart}/>} />
         <Route path="/cart" element={<Cart addToCart={addToCart} cartItems={cartItems} updateCartItems={updateCartItems} removeFromCart={removeFromCart}/>} />
+        <Route path="/checkout" element={<Checkout products={cartItems}/>} />
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/login" element={<SignInPage />} />
       </Routes>

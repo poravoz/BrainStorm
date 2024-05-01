@@ -121,5 +121,31 @@
     "device-page": {
         "description": "Description",
         "recommendations": "Recommendations"
+    },
+
+    "checkout-page": {
+        "contacts": "Contacts",
+        "name": "Name",
+        "lastname": "LastName",
+        "phone": "Phone",
+
+        "delivery": "Delivery",
+        
+        "payment_method": "Payment Method",
+        "card_number": "Card Number",
+        "expiration_date": "Expiration Date",
+        "cvc": "CVC",
+        
+        "order_summary": "Order Summary",
+        "orders": "Orders",
+        "shipping": "Shipping",
+        "total": "Total",
+
+        "my_order": "My Order",
+        "quantity": "Quantity",
+        "price": "Price",
+
+        "place_order": "PLACE ORDER"    
+
     }
 }

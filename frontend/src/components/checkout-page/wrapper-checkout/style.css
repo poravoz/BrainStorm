@@ -1,0 +1,30 @@
+.wrapper-checkout-container {
+    padding-top: 12vmin;
+    background-color: var(--color-dark-background);
+    /* height: 100%; */
+}
+.wrapper-checkout {
+    background-color: var(--color-white-text);
+    width: 90vw;
+    height: 95%;
+    margin: 0 auto;
+    border-radius: 1vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.details-checkout {
+    width: 55%;
+    height: 100%;
+    background-color: transparent;
+}
+.place-order-checkout {
+    position: relative;
+    right: 0;
+    display: flex;
+    width: 45%;
+    height: 100%;
+    /* background-color: var(--color-light-grey); */
+    border-top-right-radius: 1vmin;
+    border-bottom-right-radius: 1vmin;
+}

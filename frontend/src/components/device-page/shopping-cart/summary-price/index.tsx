@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import "./style.css";
 import "../../../../styles/variables.css";
 import ArrowCode from './icons/arrow-code';
@@ -27,7 +28,13 @@ const SummaryPrice: React.FC<{ products: ItemProp[] }> = ({ products }) => {
   const [t] = useTranslation("global");
   const [{ theme }] = useContext(ThemeContext);
 
-  const [selectedShipping, setSelectedShipping] = useState('');
+  const shippingOptions: ShippingOption[] = [
+    { name: "Nova Poshta", price: 10.00, value: "option1" },
+    { name: "UkrPoshta", price: 3.00, value: "option2" },
+    { name: "Courier", price: 25.00, value: "option3" },
+  ];
+
+  const [selectedShipping, setSelectedShipping] = useState(shippingOptions[0].value);
   const itemCountText = products.length <= 1 ? `ITEM ${products.length}` : `ITEMS ${products.length}`;
 
   const total = products.reduce((acc, product) => {
@@ -35,12 +42,6 @@ const SummaryPrice: React.FC<{ products: ItemProp[] }> = ({ products }) => {
     itemPrice = parseFloat(product.price.substr(1).replace(",", "."));
     return acc + itemPrice * product.count;
   }, 0);
-
-  const shippingOptions: ShippingOption[] = [
-    { name: "Nova Poshta", price: 10.00, value: "option1" },
-    { name: "UkrPoshta", price: 3.00, value: "option2" },
-    { name: "Courier", price: 25.00, value: "option3" },
-  ];
 
   const selectedOption = shippingOptions.find(option => option.value === selectedShipping);
   const shippingPrice = selectedOption ? selectedOption.price : shippingOptions[0].price;
@@ -81,7 +82,13 @@ const SummaryPrice: React.FC<{ products: ItemProp[] }> = ({ products }) => {
         <p className="count-price-items-summary-sc">{`$${totalPrice.toFixed(2)}`}</p>
       </div>
       <div className='container-button-checkout'>
-          <button className='button-checkout'>{t("store-page.checkout")}</button>
+          <Link 
+            to="/checkout"
+            className='button-checkout'
+            state={{products, selectedShippingOption: selectedOption, totalOrders: total, totalPrice: totalPrice}}
+          >
+              {t("store-page.checkout")}
+          </Link>
       </div>
     </div>
     

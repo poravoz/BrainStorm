@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.order-summary-checkout-container {
+    padding: 5vmin 5vmin 0 5vmin;
+    /* border-radius: 1vmin; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.order-summary-container-details {
+    /* margin-top: 3vmin; */
+    padding: 3vmin 1vmin 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vmin;
+    /* border: 0.1vmin solid var(--color-light-grey); */
+    /* border-radius: 0.2vmin; */
+    /* box-shadow: 0 0 1vmin rgba(0,0,0,0.5);; */
+}
+.orders-shipping-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vmin;
+    padding-bottom: 1.5vmin;
+    border-bottom: 0.4vmin solid var(--color-light-grey);
+}
+.orders-shipping-summary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vmin;
+}
+.orders-shipping-summary p{
+    font-family: "Inter", sans-serif;
+    color: var(--color-dark-grey-text);
+    font-size: var(--font-size-18);
+    line-height: 1.1;
+    margin-bottom: 1vmin;
+}
+.p-orders-shipping-summary-total {
+    color: var(--color-black) !important;
+    font-weight: var(--font-weight-700);
+}
+.last-bottom-line {
+    margin: 2vmin 0 3vmin;
+    border-bottom: 0.3vmin solid var(--color-black);
+}

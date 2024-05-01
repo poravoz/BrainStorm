@@ -1,9 +1,9 @@
 import React, { CSSProperties, useContext, useEffect } from 'react';
 import Delete from './icons/delete';
 import "./style.css";
-import "../../../../styles/variables.css";
+import "../../../../../styles/variables.css";
 import { useTranslation } from 'react-i18next';
-import { ThemeContext } from '../../../../contexts/theme';
+import { ThemeContext } from '../../../../../contexts/theme';
 
 interface ItemProp {
   id: number;

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../../fonts/Inter.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.place-order-container {
+    padding-top: 3vmin;
+    height: 100%;
+    width: 90%;
+}
+.last-total-summary-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vmin 8vmin 0 8vmin;
+}
+.h2-total-place-order {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-black);
+    font-size: var(--font-size-28);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+} 
+.last-total-bottom-line {
+    margin: 3vmin 5vmin 0;
+    border-bottom: 0.3vmin solid var(--color-black);
+}
+.container-button-my-order {
+    margin: 4vmin 10vmin;
+    display: flex;
+    align-items: center;
+}
+.button-my-order {
+    width: 100%;
+    height: 6vmin;
+    background-color: var(--color-black);
+    font-family: "Inter", sans-serif;
+    color: var(--color-white);
+    font-size: var(--font-size-18);
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-my-order:hover {
+    background-color: var(--color-black-dark);
+    transition: 0.5s;
+}
+.terms-and-conditions-container {
+    padding: 0 5vmin;
+}
+.terms-and-conditions-container p{
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: var(--color-light-grey-text);
+    font-size: var(--font-size-14);
+    line-height: 1.4;
+    letter-spacing: 0.1vmin;
+}
