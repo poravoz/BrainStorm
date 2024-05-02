@@ -18,7 +18,10 @@ const OptionsTechDevices = () => {
       <div className="buttons-options">
         <div className="flex-row-with-gap">
           <div className="sb-example-3">
-            <input className="search__input" type="text" placeholder="Search"/>
+          {/*<input className="search__input" type="text" placeholder="Search"/> */}
+          </div>
+          <div className="rounded-container-with-icons-and-text">
+            <Link to="/store" className="options-description-text-style">{t("store-page.all_devices")}</Link>
           </div>
           <div className="rounded-container-with-icons-and-text">
             <Link to="/category" state={{category: "monitors"}} className="options-description-text-style">{t("store-page.monitors")}</Link>

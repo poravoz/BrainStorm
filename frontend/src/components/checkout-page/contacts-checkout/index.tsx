@@ -28,8 +28,6 @@ const ContactsCheckout = () => {
       <form className="container-details">
         <label className='label-form-checkout' htmlFor="name">{t("checkout-page.name")}</label>
         <input className='input-form-checkout' type="text" placeholder='Enter Name'/>
-        <label className='label-form-checkout' htmlFor="lastname">{t("checkout-page.lastname")}</label>
-        <input className='input-form-checkout' type="text" placeholder='Enter Lastname'/>
         <label className='label-form-checkout' htmlFor="phone">{t("checkout-page.phone")}</label>
         <input className='input-form-checkout' type="text" placeholder='Enter Phone'/>
         <label className='label-form-checkout' htmlFor="phone">E-mail</label>

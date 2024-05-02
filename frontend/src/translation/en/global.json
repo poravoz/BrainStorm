@@ -91,6 +91,7 @@
     },
 
     "store-page": {
+        "all_devices": "All",
         "monitors": "Monitors",
         "keyboards": "Keyboards",
         "mice": "Mice",
