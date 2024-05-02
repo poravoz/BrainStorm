@@ -16,25 +16,6 @@ const NavigationBar = () => {
   const top = () => { window.scrollTo(0, 0) }
   const [selectedLanguage, setSelectedLanguage] = useState("en");
 
-  const scrollToPosition = (position) => {
-    window.scrollTo(0, position);
-  }
-  const scrollToOurTeam = () => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth > 1470) {
-      scrollToPosition(1470);
-    }
-    if (screenWidth <= 1470) {
-      scrollToPosition(1270);
-    }
-    if (screenWidth <= 1250) {
-      scrollToPosition(1170);
-    }
-    if (screenWidth <= 1200) {
-      scrollToPosition(1420);
-    }
-  };
-
   const handleToggleLanguage = (lang) => {
     setSelectedLanguage(lang);
     localStorage.setItem("language", lang);
@@ -83,9 +64,6 @@ const NavigationBar = () => {
               <option value="en">Eng</option>
               <option value="ua">Укр</option>
             </select>
-          </li>
-          <li>
-            <a onClick={scrollToOurTeam} className={style.link_our_team}> {t("navigation.our_team")} </a>
           </li>
           <li>
             <Link to="/store"> {t("navigation.store")} </Link>

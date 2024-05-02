@@ -75,9 +75,6 @@ const ContentItems: React.FC<Props> = ({ items }) => {
                                     <p className="text-title">{currentItem.title}</p>
                                     
                                 </Link>
-                                {hoveredId === currentItem.id && <div className="icon-add-to-wishlist-for-item" onClick={(e) => handleAddToWishList(e, item)}>
-                                    {isInWishList(item, wishListPtoducts) ? "-" : "+"}
-                                </div>}
                                 <div className="cardFooter">
                                     <span className="discount">-{currentItem.discount}</span>
                                     <div className="priceContainer">

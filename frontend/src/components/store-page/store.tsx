@@ -1,5 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit"
-import React, { CSSProperties, useContext } from 'react';
+import { CSSProperties, useContext } from 'react';
 import NavigationBar from "../main-page/navigation/navigation";
 import OptionsTechDevices from './options-tech-devices';
 import PopularDevices from './popular-devices';
@@ -22,9 +21,9 @@ const Store = () => {
       <div style={containerStyle}>
       <NavigationBar />
       <OptionsTechDevices />
-      <PopularDevices />
+      {/* <PopularDevices /> */}
       <ContentDevices />
-      <NewReleases />
+      {/* <NewReleases /> */}
       </div>
       <Footer />
     </div>
