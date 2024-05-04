@@ -15,7 +15,6 @@ function MainPage() {
             <NavigationBar /> 
             <Header />
             <AboutUs />
-            
             <Transition />
             <OurTeam />
             <ContactUs />

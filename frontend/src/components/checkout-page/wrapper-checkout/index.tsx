@@ -31,7 +31,7 @@ const WrapperCheckout = () => {
           <DetailsCheckout />
         </div>
         <div className="place-order-checkout">
-          <PlaceOrder />
+         <PlaceOrder /> 
         </div>
       </div>
     </div>

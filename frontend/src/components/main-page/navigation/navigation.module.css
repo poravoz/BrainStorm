@@ -203,26 +203,6 @@ a {
 
 }
 
-@media (max-width: 900px) { 
-  .icon_dark_theme {
-    position: relative;
-    top: 40px;
-  }
-  
-  .select_language {
-    position: relative;
-    top: 40px;
-  }
-  
-  .link_our_team {
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-  }
-
-  
-}
-
 @media (max-width: 230px) { 
   .menu { 
     height: 100%;

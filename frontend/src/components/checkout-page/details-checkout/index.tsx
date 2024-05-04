@@ -30,7 +30,7 @@ const DetailsCheckout = () => {
     <div className="details-checkout-container">
       <ContactsCheckout />
       <DeliveryCheckout />
-      <PaymentCheckout />
+      <PaymentCheckout /> 
       <OrderSummary />
     </div>
   )
