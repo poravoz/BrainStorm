@@ -52,9 +52,9 @@ const NavigationBar = () => {
         setIsLoggedIn(false);
 
         try {
-            await axios.post('http://localhost:5000/authentication/log-out', null, {
-            });
-            navigate(-1);
+            await axios.post('http://localhost:5000/authentication/log-out', {
+            },{ withCredentials: true });
+            navigate("/");
         } catch (error) {
             console.error('Logout failed:', error);
         }

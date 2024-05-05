@@ -8,18 +8,6 @@ import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../../contexts/theme';
 import axios from 'axios';
 
-interface ItemProp {
-    id: number;
-    category: string;
-    title: string;
-    old_price: string;
-    discount: string;
-    price: string;
-    popularity: number;
-    images: string[];
-    count: number;
-}
-
 const PlaceOrder = () => {
     const [t] = useTranslation("global");
     const [{ theme }] = useContext(ThemeContext);
@@ -27,52 +15,46 @@ const PlaceOrder = () => {
     const location = useLocation();
 
     const handlePlaceOrder = async () => {
-        const cartProducts: ItemProp[] = JSON.parse(localStorage.getItem('cartProducts') || '[]');
-        const selectedShippingOption: { name: string; phone: string } = JSON.parse(localStorage.getItem('selectedShippingOption') || '{}');
-
-        const productNames = cartProducts.map((item: ItemProp) => item.title).join(', ');
-        const delivery = selectedShippingOption.name;
-        const phone = selectedShippingOption.phone;
-
+        const productName = localStorage.getItem('productTitle') || ''; // Отримання назви товару з localStorage
+        const deliveryMethod = localStorage.getItem('deliveryMethod') || '';
+        const phoneNumber = localStorage.getItem('phoneNumber') || '';
+    
         const orderData = {
-            product_name: productNames,
-            phone: phone,
-            delivery: delivery
+          product_name: productName,
+          phone: phoneNumber,
+          delivery: deliveryMethod
         };
-
+    
         try {
-            const response = await axios.post('http://localhost:5000/products/', orderData);
-            console.log('Order placed successfully:', response.data);
-            setIsOrderPlaced(true);
+          const response = await axios.post('http://localhost:5000/products/', orderData, { withCredentials: true });
+          console.log('Order placed successfully:', response.data);
+          localStorage.removeItem('productTitle'); // Видалення назви товару з localStorage після успішного замовлення
+          localStorage.removeItem('deliveryMethod');
+          localStorage.removeItem('phoneNumber');
+          setIsOrderPlaced(true);
         } catch (error) {
-            console.error('Error placing order:', error);
+          console.error('Error placing order:', error);
         }
     };
 
     return (
         <div className="place-order-container">
-            <MyOrderCheckout />
-            <div className="last-total-summary-container">
-                <h2 className="h2-total-place-order">{t("checkout-page.total")}</h2>
-                <p className="h2-total-place-order">{`$${(location.state.totalPrice.toFixed(2))}`}</p>
-            </div>
-            <div className='last-total-bottom-line'></div>
-            <div className='container-button-my-order'>
-                <button 
-                    className='button-my-order'
-                    onClick={handlePlaceOrder}
-                >
-                    {t("checkout-page.place_order")}
-                </button>
-            </div>
-            <div className="terms-and-conditions-container">
-                <p>Target’s terms and conditions page discusses its acceptable use policy across its website as well as mobile sites, services, applications, platforms, and tools that the U.S. retailer operates. 
-                That’s a massive amount of businesses and operating units to cover, but it does its job very well.<br></br><br></br>
-                The page is super detailed, but we like the jump links at the top for users to be able to navigate to a specific section. Other than that, it does the job as intended — 
-                protecting Target from a legal perspective, while informing users of what they can or cannot do on the platform.</p>
-            </div>
+          <MyOrderCheckout />
+          <div className="last-total-summary-container">
+            <h2 className="h2-total-place-order">Total</h2>
+            <p className="h2-total-place-order">{`$${(location.state?.totalPrice || 0).toFixed(2)}`}</p>
+          </div>
+          <div className='last-total-bottom-line'></div>
+          <div className='container-button-my-order'>
+            <button
+              className='button-my-order'
+              onClick={handlePlaceOrder}
+            >
+              Place Order
+            </button>
+          </div>
         </div>
-    )
-}
+    );
+};
 
 export default PlaceOrder;
