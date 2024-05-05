@@ -25,14 +25,13 @@ export default function SignUp() {
                 name,
                 password
             });
+            localStorage.setItem('username', name);
             window.location.href = 'http://localhost:3000/login';
         } catch (error) {
             console.error('Registration failed:', error);
             console.log('Request data:', { email, name, password });
         }
     };
-
-
     return (
         <div className="container_sign_up" style={{backgroundColor: theme.backgroundColor_sign_up_sign_in}}>
             <form className="form_sign_up" style={{backgroundColor: theme.backgroundColor_form_sign_up_sign_in}} onSubmit={handleSignUp}>

@@ -15,12 +15,12 @@ const PlaceOrder = () => {
     const location = useLocation();
 
     const handlePlaceOrder = async () => {
-        const productName = localStorage.getItem('productTitle') || ''; // Отримання назви товару з localStorage
+        const productTitles = JSON.parse(localStorage.getItem('productTitles') || '[]');
         const deliveryMethod = localStorage.getItem('deliveryMethod') || '';
         const phoneNumber = localStorage.getItem('phoneNumber') || '';
     
         const orderData = {
-          product_name: productName,
+          product_name: productTitles,
           phone: phoneNumber,
           delivery: deliveryMethod
         };
@@ -28,7 +28,7 @@ const PlaceOrder = () => {
         try {
           const response = await axios.post('http://localhost:5000/products/', orderData, { withCredentials: true });
           console.log('Order placed successfully:', response.data);
-          localStorage.removeItem('productTitle'); // Видалення назви товару з localStorage після успішного замовлення
+          localStorage.removeItem('productTitles'); 
           localStorage.removeItem('deliveryMethod');
           localStorage.removeItem('phoneNumber');
           setIsOrderPlaced(true);
@@ -46,12 +46,12 @@ const PlaceOrder = () => {
           </div>
           <div className='last-total-bottom-line'></div>
           <div className='container-button-my-order'>
-            <button
+            <Link to={"/store"}
               className='button-my-order'
               onClick={handlePlaceOrder}
             >
               Place Order
-            </button>
+            </Link>
           </div>
         </div>
     );

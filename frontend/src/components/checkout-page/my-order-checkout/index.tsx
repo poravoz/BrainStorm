@@ -14,17 +14,22 @@ const MyOrderCheckout = () => {
 
   let cartProducts = useAppSelector(selectProductSC);
 
-  const saveProductTitleToLocal = (title: string) => {
-    console.log('Saving product title to localStorage:', title);
-    localStorage.setItem('productTitle', title); 
+  const saveProductTitlesToLocal = (titles: string[]) => {
+    console.log('Saving product titles to localStorage:', titles);
+    const titlesString = JSON.stringify(titles.join(', '));
+    localStorage.setItem('productTitles', titlesString);
   };
 
   useEffect(() => {
     if (cartProducts.length > 0) {
-      const firstProductTitle = cartProducts[0].product.title;
-      saveProductTitleToLocal(firstProductTitle);
+      const titles = cartProducts.map(item => item.product.title);
+      saveProductTitlesToLocal(titles);
     }
-  }, [cartProducts]); 
+  }, [cartProducts]);
+
+  const handleTitleClick = (title: string) => {
+    console.log('Clicked title:', title);
+  };
 
   return (
     <div className="my-order-container">
@@ -36,10 +41,11 @@ const MyOrderCheckout = () => {
               <div className="title-category-container">
                 <p className="p-my-order-category">{item.product.category}</p>
                 <p className="p-my-order-title">
-                  <span onClick={() => saveProductTitleToLocal(item.product.title)}>{item.product.title}</span>
+                  {/* Pass item.product.title to handleTitleClick */}
+                  <span onClick={() => handleTitleClick(item.product.title)}>{item.product.title}</span>
                 </p>
               </div>
-              <p className="p-my-order-quantity">{`${t("checkout-page.quantity")}: ${item.count}`}</p>
+              <p className="p-my-order-quantity">{`${t('checkout-page.quantity')}: ${item.count}`}</p>
             </div>
           </div>
           <p className="p-my-order-price">{`$${(parseFloat(item.product.price.replace('$', '')) * item.count).toFixed(2)}`}</p>
@@ -48,5 +54,6 @@ const MyOrderCheckout = () => {
     </div>
   );
 };
+
 
 export default MyOrderCheckout;

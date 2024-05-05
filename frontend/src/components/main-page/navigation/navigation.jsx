@@ -17,6 +17,7 @@ const NavigationBar = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("en");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
+    const [username, setUsername] = useState('');
 
     const handleToggleLanguage = (lang) => {
         setSelectedLanguage(lang);
@@ -38,6 +39,13 @@ const NavigationBar = () => {
     useEffect(() => {
         const userLoggedIn = localStorage.getItem("isLoggedIn") === "true";
         setIsLoggedIn(userLoggedIn);
+    }, []);
+
+    useEffect(() => {
+        const savedUsername = localStorage.getItem('username');
+        if (savedUsername) {
+            setUsername(savedUsername);
+        }
     }, []);
 
     const handleToggleTheme = () => {
@@ -90,6 +98,7 @@ const NavigationBar = () => {
                     </li>
                     {isLoggedIn ? (
                         <>
+                            <p>Hello, {username}!</p>
                             <li>
                                 <button className={style.button_register}
                                         style={{ backgroundColor: theme.backgroundColor_header_button, color: theme.color_header_button}} 
