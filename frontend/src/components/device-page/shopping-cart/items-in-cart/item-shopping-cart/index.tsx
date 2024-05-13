@@ -30,7 +30,7 @@ const ItemShoppingCart = () => {
   return (
     <>
       {cartProducts.map((item, index) => (
-        <div className="item-shopping-cart">
+        <div className="item-shopping-cart" key={item.product.id}>
           <img src={item.product.images[0]} className='image-item-sc' alt={item.product.id.toString()} />
           <div key={index} className='details-item-sc'>
             <p className='category-item-sc'>{item.product.category}</p>
@@ -45,7 +45,6 @@ const ItemShoppingCart = () => {
           <Delete width='4vmin' height='4vmin' className='delete-item-from-cart-cs' onClick={() => removeFromCart(item.product)}/>
         </div>
       ))}
-      
     </>
   )
 }
