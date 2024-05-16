@@ -12,7 +12,9 @@ import { ThemeContext } from '../../contexts/theme';
 
 const Store = () => {
   const containerStyle: CSSProperties = {
-    margin: '0 10vw'
+    margin: '0 10vw',
+    height: '100%',
+    flex: '1 0 auto',
   };
 
   const [{ theme }] = useContext(ThemeContext);
@@ -26,7 +28,7 @@ const Store = () => {
       <ContentDevices />
       <NewReleases />
       </div>
-      <Footer />
+      <Footer/>
     </div>
 
   )

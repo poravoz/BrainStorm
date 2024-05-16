@@ -1,15 +1,28 @@
-import React, {useState, useContext } from 'react';
-import { Link } from "react-router-dom";
+import React, { useContext } from 'react';
+import { Link, useLocation, useNavigate,  } from "react-router-dom";
 import "./style.css";
 import ShoppingCartSvg from './icons/shopping-cart-svg';
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../../../contexts/theme';
+import { useAppDispatch } from '../../../app/hooks';
+import { searchProductS } from '../../../slices/search-slice';
 
 const OptionsTechDevices = () => {
   const [t] = useTranslation("global");
-
   const [{ theme }] = useContext(ThemeContext);
+  const location = useLocation();
+  const navigate = useNavigate();
   
+  const dispatch = useAppDispatch();
+  
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const searchTerm = e.target.value;
+    dispatch(searchProductS(searchTerm));
+
+    navigate('/category', {
+      state: { category: "search", searchTerm }
+    });
+  };
 
   return (
     <div className="primary-content-container">
@@ -18,7 +31,7 @@ const OptionsTechDevices = () => {
       <div className="buttons-options">
         <div className="flex-row-with-gap">
           <div className="sb-example-3">
-            <input className="search__input" type="text" placeholder="Search"/>
+            <input className="search__input" type="text" placeholder="Search" onChange={handleInputChange} />
           </div>
           <div className="rounded-container-with-icons-and-text">
             <Link to="/category" state={{category: "monitors"}} className="options-description-text-style">{t("store-page.monitors")}</Link>
