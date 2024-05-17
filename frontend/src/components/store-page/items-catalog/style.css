@@ -4,16 +4,6 @@
     font-weight: normal;
     font-style: normal;
 }
-main {
-  padding-bottom: 100px;
-  /*Высота футера*/
-}
-footer {
-  margin-top: -100px;
-  /*Минус Высота футера*/
-  height: 100px;
-  /*Высота футера*/
-}
 .arrow-left {
     position: absolute;
     left: 0;
