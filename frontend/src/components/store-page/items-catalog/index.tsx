@@ -48,9 +48,9 @@ const ItemsCatalog: React.FC<Props> = ({ items }) => {
                     <p className="no-items-message">Товарів не знайдено</p>
                 ) : (
                     <ul className="saleslist">
-                        {items.map((item) => (
+                        {items.map((item, key) => (
                             <li
-                                key={item.id}
+                                key={key}
                                 className="card"
                                 onMouseEnter={() => handleMouseEnter(item.title)}
                                 onMouseLeave={handleMouseLeave}
