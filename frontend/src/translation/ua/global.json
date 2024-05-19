@@ -91,6 +91,7 @@
     },
 
     "store-page": {
+        "all_devices": "Усі",
         "monitors": "Монітори",
         "keyboards": "Клавіатури",
         "mice": "Мишки",

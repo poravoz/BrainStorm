@@ -4,9 +4,9 @@
 }
 
 .container_about_us {
-    /* height: 450px; */
+    height: 450px; 
     height: 48vmin;
-    /* top: 79px; */
+    top: 79px;
     position: relative;
     display: flex;
     gap: 100px;

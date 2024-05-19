@@ -57,6 +57,9 @@ const OptionsTechDevices = () => {
             />
           </div>
           <div className="rounded-container-with-icons-and-text">
+            <Link to="/store" className="options-description-text-style">{t("store-page.all_devices")}</Link>
+          </div>
+          <div className="rounded-container-with-icons-and-text">
             <Link to="/category" state={{ category: "monitors" }} className="options-description-text-style">
               {t("store-page.monitors")}
             </Link>
