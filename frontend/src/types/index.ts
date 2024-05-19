@@ -9,7 +9,7 @@ export interface Product {
     images: string[];
 }
 
-export interface WishList {
+export interface ProductList {
     products: Product[];
 }
 
@@ -41,4 +41,9 @@ export interface Order{
 
 export interface OrderList{
     orders: Order[];
+}
+
+export interface SearchState{
+    data: Product[];
+    searchResults: Product[];
 }

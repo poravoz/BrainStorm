@@ -11,6 +11,7 @@ const ContactsCheckout = () => {
   const [t] = useTranslation("global");
   const [{ theme }] = useContext(ThemeContext);
   const dispatch = useAppDispatch();
+  
 
   // Define customerDetails as state using useState
   const [customerDetails, setCustomerDetails] = useState({
@@ -31,9 +32,9 @@ const ContactsCheckout = () => {
     }));
 
     setCustomerDetails(prevDetails => {
-      //if (prevDetails['name'] !== '' && prevDetails['lastname'] !== '' && prevDetails['phone'] !== '' && prevDetails['email'] !== '') {
+      if (prevDetails['name'] !== '' && prevDetails['lastname'] !== '' && prevDetails['phone'] !== '' && prevDetails['email'] !== '') {
         dispatch(setCustomerC(prevDetails));
-      //}
+      }
       return prevDetails;
     });
   };

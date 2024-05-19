@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Product, WishList } from "../types/index";
+import { Product, ProductList } from "../types/index";
 import { RootState } from "../app/store";
 
-const initialState: WishList = {
+const initialState: ProductList = {
     products: []
 }
 
