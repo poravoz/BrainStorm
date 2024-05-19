@@ -91,6 +91,7 @@
     },
 
     "store-page": {
+        "no_search": "No products found",
         "all_devices": "All",
         "monitors": "Monitors",
         "keyboards": "Keyboards",

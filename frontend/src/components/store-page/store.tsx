@@ -21,9 +21,9 @@ const Store = () => {
       <div style={containerStyle}>
       <NavigationBar />
       <OptionsTechDevices />
-      {/* <PopularDevices /> */}
+       <PopularDevices />
       <ContentDevices />
-      {/* <NewReleases /> */}
+      <NewReleases />
       </div>
       <Footer />
     </div>

@@ -3,7 +3,8 @@
     height: 55vh; 
     margin: 0 auto; 
     position: relative;
-    /* top: 75px; */
+    top: 75px;
+    height: 500px;
 }
 
 .text_our_team {

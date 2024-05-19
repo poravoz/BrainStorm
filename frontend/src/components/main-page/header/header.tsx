@@ -30,8 +30,9 @@ const Header = () => {
     
     return (
         <div className="container" style={{backgroundColor : theme.backgroundColor_header}}>
-            <h2 className="title_header" style={{color: theme.color_header}}> {t("header.title_header")} </h2>
-            <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
+            <h2 className="title_header" style={{color: theme.color_header}}> {t("header.title_header")} 
+                <img className="robot_header" style={{filter: theme.robot_header}} src={robot}/>
+            </h2>
         </div>
     );
 };

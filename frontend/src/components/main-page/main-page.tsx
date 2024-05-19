@@ -17,7 +17,7 @@ function MainPage() {
             <AboutUs />
             <Transition />
             <OurTeam />
-            {/* <ContactUs /> */}
+            <ContactUs /> 
             <Footer />
             <ScrollToTop />
         </div>
