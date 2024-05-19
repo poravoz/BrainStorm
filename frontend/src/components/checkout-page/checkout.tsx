@@ -34,7 +34,7 @@ const Checkout = () => {
   return (
     <div style={{backgroundColor : theme.backgroundColor_store, position: `relative`, height: `100vh`}}>
         <NavigationBar />
-        <WrapperCheckout />
+        <WrapperCheckout /> 
         {/* <WrapperCart cartItems={cartItems} addToCart={addToCart} updateCartItems={updateCartItems} removeFromCart={removeFromCart}/> */}
 
 

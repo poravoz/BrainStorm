@@ -45,7 +45,7 @@ const ItemsCatalog: React.FC<Props> = ({ items }) => {
         <div>
             <section className="sales">
                 {items.length === 0 ? (
-                    <p className="no-items-message">Товарів не знайдено</p>
+                    <p className="no-items-message"> {t("store-page.no_search")}</p>
                 ) : (
                     <ul className="saleslist">
                         {items.map((item, key) => (

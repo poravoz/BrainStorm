@@ -102,10 +102,6 @@ const DevicePrice: React.FC<{ product: ItemProp; }> = ({ product }) => {
               {t("store-page.buy_now")}
           </Link>
         )}
-        <a href="#!" className="btn-price btnWishlist-price">
-          <div className="icon-add-to-washlist-price">+</div>
-          <p className="add-to-washlist-price">{t("store-page.add_to_washlist")}</p>
-        </a>
       </div>
     </div>
   );

@@ -69,7 +69,6 @@ const DeviceRecommendations: React.FC<ItemProp> = ({ id, category }) => {
                   <img src={item.images[0]} className='image-devices-recommendations' alt="sales game" />
                   <p className="text-category-recommendations">{item.category}</p>
                   <p className="text-title-recommendations">{item.title}</p>
-                  {item && item.id && hoveredId === item.id && <div className="icon-add-to-wishlist-for-item-recommendations">+</div>}
               </Link>
               <div className="cardFooter-recommendations">
                   <span className="discount-recommendations">-{item.discount}</span>

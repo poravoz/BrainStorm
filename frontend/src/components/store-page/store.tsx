@@ -1,5 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit"
-import React, { CSSProperties, useContext } from 'react';
+import { CSSProperties, useContext } from 'react';
 import NavigationBar from "../main-page/navigation/navigation";
 import OptionsTechDevices from './options-tech-devices';
 import PopularDevices from './popular-devices';
@@ -12,9 +11,7 @@ import { ThemeContext } from '../../contexts/theme';
 
 const Store = () => {
   const containerStyle: CSSProperties = {
-    margin: '0 10vw',
-    height: '100%',
-    flex: '1 0 auto',
+    margin: '0 10vw'
   };
 
   const [{ theme }] = useContext(ThemeContext);
@@ -24,11 +21,11 @@ const Store = () => {
       <div style={containerStyle}>
       <NavigationBar />
       <OptionsTechDevices />
-      <PopularDevices />
+       <PopularDevices />
       <ContentDevices />
       <NewReleases />
       </div>
-      <Footer/>
+      <Footer />
     </div>
 
   )

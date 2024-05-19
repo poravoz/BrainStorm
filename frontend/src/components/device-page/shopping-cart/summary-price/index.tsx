@@ -61,15 +61,6 @@ const SummaryPrice = () => {
           ))}
         </select>
       </div>
-      <div className='give-code-summary-sc'>
-        <p className="count-price-items-summary-sc">{t("store-page.give_code")}</p>
-        <div className="input-container">
-          <input className="input-give-code-summary-sc" type="text" placeholder={`${t("store-page.enter_your_code")}`}/>
-          <div className="arrow-code-container">
-            <ArrowCode width="5vmin" height='3vmin' className=''/>
-          </div>
-        </div>
-      </div>
       <div className='total-price-summary-sc'>
         <p className="count-price-items-summary-sc">{t("store-page.total_price")}</p>
         <p className="count-price-items-summary-sc">{`$${totalPrice.toFixed(2)}`}</p>

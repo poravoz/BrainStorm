@@ -91,6 +91,7 @@
     },
 
     "store-page": {
+        "no_search": "Товарів не знайдено",
         "all_devices": "Усі",
         "monitors": "Монітори",
         "keyboards": "Клавіатури",

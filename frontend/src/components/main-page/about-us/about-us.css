@@ -4,7 +4,7 @@
 }
 
 .container_about_us {
-    height: 450px; 
+    /* height: 450px; */
     height: 48vmin;
     top: 79px;
     position: relative;
@@ -86,7 +86,7 @@
     }
 }
 
-@media (max-width:1200px) { 
+@media (max-width:1800px) { 
     .container_about_us {
         flex-direction: column; 
         gap: 20px; 

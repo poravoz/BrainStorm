@@ -15,10 +15,9 @@ function MainPage() {
             <NavigationBar /> 
             <Header />
             <AboutUs />
-            
             <Transition />
             <OurTeam />
-            <ContactUs />
+            <ContactUs /> 
             <Footer />
             <ScrollToTop />
         </div>

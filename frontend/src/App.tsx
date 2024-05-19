@@ -10,6 +10,19 @@ import { Provider } from 'react-redux';
 import store from './app/store';
 import SignUpPage from './components/sign-up&sign-in/sign-up-page/sign-up-page';
 import SignInPage from './components/sign-up&sign-in/sign-in-page/sign-in-page';
+import "./style.css";
+
+interface ItemProp {
+  id: number;
+  category: string;
+  title: string;
+  old_price: string;
+  discount: string;
+  price: string;
+  popularity: number;
+  images: string[];
+  count: number;
+}
 
 function App() {
   return (

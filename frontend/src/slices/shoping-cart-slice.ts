@@ -26,19 +26,15 @@ const ShoppingCartSlice = createSlice({
             }
         },
         remProductSC: (state, action: PayloadAction<Product>) => {
-            const titleToRemove = action.payload.title;
-            const newProducts = state.products.filter(line => line.product.title !== titleToRemove);
-            if (newProducts.length < state.products.length) {
-                state.products = newProducts;
-                state.totalPrice = newProducts.reduce((total, item) => {
+            const index = state.products.findIndex(line => line.product === action.payload);
+            if (index) {
+                state.products.splice(index, 1);
+                state.totalPrice = state.products.reduce((total, item) => {
                     const price = Number(item.product.price.replace(/\D/g, ''));
                     return total + price * item.count;
                 }, 0);
-            } else {
-                console.log("Didn't find the product", titleToRemove, current(state));
             }
         },
-        
         incProductSC: (state, action: PayloadAction<Product>) => {
             let line = state.products.find(line => line.product.title === action.payload.title);
             if (line) {
@@ -61,15 +57,11 @@ const ShoppingCartSlice = createSlice({
                 }
             }
         },
-        clearCartSC: (state) => {
-            state.products = [];
-            state.totalPrice = 0;
-        }
     }
 })
 
 export const selectProductSC = (state: RootState) => {return state.root.shoppingCart.products}
 export const selectTotalPrice = (state: RootState) => {return state.root.shoppingCart.totalPrice}
 
-export const {addProductSC, remProductSC, incProductSC, decProductSC, clearCartSC} = ShoppingCartSlice.actions;
+export const {addProductSC, remProductSC, incProductSC, decProductSC} = ShoppingCartSlice.actions;
 export default ShoppingCartSlice.reducer;
